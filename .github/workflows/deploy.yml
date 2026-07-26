@@ -5,6 +5,8 @@ on:
     branches: [main]
   workflow_dispatch:
 
+# Pages must be enabled once manually:
+# Settings → Pages → Build and deployment → Source: GitHub Actions
 permissions:
   contents: read
   pages: write
@@ -23,10 +25,7 @@ jobs:
         with:
           node-version: 24
           cache: npm
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-        with:
-          enablement: true
+      - uses: actions/configure-pages@v5
       - run: npm ci
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
