@@ -1,52 +1,16 @@
 ---
-const rows = [
-  {
-    feature: 'Editor',
-    cortex: 'Tu VS Code actual',
-    cursor: 'Editor propio (fork de VS Code)',
-    windsurf: 'Editor propio (fork de VS Code)',
-  },
-  {
-    feature: 'Proveedor de IA',
-    cortex: 'Multi-proveedor (tú eliges)',
-    cursor: 'OpenAI (principalmente)',
-    windsurf: 'Multi-proveedor',
-  },
-  {
-    feature: 'Open source',
-    cortex: 'Sí — backend OpenCode',
-    cursor: 'No',
-    windsurf: 'No',
-  },
-  {
-    feature: 'Costo de licencia',
-    cortex: 'Gratis (pagas tu API key)',
-    cursor: 'Plan free limitado + $20/mes Pro',
-    windsurf: 'Plan free limitado + $15/mes Pro',
-  },
-  {
-    feature: 'Agentic workflow',
-    cortex: 'Plan → Build con checklists',
-    cursor: 'Agent mode con tools',
-    windsurf: 'Cascade con tools',
-  },
-  {
-    feature: 'Control del código',
-    cortex: 'Diff inline, aceptar/rechazar',
-    cursor: 'Diff inline, aceptar/rechazar',
-    windsurf: 'Diff inline, aceptar/rechazar',
-  },
-  {
-    feature: 'Contexto del proyecto',
-    cortex: 'Búsqueda léxica + semántica',
-    cursor: '@mentions + codebase index',
-    windsurf: '@mentions + context flows',
-  },
-];
+import { getT, type Lang, defaultLang } from '../i18n/translations';
+
+interface Props {
+  lang?: Lang;
+}
+
+const { lang = defaultLang } = Astro.props;
+const t = getT(lang);
 ---
 <section class="compare">
-  <h2>Cortex vs los demás</h2>
-  <p class="subtitle">Misma potencia agentic, más libertad.</p>
+  <h2>{t.compareTitle}</h2>
+  <p class="subtitle">{t.compareSubtitle}</p>
   <div class="table-wrap">
     <table>
       <thead>
@@ -58,7 +22,7 @@ const rows = [
         </tr>
       </thead>
       <tbody>
-        {rows.map((r) => (
+        {t.compareRows.map((r) => (
           <tr>
             <td class="feature">{r.feature}</td>
             <td class="highlight">{r.cortex}</td>
@@ -70,8 +34,7 @@ const rows = [
     </table>
   </div>
   <p class="note">
-    Cortex es una extensión de VS Code, no un fork. No necesitas migrar tu editor ni tu configuración.
-    Construido desde cero sobre <a href="https://github.com/opencode-ai/opencode" target="_blank">OpenCode</a> para replicar el flow agentico de Cursor/Windsurf con stack abierto.
+    {t.compareNote}
   </p>
 </section>
 

@@ -1,0 +1,93 @@
+---
+import { LANGUAGES, type Lang } from '../i18n/translations';
+
+interface Props {
+  current: Lang;
+}
+
+const { current } = Astro.props;
+const base = import.meta.env.BASE_URL;
+
+function langPath(lang: Lang): string {
+  if (lang === 'en') return base;
+  return `${base}${lang}/`;
+}
+---
+<div class="lang-switcher">
+  <button class="lang-btn" aria-label="Change language">
+    {LANGUAGES.find(l => l.code === current)?.flag}
+  </button>
+  <div class="lang-menu">
+    {LANGUAGES.map(l => (
+      <a
+        href={langPath(l.code)}
+        class:list={['lang-option', { active: l.code === current }]}
+      >
+        <span class="flag">{l.flag}</span>
+        <span class="label">{l.label}</span>
+      </a>
+    ))}
+  </div>
+</div>
+
+<style>
+  .lang-switcher {
+    position: relative;
+  }
+  .lang-btn {
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.3rem 0.55rem;
+    font-size: 1.05rem;
+    cursor: pointer;
+    line-height: 1;
+    transition: border-color 0.15s;
+  }
+  .lang-btn:hover {
+    border-color: var(--accent);
+  }
+  .lang-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 0;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    min-width: 160px;
+    z-index: 100;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  }
+  .lang-switcher:hover .lang-menu {
+    display: block;
+  }
+  .lang-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: background 0.1s, color 0.1s;
+  }
+  .lang-option:first-child {
+    border-radius: var(--radius) var(--radius) 0 0;
+  }
+  .lang-option:last-child {
+    border-radius: 0 0 var(--radius) var(--radius);
+  }
+  .lang-option:hover {
+    background: var(--surface-hover);
+    color: var(--text);
+  }
+  .lang-option.active {
+    color: var(--accent);
+    font-weight: 600;
+  }
+  .flag {
+    font-size: 1rem;
+    line-height: 1;
+  }
+</style>

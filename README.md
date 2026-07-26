@@ -1,38 +1,38 @@
 # Cortex
 
-Agentic AI coding en VS Code — misma experiencia que Cursor/Windsurf, pero sin cambiar de editor.
+Agentic AI coding in VS Code — same experience as Cursor/Windsurf, without switching editors.
 
-**[Documentación](https://daniquir.github.io/cortex)** · **[Extension](https://marketplace.visualstudio.com/items?itemName=daniquir.cortex)**
+**[Documentation](https://daniquir.github.io/cortex)** · **[Extension](https://marketplace.visualstudio.com/items?itemName=daniquir.cortex)**
 
-## ¿Qué es Cortex?
+## What is Cortex?
 
-Cortex es una extensión de VS Code que conecta con [OpenCode](https://github.com/opencode-ai/opencode) para ofrecer:
+Cortex is a VS Code extension that connects to [OpenCode](https://github.com/opencode-ai/opencode) to provide:
 
-- **Agentic workflow completo** — Plan → Build con checklists, mismo flow de Cursor Agent
-- **Multi-proveedor** — OpenAI, Anthropic, Google, xAI, OpenRouter y más
-- **Contexto inteligente** — búsqueda léxica + semántica sobre tu codebase
-- **Ediciones inline** — acepta/rechaza sugerencias con diff preview
-- **Chat lateral** — historial completo con timeline de herramientas
-- **Open source** — backend OpenCode, sin.lock-in
+- **Complete agentic workflow** — Plan → Build with checklists, same flow as Cursor Agent
+- **Multi-provider** — OpenAI, Anthropic, Google, xAI, OpenRouter and more
+- **Smart context** — lexical + semantic search over your codebase
+- **Inline diffs** — accept/reject suggestions with diff preview
+- **Chat sidebar** — full history with tool usage timeline
+- **Open source** — OpenCode backend, no lock-in
 
-## Instalación
+## Install
 
 ```bash
 code --install-extension daniquir.cortex
 ```
 
-O busca "Cortex" en la VS Code Marketplace.
+Or search "Cortex" in the VS Code Marketplace.
 
-## Desarrollo
+## Development
 
-Este repo contiene el sitio de documentación (Astro).
+This repo contains the documentation site (Astro).
 
 ```bash
 npm install
-npm run dev    # servidor de desarrollo local
-npm run build  # build de producción
+npm run dev    # local dev server
+npm run build  # production build
 ```
 
-## Licencia
+## License
 
 MIT

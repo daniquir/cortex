@@ -1,29 +1,25 @@
 ---
+import { getT, type Lang, defaultLang } from '../i18n/translations';
+
+interface Props {
+  lang?: Lang;
+}
+
+const { lang = defaultLang } = Astro.props;
+const t = getT(lang);
 ---
 <section class="install">
-  <h2>Empieza en 3 pasos</h2>
+  <h2>{t.installTitle}</h2>
   <div class="steps">
-    <div class="step">
-      <span class="num">1</span>
-      <div>
-        <strong>Instala la extensión</strong>
-        <p>Busca "Cortex" en Extensiones de VS Code, o instala desde la <a href="https://marketplace.visualstudio.com/items?itemName=daniquir.cortex" target="_blank">Marketplace</a>.</p>
+    {t.installSteps.map((step, i) => (
+      <div class="step">
+        <span class="num">{i + 1}</span>
+        <div>
+          <strong>{step.strong}</strong>
+          <p>{step.p}</p>
+        </div>
       </div>
-    </div>
-    <div class="step">
-      <span class="num">2</span>
-      <div>
-        <strong>Conecta tu proveedor de IA</strong>
-        <p>Abre el sidebar de Cortex → "Abrir OpenCode" → conecta tu proveedor (OpenAI, Anthropic, Google, etc.) con tu API key.</p>
-      </div>
-    </div>
-    <div class="step">
-      <span class="num">3</span>
-      <div>
-        <strong>Empieza a codear con IA</strong>
-        <p>Pregunta, genera código, refactorea — Cortex analiza, planifica y ejecuta. Tú apruebas cada cambio.</p>
-      </div>
-    </div>
+    ))}
   </div>
 </section>
 

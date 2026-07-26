@@ -1,20 +1,27 @@
 ---
+import { getT, type Lang, defaultLang } from '../i18n/translations';
+
+interface Props {
+  lang?: Lang;
+}
+
+const { lang = defaultLang } = Astro.props;
+const t = getT(lang);
+const base = import.meta.env.BASE_URL;
 ---
 <section class="hero">
-  <div class="badge">Desarrollado desde cero para VS Code</div>
+  <div class="badge">{t.badge}</div>
   <h1>Cortex</h1>
-  <p class="tagline">
-    Agentic AI coding directo en VS Code. Misma experiencia de programación asistida que Cursor y Windsurf, pero sin cambiar de editor — y con la libertad de elegir tu proveedor de IA.
-  </p>
+  <p class="tagline">{t.tagline}</p>
   <div class="actions">
     <a class="btn primary" href="https://marketplace.visualstudio.com/items?itemName=daniquir.cortex" target="_blank">
-      Instalar desde Marketplace
+      {t.ctaInstall}
     </a>
-    <a class="btn" href={`${import.meta.env.BASE_URL}docs/`}>
-      Leer la documentación
+    <a class="btn" href={`${base}${lang === 'en' ? '' : lang + '/'}docs/`}>
+      {t.ctaDocs}
     </a>
   </div>
-  <p class="sub">Funciona con OpenAI, Anthropic, Google, xAI, OpenRouter y más. Tú controlas qué modelo usa tu código.</p>
+  <p class="sub">{t.sub}</p>
 </section>
 
 <style>
