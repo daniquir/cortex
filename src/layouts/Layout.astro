@@ -4,7 +4,7 @@ interface Props {
   description?: string;
 }
 
-const { title, description = 'Cortex — Agentic AI coding in VS Code, powered by OpenCode' } = Astro.props;
+const { title, description = 'Cortex — Agentic AI coding en VS Code' } = Astro.props;
 ---
 <!DOCTYPE html>
 <html lang="es">
@@ -13,7 +13,7 @@ const { title, description = 'Cortex — Agentic AI coding in VS Code, powered b
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content={description} />
   <title>{title}</title>
-  <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}icon.svg`} />
+  <link rel="icon" type="image/png" href={`${import.meta.env.BASE_URL}logo.png`} />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -56,10 +56,10 @@ const { title, description = 'Cortex — Agentic AI coding in VS Code, powered b
     }
     nav .logo:hover { color: var(--text); }
     nav .logo img {
-      width: 30px;
-      height: 30px;
+      width: 32px;
+      height: 32px;
       display: block;
-      filter: drop-shadow(0 0 6px #39ff1444);
+      border-radius: 6px;
     }
     nav .links { display: flex; gap: 1.5rem; }
     nav .links a { color: var(--text-muted); font-size: 0.9rem; font-weight: 500; }
@@ -75,7 +75,7 @@ const { title, description = 'Cortex — Agentic AI coding in VS Code, powered b
   <div class="container">
     <nav>
       <a class="logo" href={`${import.meta.env.BASE_URL}`}>
-        <img src={`${import.meta.env.BASE_URL}icon.svg`} alt="" width="30" height="30" />
+        <img src={`${import.meta.env.BASE_URL}logo.png`} alt="" width="32" height="32" />
         Cortex
       </a>
       <div class="links">
@@ -88,7 +88,7 @@ const { title, description = 'Cortex — Agentic AI coding in VS Code, powered b
       <slot />
     </main>
     <footer>
-      <p>Built with ❤️ by <a href="https://github.com/daniquir">daniquir</a> · Powered by <a href="https://github.com/opencode-ai/opencode" target="_blank">OpenCode</a></p>
+      <p>Built with ❤️ by <a href="https://github.com/daniquir">daniquir</a></p>
     </footer>
   </div>
 </body>
