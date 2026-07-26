@@ -1,0 +1,54 @@
+---
+---
+<section class="hero">
+  <h1>⚡ Cortex</h1>
+  <p class="tagline">AI coding agent for VS Code — like Cursor, but in your editor.</p>
+  <div class="actions">
+    <a class="btn primary" href="https://marketplace.visualstudio.com/items?itemName=daniquir.cortex" target="_blank">
+      Install from Marketplace
+    </a>
+    <a class="btn" href={`${import.meta.env.BASE_URL}docs/`}>
+      Read the Docs
+    </a>
+  </div>
+</section>
+
+<style>
+  .hero {
+    text-align: center;
+    padding: 6rem 0 4rem;
+  }
+  .hero h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+  .tagline {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    max-width: 500px;
+    margin: 0 auto 2rem;
+  }
+  .actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius);
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: 1px solid var(--border);
+    color: var(--text);
+    transition: all 0.15s;
+  }
+  .btn:hover { border-color: var(--accent); color: var(--accent); }
+  .btn.primary {
+    background: var(--accent);
+    color: var(--bg);
+    border-color: var(--accent);
+  }
+  .btn.primary:hover { background: var(--accent-hover); }
+</style>

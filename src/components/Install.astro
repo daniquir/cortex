@@ -1,0 +1,59 @@
+---
+---
+<section class="install">
+  <h2>Quick Start</h2>
+  <div class="steps">
+    <div class="step">
+      <span class="num">1</span>
+      <div>
+        <strong>Install the extension</strong>
+        <p>Search "Cortex" in VS Code Extensions, or install from the <a href="https://marketplace.visualstudio.com/items?itemName=daniquir.cortex" target="_blank">Marketplace</a>.</p>
+      </div>
+    </div>
+    <div class="step">
+      <span class="num">2</span>
+      <div>
+        <strong>Connect a provider</strong>
+        <p>Open Cortex sidebar → "Abrir OpenCode" → connect your AI provider (OpenAI, Anthropic, etc.).</p>
+      </div>
+    </div>
+    <div class="step">
+      <span class="num">3</span>
+      <div>
+        <strong>Start coding</strong>
+        <p>Ask questions, generate code, refactor — Cortex handles the rest.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .install { padding: 4rem 0; }
+  .install h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+  .steps { max-width: 600px; margin: 0 auto; }
+  .step {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+  }
+  .num {
+    flex-shrink: 0;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+  .step strong { display: block; margin-bottom: 0.25rem; }
+  .step p { color: var(--text-muted); font-size: 0.9rem; margin: 0; }
+</style>

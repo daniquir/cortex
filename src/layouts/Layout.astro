@@ -1,0 +1,71 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'Cortex — AI coding agent for VS Code' } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content={description} />
+  <title>{title}</title>
+  <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}icon.svg`} />
+  <style>
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --border: #30363d;
+      --text: #e6edf3;
+      --text-muted: #8b949e;
+      --accent: #58a6ff;
+      --accent-hover: #79c0ff;
+      --green: #3fb950;
+      --radius: 8px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--accent-hover); }
+    .container { max-width: 960px; margin: 0 auto; padding: 0 1.5rem; }
+    nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1rem 0; border-bottom: 1px solid var(--border);
+    }
+    nav .logo { font-size: 1.25rem; font-weight: 700; color: var(--text); }
+    nav .links { display: flex; gap: 1.5rem; }
+    nav .links a { color: var(--text-muted); font-size: 0.9rem; }
+    nav .links a:hover { color: var(--text); }
+    footer {
+      margin-top: 4rem; padding: 2rem 0; border-top: 1px solid var(--border);
+      text-align: center; color: var(--text-muted); font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a class="logo" href={`${import.meta.env.BASE_URL}`}>⚡ Cortex</a>
+      <div class="links">
+        <a href={`${import.meta.env.BASE_URL}docs/`}>Docs</a>
+        <a href={`${import.meta.env.BASE_URL}changelog/`}>Changelog</a>
+        <a href="https://github.com/daniquir/cortex-agent" target="_blank">GitHub</a>
+      </div>
+    </nav>
+    <main>
+      <slot />
+    </main>
+    <footer>
+      <p>Built with ❤️ by <a href="https://github.com/daniquir">daniquir</a></p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+<Layout title="Configuration — Cortex">
+  <h1>Configuration</h1>
+
+  <h2>Settings</h2>
+  <p>Cortex reads its configuration from <code>config.json</code> in your workspace root.</p>
+
+  <table>
+    <thead>
+      <tr><th>Setting</th><th>Default</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><code>agent</code></td><td><code>"build"</code></td><td>Default agent mode: <code>plan</code>, <code>build</code>, or <code>ask</code></td></tr>
+      <tr><td><code>opencodeBinary</code></td><td><code>"opencode"</code></td><td>Path to the OpenCode binary</td></tr>
+      <tr><td><code>opencodePort</code></td><td><code>4096</code></td><td>Port for the OpenCode server</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Providers</h2>
+  <p>Cortex connects to AI providers through OpenCode. Supported providers:</p>
+  <ul>
+    <li><strong>OpenAI</strong> — GPT-4o, GPT-4.1, o3, etc.</li>
+    <li><strong>Anthropic</strong> — Claude Sonnet 4, Opus 4, etc.</li>
+    <li><strong>Google</strong> — Gemini 2.5 Pro, Flash, etc.</li>
+    <li><strong>xAI</strong> — Grok models</li>
+    <li><strong>OpenRouter</strong> — 200+ models via proxy</li>
+  </ul>
+
+  <h2>Context Sources</h2>
+  <p>Cortex automatically gathers context from:</p>
+  <ul>
+    <li><strong>Active file</strong> — the file you're editing</li>
+    <li><strong>Selection</strong> — highlighted text</li>
+    <li><strong>Lexical search</strong> — keyword matching across the project</li>
+    <li><strong>Semantic search</strong> — MiniLM embeddings for related code</li>
+    <li><strong>Rules</strong> — <code>.cortex/rules</code> files</li>
+  </ul>
+</Layout>
+
+<style>
+  h1 { margin-top: 3rem; }
+  h2 { margin-top: 2rem; margin-bottom: 0.75rem; }
+  p { color: var(--text-muted); margin-bottom: 1rem; }
+  ul { margin-left: 1.5rem; margin-bottom: 1rem; color: var(--text-muted); }
+  li { margin-bottom: 0.5rem; }
+  code {
+    background: var(--surface);
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--border);
+  }
+  th { color: var(--text); font-size: 0.85rem; text-transform: uppercase; }
+  td { color: var(--text-muted); font-size: 0.9rem; }
+</style>
