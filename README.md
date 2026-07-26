@@ -1,37 +1,38 @@
 # Cortex
 
-AI coding agent for VS Code — like Cursor, but in your editor.
+Agentic AI coding en VS Code — misma experiencia que Cursor/Windsurf, pero sin cambiar de editor.
 
-**[Documentation](https://daniquir.github.io/cortex)** · **[Extension](https://marketplace.visualstudio.com/items?itemName=daniquir.cortex)** · **[Agent Source](https://github.com/daniquir/cortex-agent)**
+**[Documentación](https://daniquir.github.io/cortex)** · **[Extension](https://marketplace.visualstudio.com/items?itemName=daniquir.cortex)**
 
-## What is Cortex?
+## ¿Qué es Cortex?
 
-Cortex is a VS Code extension that connects to [OpenCode](https://github.com/opencode-ai/opencode) to provide:
+Cortex es una extensión de VS Code que conecta con [OpenCode](https://github.com/opencode-ai/opencode) para ofrecer:
 
-- **Multi-provider AI** — OpenAI, Anthropic, Google, xAI, and more
-- **Context-aware coding** — lexical + semantic search over your codebase
-- **Plan & Build workflow** — analyze first, then implement step by step
-- **Inline diffs** — accept/reject AI suggestions directly in the editor
-- **Chat sidebar** — full conversation history with tool usage timeline
+- **Agentic workflow completo** — Plan → Build con checklists, mismo flow de Cursor Agent
+- **Multi-proveedor** — OpenAI, Anthropic, Google, xAI, OpenRouter y más
+- **Contexto inteligente** — búsqueda léxica + semántica sobre tu codebase
+- **Ediciones inline** — acepta/rechaza sugerencias con diff preview
+- **Chat lateral** — historial completo con timeline de herramientas
+- **Open source** — backend OpenCode, sin.lock-in
 
-## Install
+## Instalación
 
 ```bash
 code --install-extension daniquir.cortex
 ```
 
-Or search "Cortex" in the VS Code Marketplace.
+O busca "Cortex" en la VS Code Marketplace.
 
-## Development
+## Desarrollo
 
-This repo contains the documentation site (Astro). The extension source code is in [cortex-agent](https://github.com/daniquir/cortex-agent).
+Este repo contiene el sitio de documentación (Astro).
 
 ```bash
 npm install
-npm run dev    # local dev server
-npm run build  # production build
+npm run dev    # servidor de desarrollo local
+npm run build  # build de producción
 ```
 
-## License
+## Licencia
 
 MIT

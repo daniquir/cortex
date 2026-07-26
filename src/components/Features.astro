@@ -1,39 +1,39 @@
 ---
 const features = [
   {
-    icon: '🤖',
-    title: 'Multi-provider AI',
-    desc: 'Connect OpenAI, Anthropic, Google, xAI, and more. Switch models on the fly.',
-  },
-  {
-    icon: '🔍',
-    title: 'Context-aware',
-    desc: 'Lexical + semantic search over your codebase. The agent sees what matters.',
-  },
-  {
-    icon: '📝',
-    title: 'Plan & Build',
-    desc: 'Analyze first, then implement. Two-mode workflow inspired by Cursor Agent.',
-  },
-  {
-    icon: '🔧',
-    title: 'Inline edits',
-    desc: 'Accept/reject AI suggestions directly in the editor with diff preview.',
-  },
-  {
-    icon: '💬',
-    title: 'Chat sidebar',
-    desc: 'Full conversation history, tool usage timeline, markdown streaming.',
+    icon: '🧠',
+    title: 'Agentic workflow completo',
+    desc: 'Plan → Build: analiza tu código, propone un plan con checklist, y ejecuta paso a paso. El mismo flow de Cursor Agent, ahora en tu VS Code.',
   },
   {
     icon: '🔌',
-    title: 'MCP support',
-    desc: 'Connect external tools via Model Context Protocol servers.',
+    title: 'Multi-proveedor, multi-modelo',
+    desc: 'Conecta OpenAI, Anthropic, Google, xAI, OpenRouter y más. Cambia de modelo al vuelo sin.lock-in. Tú decides qué IA toca tu código.',
+  },
+  {
+    icon: '🔍',
+    title: 'Contexto inteligente',
+    desc: 'Búsqueda léxica + semántica sobre tu codebase. El agente ve exactamente lo que importa, no escanea el repo entero.',
+  },
+  {
+    icon: '✏️',
+    title: 'Ediciones inline con diff',
+    desc: 'Acepta o rechaza cada sugerencia de IA directamente en el editor con preview de diffs. Control total sobre lo que cambia.',
+  },
+  {
+    icon: '💬',
+    title: 'Chat lateral completo',
+    desc: 'Historial de conversación, timeline de uso de herramientas, streaming de markdown. Todo lo que necesitas para flujo continuo.',
+  },
+  {
+    icon: '🔓',
+    title: 'Built on OpenCode',
+    desc: 'Desarrollado desde cero sobre OpenCode, el backend open-source de agentes de código. Extensible, transparente, tuyo.',
   },
 ];
 ---
 <section class="features">
-  <h2>Features</h2>
+  <h2>¿Qué hace a Cortex diferente?</h2>
   <div class="grid">
     {features.map((f) => (
       <div class="card">
@@ -51,19 +51,25 @@ const features = [
     text-align: center;
     font-size: 2rem;
     margin-bottom: 2.5rem;
+    letter-spacing: -0.02em;
   }
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1.5rem;
+    gap: 1.25rem;
   }
   .card {
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius);
     padding: 1.5rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 0 15px var(--accent-dim);
   }
   .icon { font-size: 1.5rem; }
-  .card h3 { margin: 0.5rem 0 0.25rem; font-size: 1.1rem; }
-  .card p { color: var(--text-muted); font-size: 0.9rem; }
+  .card h3 { margin: 0.5rem 0 0.25rem; font-size: 1.05rem; font-weight: 600; }
+  .card p { color: var(--text-muted); font-size: 0.88rem; line-height: 1.6; margin: 0; }
 </style>

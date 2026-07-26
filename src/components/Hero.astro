@@ -1,54 +1,89 @@
 ---
 ---
 <section class="hero">
-  <h1>⚡ Cortex</h1>
-  <p class="tagline">AI coding agent for VS Code — like Cursor, but in your editor.</p>
+  <div class="badge">Desarrollado desde cero · Powered by OpenCode</div>
+  <h1>Cortex</h1>
+  <p class="tagline">
+    Agentic AI coding directo en VS Code. Misma experiencia de programación asistida que Cursor y Windsurf, pero sin cambiar de editor — y con la libertad de elegir tu proveedor de IA.
+  </p>
   <div class="actions">
     <a class="btn primary" href="https://marketplace.visualstudio.com/items?itemName=daniquir.cortex" target="_blank">
-      Install from Marketplace
+      Instalar desde Marketplace
     </a>
     <a class="btn" href={`${import.meta.env.BASE_URL}docs/`}>
-      Read the Docs
+      Leer la documentación
     </a>
   </div>
+  <p class="sub">Funciona con OpenAI, Anthropic, Google, xAI, OpenRouter y más. Tú controlas qué modelo usa tu código.</p>
 </section>
 
 <style>
   .hero {
     text-align: center;
-    padding: 6rem 0 4rem;
+    padding: 5rem 0 3.5rem;
+  }
+  .badge {
+    display: inline-block;
+    padding: 0.35rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--accent);
+    background: var(--accent-dim);
+    border: 1px solid var(--accent);
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.02em;
   }
   .hero h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-weight: 800;
     margin-bottom: 1rem;
+    letter-spacing: -0.03em;
+    background: linear-gradient(135deg, #39ff14, #a8ff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 0 20px #39ff1433);
   }
   .tagline {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     color: var(--text-muted);
-    max-width: 500px;
+    max-width: 620px;
     margin: 0 auto 2rem;
+    line-height: 1.7;
   }
   .actions {
     display: flex;
     gap: 1rem;
     justify-content: center;
+    margin-bottom: 1.5rem;
   }
   .btn {
     display: inline-block;
-    padding: 0.75rem 1.5rem;
+    padding: 0.8rem 1.75rem;
     border-radius: var(--radius);
     font-weight: 600;
     font-size: 0.95rem;
     border: 1px solid var(--border);
     color: var(--text);
-    transition: all 0.15s;
+    transition: all 0.2s;
   }
   .btn:hover { border-color: var(--accent); color: var(--accent); }
   .btn.primary {
     background: var(--accent);
     color: var(--bg);
     border-color: var(--accent);
+    font-weight: 700;
   }
-  .btn.primary:hover { background: var(--accent-hover); }
+  .btn.primary:hover {
+    background: var(--accent-hover);
+    border-color: var(--accent-hover);
+    box-shadow: 0 0 20px #39ff1444;
+  }
+  .sub {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    max-width: 500px;
+    margin: 0 auto;
+  }
 </style>

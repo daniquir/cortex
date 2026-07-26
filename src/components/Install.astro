@@ -1,27 +1,27 @@
 ---
 ---
 <section class="install">
-  <h2>Quick Start</h2>
+  <h2>Empieza en 3 pasos</h2>
   <div class="steps">
     <div class="step">
       <span class="num">1</span>
       <div>
-        <strong>Install the extension</strong>
-        <p>Search "Cortex" in VS Code Extensions, or install from the <a href="https://marketplace.visualstudio.com/items?itemName=daniquir.cortex" target="_blank">Marketplace</a>.</p>
+        <strong>Instala la extensión</strong>
+        <p>Busca "Cortex" en Extensiones de VS Code, o instala desde la <a href="https://marketplace.visualstudio.com/items?itemName=daniquir.cortex" target="_blank">Marketplace</a>.</p>
       </div>
     </div>
     <div class="step">
       <span class="num">2</span>
       <div>
-        <strong>Connect a provider</strong>
-        <p>Open Cortex sidebar → "Abrir OpenCode" → connect your AI provider (OpenAI, Anthropic, etc.).</p>
+        <strong>Conecta tu proveedor de IA</strong>
+        <p>Abre el sidebar de Cortex → "Abrir OpenCode" → conecta tu proveedor (OpenAI, Anthropic, Google, etc.) con tu API key.</p>
       </div>
     </div>
     <div class="step">
       <span class="num">3</span>
       <div>
-        <strong>Start coding</strong>
-        <p>Ask questions, generate code, refactor — Cortex handles the rest.</p>
+        <strong>Empieza a codear con IA</strong>
+        <p>Pregunta, genera código, refactorea — Cortex analiza, planifica y ejecuta. Tú apruebas cada cambio.</p>
       </div>
     </div>
   </div>
@@ -33,6 +33,7 @@
     text-align: center;
     font-size: 2rem;
     margin-bottom: 2.5rem;
+    letter-spacing: -0.02em;
   }
   .steps { max-width: 600px; margin: 0 auto; }
   .step {
@@ -43,8 +44,8 @@
   }
   .num {
     flex-shrink: 0;
-    width: 2rem;
-    height: 2rem;
+    width: 2.2rem;
+    height: 2.2rem;
     border-radius: 50%;
     background: var(--accent);
     color: var(--bg);
@@ -53,7 +54,8 @@
     justify-content: center;
     font-weight: 700;
     font-size: 0.9rem;
+    box-shadow: 0 0 12px var(--accent-dim);
   }
-  .step strong { display: block; margin-bottom: 0.25rem; }
-  .step p { color: var(--text-muted); font-size: 0.9rem; margin: 0; }
+  .step strong { display: block; margin-bottom: 0.25rem; font-size: 1rem; }
+  .step p { color: var(--text-muted); font-size: 0.9rem; margin: 0; line-height: 1.6; }
 </style>

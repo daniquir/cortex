@@ -1,0 +1,142 @@
+---
+const rows = [
+  {
+    feature: 'Editor',
+    cortex: 'Tu VS Code actual',
+    cursor: 'Editor propio (fork de VS Code)',
+    windsurf: 'Editor propio (fork de VS Code)',
+  },
+  {
+    feature: 'Proveedor de IA',
+    cortex: 'Multi-proveedor (tú eliges)',
+    cursor: 'OpenAI (principalmente)',
+    windsurf: 'Multi-proveedor',
+  },
+  {
+    feature: 'Open source',
+    cortex: 'Sí — backend OpenCode',
+    cursor: 'No',
+    windsurf: 'No',
+  },
+  {
+    feature: 'Costo de licencia',
+    cortex: 'Gratis (pagas tu API key)',
+    cursor: 'Plan free limitado + $20/mes Pro',
+    windsurf: 'Plan free limitado + $15/mes Pro',
+  },
+  {
+    feature: 'Agentic workflow',
+    cortex: 'Plan → Build con checklists',
+    cursor: 'Agent mode con tools',
+    windsurf: 'Cascade con tools',
+  },
+  {
+    feature: 'Control del código',
+    cortex: 'Diff inline, aceptar/rechazar',
+    cursor: 'Diff inline, aceptar/rechazar',
+    windsurf: 'Diff inline, aceptar/rechazar',
+  },
+  {
+    feature: 'Contexto del proyecto',
+    cortex: 'Búsqueda léxica + semántica',
+    cursor: '@mentions + codebase index',
+    windsurf: '@mentions + context flows',
+  },
+];
+---
+<section class="compare">
+  <h2>Cortex vs los demás</h2>
+  <p class="subtitle">Misma potencia agentic, más libertad.</p>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th class="highlight">Cortex</th>
+          <th>Cursor</th>
+          <th>Windsurf</th>
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map((r) => (
+          <tr>
+            <td class="feature">{r.feature}</td>
+            <td class="highlight">{r.cortex}</td>
+            <td>{r.cursor}</td>
+            <td>{r.windsurf}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  <p class="note">
+    Cortex es una extensión de VS Code, no un fork. No necesitas migrar tu editor ni tu configuración.
+    Construido desde cero sobre <a href="https://github.com/opencode-ai/opencode" target="_blank">OpenCode</a> para replicar el flow agentico de Cursor/Windsurf con stack abierto.
+  </p>
+</section>
+
+<style>
+  .compare { padding: 4rem 0; }
+  .compare h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+  }
+  .subtitle {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    margin-bottom: 2.5rem;
+  }
+  .table-wrap {
+    overflow-x: auto;
+    margin-bottom: 2rem;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+  }
+  th, td {
+    padding: 0.85rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+  }
+  th {
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  th.highlight, td.highlight {
+    color: var(--accent);
+    font-weight: 600;
+  }
+  th.highlight {
+    position: relative;
+  }
+  th.highlight::after {
+    content: '★';
+    margin-left: 0.35rem;
+    font-size: 0.7rem;
+  }
+  td.feature {
+    color: var(--text);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  tr:hover td {
+    background: var(--surface);
+  }
+  .note {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+  .note a { font-weight: 600; }
+</style>
