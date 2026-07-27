@@ -17,9 +17,15 @@ const d = getDocs(lang);
   <ol>
     {d.installMarketplaceSteps.map((step) => <li>{step}</li>)}
   </ol>
+  <pre><code>{d.installMarketplaceCmd}</code></pre>
+
+  <h2>{d.installFromOpenVsx}</h2>
+  <p>{d.installOpenVsxIntro}</p>
+  <pre><code>{d.installOpenVsxCmd}</code></pre>
 
   <h2>{d.installFromVsix}</h2>
-  <pre><code>code --install-extension cortex-0.1.0.vsix</code></pre>
+  <p>{d.installVsixIntro}</p>
+  <pre><code>{d.installVsixCmd}</code></pre>
 
   <h2>{d.installFirstRun}</h2>
   <ol>
@@ -41,6 +47,7 @@ const d = getDocs(lang);
 <style>
   h1 { margin-top: 3rem; }
   h2 { margin-top: 2rem; margin-bottom: 0.75rem; }
+  p { color: var(--text-muted); margin-bottom: 1rem; }
   ol, ul { margin-left: 1.5rem; margin-bottom: 1rem; color: var(--text-muted); }
   li { margin-bottom: 0.5rem; }
   code {
@@ -55,6 +62,7 @@ const d = getDocs(lang);
     border-radius: var(--radius);
     padding: 1rem;
     overflow-x: auto;
+    margin-bottom: 1rem;
   }
   pre code { background: none; padding: 0; }
 </style>

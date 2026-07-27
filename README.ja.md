@@ -1,27 +1,31 @@
 # Cortex
 
-VS Code での AI エージェント開発 — Cursor/Windsurf と同じエクスペリエンス、エディタを切り替えずに。
+CursorやWindsurfと同じエージェント体験を、自分のVS Codeで — OpenCodeサブスクリプションで動かします。
 
-**[ドキュメント](https://daniquir.github.io/cortex)** · **[エクステンション](https://marketplace.visualstudio.com/items?itemName=daniquir.cortex)**
+**[ドキュメント](https://daniquir.github.io/cortex)** · **[拡張機能](https://marketplace.visualstudio.com/items?itemName=cortex-labs.cortex-agent)**
 
 ## Cortex とは？
 
-Cortex は [OpenCode](https://github.com/opencode-ai/opencode) に接続する VS Code 拡張機能で、以下を提供します：
+Cortex は [OpenCode](https://opencode.ai) をアジェンティックランタイムとしてエディタに統合する VS Code 拡張機能です：
 
-- **完全なエージェントワークフロー** — チェックリストを使った計画 → 構築、Cursor Agent と同じフロー
-- **マルチプロバイダー** — OpenAI、Anthropic、Google、xAI、OpenRouter など
-- **スマートコンテキスト** — コードベースに対する語義的 + 意味的検索
-- **インライン差分** — 差分プレビュー付きで提案を承認/拒否
+- **完全なアジェンティックワークフロー** — チェックリスト付き Plan → Build、Cursor Agent と同じフロー
+- **あなたの OpenCode モデル** — OpenCode サブスクリプションで利用可能な任意のモデルを選択
+- **スマートコンテキスト** — コードベースに対するレキシカル＋セマンティック検索
+- **インラインdiff** — 差分プレビュー付きで提案を承認/却下
 - **チャットサイドバー** — ツール使用タイムライン付きの完全な履歴
-- **オープンソース** — OpenCode バックエンド、ベンダーロックインなし
+- **あなたのエディタ** — VS Code または互換フォーク；OpenCode の課金は Cortex の外
 
 ## インストール
 
+[VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=cortex-labs.cortex-agent) または [Open VSX](https://open-vsx.org/) から：
+
 ```bash
-code --install-extension daniquir.cortex
+code --install-extension cortex-labs.cortex-agent
+# または
+ovsx install cortex-labs.cortex-agent
 ```
 
-または VS Code Marketplace で「Cortex」を検索してください。
+または拡張機能で **Cortex Agent** を検索してください。
 
 ## 開発
 

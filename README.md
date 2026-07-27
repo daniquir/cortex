@@ -1,27 +1,31 @@
 # Cortex
 
-Agentic AI coding in VS Code — same experience as Cursor/Windsurf, without switching editors.
+The Cursor and Windsurf agent experience — in your own VS Code, powered by your OpenCode subscription.
 
-**[Documentation](https://daniquir.github.io/cortex)** · **[Extension](https://marketplace.visualstudio.com/items?itemName=daniquir.cortex)**
+**[Documentation](https://daniquir.github.io/cortex)** · **[Extension](https://marketplace.visualstudio.com/items?itemName=cortex-labs.cortex-agent)**
 
 ## What is Cortex?
 
-Cortex is a VS Code extension that connects to [OpenCode](https://github.com/opencode-ai/opencode) to provide:
+Cortex is a VS Code extension that integrates [OpenCode](https://opencode.ai) as the agentic runtime inside your editor:
 
 - **Complete agentic workflow** — Plan → Build with checklists, same flow as Cursor Agent
-- **Multi-provider** — OpenAI, Anthropic, Google, xAI, OpenRouter and more
+- **Your OpenCode models** — pick any model available on your OpenCode subscription
 - **Smart context** — lexical + semantic search over your codebase
 - **Inline diffs** — accept/reject suggestions with diff preview
 - **Chat sidebar** — full history with tool usage timeline
-- **Open source** — OpenCode backend, no lock-in
+- **Your editor** — VS Code or any compatible fork; OpenCode billing stays outside Cortex
 
 ## Install
 
+From the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=cortex-labs.cortex-agent) or [Open VSX](https://open-vsx.org/):
+
 ```bash
-code --install-extension daniquir.cortex
+code --install-extension cortex-labs.cortex-agent
+# or
+ovsx install cortex-labs.cortex-agent
 ```
 
-Or search "Cortex" in the VS Code Marketplace.
+Or search **Cortex Agent** in Extensions.
 
 ## Development
 

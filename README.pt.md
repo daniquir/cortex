@@ -1,27 +1,31 @@
 # Cortex
 
-Programação com IA agêntica no VS Code — a mesma experiência do Cursor/Windsurf, sem trocar de editor.
+A experiência agentic do Cursor e Windsurf — no seu próprio VS Code, com a sua assinatura OpenCode.
 
-**[Documentação](https://daniquir.github.io/cortex)** · **[Extensão](https://marketplace.visualstudio.com/items?itemName=daniquir.cortex)**
+**[Documentação](https://daniquir.github.io/cortex)** · **[Extensão](https://marketplace.visualstudio.com/items?itemName=cortex-labs.cortex-agent)**
 
 ## O que é Cortex?
 
-Cortex é uma extensão do VS Code que se conecta ao [OpenCode](https://github.com/opencode-ai/opencode) para oferecer:
+Cortex é uma extensão do VS Code que integra o [OpenCode](https://opencode.ai) como runtime agentic dentro do seu editor:
 
-- **Fluxo agêntico completo** — Planejar → Construir com checklists, o mesmo fluxo do Cursor Agent
-- **Multi-provedor** — OpenAI, Anthropic, Google, xAI, OpenRouter e mais
-- **Contexto inteligente** — busca léxica + semântica no seu código-fonte
-- **Diffs inline** — aceitar/rejeitar sugestões com visualização de diferenças
-- **Barra lateral de chat** — histórico completo com linha do tempo de uso de ferramentas
-- **Código aberto** — backend do OpenCode, sem lock-in
+- **Workflow agentic completo** — Plan → Build com checklists, o mesmo flow do Cursor Agent
+- **Seus modelos OpenCode** — escolha qualquer modelo disponível na sua assinatura OpenCode
+- **Contexto inteligente** — busca léxica + semântica no seu codebase
+- **Diffs inline** — aceitar/rejeitar sugestões com preview de diferenças
+- **Chat lateral** — histórico completo com timeline de uso de ferramentas
+- **Seu editor** — VS Code ou qualquer fork compatível; a cobrança do OpenCode fica fora do Cortex
 
 ## Instalação
 
+Na [Marketplace do VS Code](https://marketplace.visualstudio.com/items?itemName=cortex-labs.cortex-agent) ou [Open VSX](https://open-vsx.org/):
+
 ```bash
-code --install-extension daniquir.cortex
+code --install-extension cortex-labs.cortex-agent
+# ou
+ovsx install cortex-labs.cortex-agent
 ```
 
-Ou busque "Cortex" no VS Code Marketplace.
+Ou busque **Cortex Agent** nas Extensões.
 
 ## Desenvolvimento
 
