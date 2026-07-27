@@ -1,0 +1,48 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getDocs } from '../../i18n/docs';
+import { langHref } from '../../i18n/paths';
+import type { Lang } from '../../i18n/translations';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const d = getDocs(lang);
+---
+<Layout title={d.docsMetaTitle} lang={lang}>
+  <h1>{d.docsTitle}</h1>
+  <p class="subtitle">{d.docsSubtitle}</p>
+
+  <div class="doc-grid">
+    {d.docsCards.map((card) => (
+      <a class="doc-card" href={langHref(lang, card.path)}>
+        <h3>{card.title}</h3>
+        <p>{card.desc}</p>
+      </a>
+    ))}
+  </div>
+</Layout>
+
+<style>
+  h1 { margin-top: 3rem; }
+  .subtitle { color: var(--text-muted); margin-bottom: 2rem; }
+  .doc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+  }
+  .doc-card {
+    display: block;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    color: var(--text);
+    transition: border-color 0.15s;
+  }
+  .doc-card:hover { border-color: var(--accent); }
+  .doc-card h3 { margin-bottom: 0.5rem; }
+  .doc-card p { color: var(--text-muted); font-size: 0.9rem; margin: 0; }
+</style>

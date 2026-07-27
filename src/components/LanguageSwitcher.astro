@@ -1,17 +1,13 @@
 ---
 import { LANGUAGES, type Lang } from '../i18n/translations';
+import { switchLangPath } from '../i18n/paths';
 
 interface Props {
   current: Lang;
 }
 
 const { current } = Astro.props;
-const base = import.meta.env.BASE_URL;
-
-function langPath(lang: Lang): string {
-  if (lang === 'en') return base;
-  return `${base}${lang}/`;
-}
+const pathname = Astro.url.pathname;
 ---
 <div class="lang-switcher">
   <button class="lang-btn" aria-label="Change language">
@@ -20,7 +16,7 @@ function langPath(lang: Lang): string {
   <div class="lang-menu">
     {LANGUAGES.map(l => (
       <a
-        href={langPath(l.code)}
+        href={switchLangPath(pathname, l.code)}
         class:list={['lang-option', { active: l.code === current }]}
       >
         <span class="flag">{l.flag}</span>

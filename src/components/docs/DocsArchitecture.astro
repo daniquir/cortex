@@ -1,0 +1,70 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getDocs } from '../../i18n/docs';
+import type { Lang } from '../../i18n/translations';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const d = getDocs(lang);
+---
+<Layout title={d.archMetaTitle} lang={lang}>
+  <h1>{d.archTitle}</h1>
+
+  <h2>{d.archHowTitle}</h2>
+  <p>
+    {d.archHowBefore}<a href="https://github.com/opencode-ai/opencode" target="_blank">OpenCode</a>{d.archHowAfter}
+  </p>
+
+  <div class="diagram">
+    <pre>
+┌──────────────┐     ┌──────────────┐     ┌──────────────┐
+│  VS Code UI  │ ←→  │ Cortex Ext.  │ ←→  │  OpenCode    │
+│  (Sidebar +  │     │ (TypeScript) │     │  (Server)    │
+│   Inline)    │     │              │     │              │
+└──────────────┘     └──────────────┘     └──────┬───────┘
+                                                  │
+                                          ┌───────▼───────┐
+                                          │  AI Provider  │
+                                          │  (OpenAI,     │
+                                          │  Anthropic…)  │
+                                          └───────────────┘</pre>
+  </div>
+
+  <h2>{d.archComponents}</h2>
+  <ul>
+    {d.archComponentItems.map((item) => (
+      <li><strong>{item.name}</strong> — {item.desc}</li>
+    ))}
+  </ul>
+
+  <h2>{d.archWorkflow}</h2>
+  <ol>
+    {d.archWorkflowSteps.map((step) => (
+      <li><strong>{step.name}</strong>: {step.desc}</li>
+    ))}
+  </ol>
+</Layout>
+
+<style>
+  h1 { margin-top: 3rem; }
+  h2 { margin-top: 2rem; margin-bottom: 0.75rem; }
+  p { color: var(--text-muted); margin-bottom: 1rem; }
+  ol, ul { margin-left: 1.5rem; margin-bottom: 1rem; color: var(--text-muted); }
+  li { margin-bottom: 0.5rem; }
+  .diagram {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+  }
+  .diagram pre {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+</style>

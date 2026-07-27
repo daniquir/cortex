@@ -318,3 +318,6 @@ const translations: Record<Lang, Translations> = {
 export function getT(lang: Lang): Translations {
   return translations[lang] ?? translations[defaultLang];
 }
+
+export { getDocs } from './docs';
+export { getChangelog } from './changelog';

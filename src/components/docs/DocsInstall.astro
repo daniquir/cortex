@@ -1,0 +1,60 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getDocs } from '../../i18n/docs';
+import type { Lang } from '../../i18n/translations';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const d = getDocs(lang);
+---
+<Layout title={d.installMetaTitle} lang={lang}>
+  <h1>{d.installTitle}</h1>
+
+  <h2>{d.installFromMarketplace}</h2>
+  <ol>
+    {d.installMarketplaceSteps.map((step) => <li>{step}</li>)}
+  </ol>
+
+  <h2>{d.installFromVsix}</h2>
+  <pre><code>code --install-extension cortex-0.1.0.vsix</code></pre>
+
+  <h2>{d.installFirstRun}</h2>
+  <ol>
+    {d.installFirstRunSteps.map((step) => (
+      <li>
+        {step.before}
+        {step.strong && <strong>{step.strong}</strong>}
+        {step.after}
+      </li>
+    ))}
+  </ol>
+
+  <h2>{d.installRequirements}</h2>
+  <ul>
+    {d.installReqItems.map((item) => <li>{item}</li>)}
+  </ul>
+</Layout>
+
+<style>
+  h1 { margin-top: 3rem; }
+  h2 { margin-top: 2rem; margin-bottom: 0.75rem; }
+  ol, ul { margin-left: 1.5rem; margin-bottom: 1rem; color: var(--text-muted); }
+  li { margin-bottom: 0.5rem; }
+  code {
+    background: var(--surface);
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+  pre {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem;
+    overflow-x: auto;
+  }
+  pre code { background: none; padding: 0; }
+</style>

@@ -1,0 +1,47 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getChangelog } from '../i18n/changelog';
+import type { Lang } from '../i18n/translations';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const c = getChangelog(lang);
+---
+<Layout title={c.metaTitle} lang={lang}>
+  <h1>{c.title}</h1>
+
+  {c.entries.map((entry) => (
+    <div class="entry">
+      <h2>{entry.version} <span class="date">{entry.date}</span></h2>
+      <ul>
+        {entry.items.map((item) => <li>{item}</li>)}
+      </ul>
+    </div>
+  ))}
+</Layout>
+
+<style>
+  h1 { margin-top: 3rem; }
+  .entry {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .entry h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+  }
+  .date {
+    color: var(--text-muted);
+    font-weight: 400;
+    font-size: 0.9rem;
+  }
+  ul {
+    margin-left: 1.5rem;
+    color: var(--text-muted);
+  }
+  li { margin-bottom: 0.4rem; }
+</style>
