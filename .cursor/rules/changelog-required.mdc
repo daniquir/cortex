@@ -1,0 +1,18 @@
+---
+description: Strict changelog — every meaningful change must update i18n/changelog.ts in all 7 languages
+alwaysApply: true
+---
+
+# Strict changelog (`cortex` landing)
+
+Any user-visible or release-relevant change **must** update `src/i18n/changelog.ts` in the same change.
+
+## Rules
+
+1. **Same change** — no landing/docs/content without a changelog bullet.
+2. **All 7 languages** — `en` first, then `es`, `pt`, `fr`, `de`, `ja`, `zh`. Incomplete locales are not allowed.
+3. **Short summary** — user-facing impact.
+4. **Correct version** — prepend under the current next `version: 'vX.Y.Z'` entry (create it if missing).
+5. **Skip only** pure internals with zero user impact. When unsure, log it.
+
+If the extension (`cortex-agent/`) also changed, update `cortex-agent/CHANGELOG.md` too.

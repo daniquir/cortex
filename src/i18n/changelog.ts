@@ -12,6 +12,18 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
+        version: 'v0.1.1',
+        date: 'Jul 27, 2026',
+        items: [
+          'Open VSX install CTA on the landing and install docs',
+          'Marketplace / Open VSX listing points to the public cortex repo (not the private source)',
+          'End-user README only; proprietary license (source not open source)',
+          'Marketplace gallery icon and banner',
+          'Icons for all menu items in the "More" menu (compact, undo, reindex, MCP/skills, remember, rules, plans, background agent, language, OpenCode)',
+          'Flag emojis for each language in the language submenu and language button',
+        ],
+      },
+      {
         version: 'v0.1.0',
         date: 'Jul 27, 2026',
         items: [
@@ -37,6 +49,18 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     metaTitle: 'Changelog — Cortex',
     title: 'Changelog',
     entries: [
+      {
+        version: 'v0.1.1',
+        date: '27 jul 2026',
+        items: [
+          'CTA de instalación Open VSX en la landing y docs de install',
+          'La ficha de Marketplace / Open VSX apunta al repo público cortex (no al código privado)',
+          'README solo para usuarios finales; licencia propietaria (el código no es open source)',
+          'Icono y banner de la galería del Marketplace',
+          'Iconos en todas las opciones del menú "Más" (compactar, deshacer, reindexar, MCP/skills, recordar, reglas, planes, agente en segundo plano, idioma, OpenCode)',
+          'Emojis de bandera para cada idioma en el submenu de idiomas y el botón de idioma',
+        ],
+      },
       {
         version: 'v0.1.0',
         date: '27 jul 2026',
@@ -64,6 +88,18 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
+        version: 'v0.1.1',
+        date: '27 jul 2026',
+        items: [
+          'CTA de instalação Open VSX na landing e docs de install',
+          'A listagem Marketplace / Open VSX aponta para o repo público cortex (não o código privado)',
+          'README só para usuários finais; licença proprietária (código não é open source)',
+          'Ícone e banner da galeria do Marketplace',
+          'Ícones para todos os itens do menu "Mais" (compactar, desfazer, reindexar, MCP/skills, lembrar, regras, planos, agente em segundo plano, idioma, OpenCode)',
+          'Emojis de bandeira para cada idioma no submenu de idiomas e no botão de idioma',
+        ],
+      },
+      {
         version: 'v0.1.0',
         date: '27 jul 2026',
         items: [
@@ -89,6 +125,18 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     metaTitle: 'Changelog — Cortex',
     title: 'Changelog',
     entries: [
+      {
+        version: 'v0.1.1',
+        date: '27 juil. 2026',
+        items: [
+          'CTA d\'installation Open VSX sur la landing et les docs d\'install',
+          'La fiche Marketplace / Open VSX pointe vers le dépôt public cortex (pas le code privé)',
+          'README réservé aux utilisateurs finaux ; licence propriétaire (le code n\'est pas open source)',
+          'Icône et bannière de la galerie Marketplace',
+          'Icônes pour tous les éléments du menu "Plus" (compacter, annuler, réindexer, MCP/skills, mémoriser, règles, plans, agent en arrière-plan, langue, OpenCode)',
+          'Emojis de drapeau pour chaque langue dans le sous-menu langue et le bouton langue',
+        ],
+      },
       {
         version: 'v0.1.0',
         date: '27 juil. 2026',
@@ -116,6 +164,18 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
+        version: 'v0.1.1',
+        date: '27. Jul 2026',
+        items: [
+          'Open-VSX-Install-CTA auf Landing und Install-Docs',
+          'Marketplace- / Open-VSX-Eintrag verweist auf das öffentliche cortex-Repo (nicht den privaten Code)',
+          'README nur für Endnutzer; proprietäre Lizenz (Quellcode nicht Open Source)',
+          'Marketplace-Galerie-Icon und Banner',
+          'Icons für alle Menüeinträge im "Mehr"-Menü (komprimieren, rückgängig, neu indexieren, MCP/Skills, merken, Regeln, Pläne, Hintergrundagent, Sprache, OpenCode)',
+          'Flaggen-Emojis für jede Sprache im Sprachuntermenü und auf der Sprachschaltfläche',
+        ],
+      },
+      {
         version: 'v0.1.0',
         date: '27. Jul 2026',
         items: [
@@ -142,6 +202,18 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: '変更履歴',
     entries: [
       {
+        version: 'v0.1.1',
+        date: '2026年7月27日',
+        items: [
+          'ランディングとインストール docs に Open VSX インストール CTA を追加',
+          'Marketplace / Open VSX の掲載先を公開 cortex リポジトリに変更（非公開ソースではない）',
+          'エンドユーザー向け README のみ；プロプライエタリライセンス（ソースはオープンソースではない）',
+          'Marketplace ギャラリーのアイコンとバナー',
+          '「その他」メニューの全アイテムにアイコンを追加（圧縮、取り消し、再インデックス、MCP/skills、記憶、ルール、プラン、バックグラウンドエージェント、言語、OpenCode）',
+          '言語サブメニューと言語ボタンに各言語の国旗エモジを追加',
+        ],
+      },
+      {
         version: 'v0.1.0',
         date: '2026年7月27日',
         items: [
@@ -167,6 +239,18 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     metaTitle: '更新日志 — Cortex',
     title: '更新日志',
     entries: [
+      {
+        version: 'v0.1.1',
+        date: '2026年7月27日',
+        items: [
+          '落地页与安装文档增加 Open VSX 安装 CTA',
+          'Marketplace / Open VSX 列表指向公开 cortex 仓库（非私有源码）',
+          '仅面向最终用户的 README；专有许可（源码非开源）',
+          'Marketplace 图库图标与横幅',
+          '为"更多"菜单中的所有选项添加图标（压缩、撤销、重新索引、MCP/skills、记忆、规则、计划、后台代理、语言、OpenCode）',
+          '在语言子菜单和语言按钮中为每种语言添加国旗表情符号',
+        ],
+      },
       {
         version: 'v0.1.0',
         date: '2026年7月27日',

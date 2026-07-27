@@ -39,4 +39,6 @@ npm run build  # 生产构建
 
 ## 许可证
 
-MIT
+VS Code 扩展 **Cortex Agent** 为专有软件。源代码非开源，亦未授权公开再分发。
+
+本仓库仅托管公开网站与文档。

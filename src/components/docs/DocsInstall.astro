@@ -20,7 +20,11 @@ const d = getDocs(lang);
   <pre><code>{d.installMarketplaceCmd}</code></pre>
 
   <h2>{d.installFromOpenVsx}</h2>
-  <p>{d.installOpenVsxIntro}</p>
+  <p>
+    {d.installOpenVsxIntro}
+    {' '}
+    <a href="https://open-vsx.org/extension/cortex-labs/cortex-agent" target="_blank" rel="noopener">open-vsx.org</a>
+  </p>
   <pre><code>{d.installOpenVsxCmd}</code></pre>
 
   <h2>{d.installFromVsix}</h2>
@@ -48,6 +52,7 @@ const d = getDocs(lang);
   h1 { margin-top: 3rem; }
   h2 { margin-top: 2rem; margin-bottom: 0.75rem; }
   p { color: var(--text-muted); margin-bottom: 1rem; }
+  p a { color: var(--accent); }
   ol, ul { margin-left: 1.5rem; margin-bottom: 1rem; color: var(--text-muted); }
   li { margin-bottom: 0.5rem; }
   code {

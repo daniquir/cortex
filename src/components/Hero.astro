@@ -14,8 +14,11 @@ const t = getT(lang);
   <h1>Cortex</h1>
   <p class="tagline">{t.tagline}</p>
   <div class="actions">
-    <a class="btn primary" href="https://marketplace.visualstudio.com/items?itemName=cortex-labs.cortex-agent" target="_blank">
+    <a class="btn primary" href="https://marketplace.visualstudio.com/items?itemName=cortex-labs.cortex-agent" target="_blank" rel="noopener">
       {t.ctaInstall}
+    </a>
+    <a class="btn" href="https://open-vsx.org/extension/cortex-labs/cortex-agent" target="_blank" rel="noopener">
+      {t.ctaOpenVsx}
     </a>
     <a class="btn" href={langHref(lang, 'docs/')}>
       {t.ctaDocs}
@@ -61,6 +64,7 @@ const t = getT(lang);
   }
   .actions {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
     margin-bottom: 1.5rem;

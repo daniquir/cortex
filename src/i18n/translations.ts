@@ -22,6 +22,7 @@ interface Translations {
   badge: string;
   tagline: string;
   ctaInstall: string;
+  ctaOpenVsx: string;
   ctaDocs: string;
   sub: string;
   // Features
@@ -48,6 +49,7 @@ const translations: Record<Lang, Translations> = {
     badge: 'Early access for VS Code',
     tagline: 'The Cursor and Windsurf agent experience — in your own VS Code, powered by your OpenCode subscription.',
     ctaInstall: 'Install from Marketplace',
+    ctaOpenVsx: 'Install from Open VSX',
     ctaDocs: 'Read the docs',
     sub: 'Pick any model available on your OpenCode plan. You keep your editor and your OpenCode billing — Cortex is the IDE layer in between.',
     featuresTitle: 'What makes Cortex different?',
@@ -87,6 +89,7 @@ const translations: Record<Lang, Translations> = {
     badge: 'Acceso anticipado para VS Code',
     tagline: 'La experiencia agentic de Cursor y Windsurf — en tu propio VS Code, impulsada por tu suscripción de OpenCode.',
     ctaInstall: 'Instalar desde Marketplace',
+    ctaOpenVsx: 'Instalar desde Open VSX',
     ctaDocs: 'Leer la documentación',
     sub: 'Elige cualquier modelo disponible en tu plan de OpenCode. Conservas tu editor y tu facturación de OpenCode — Cortex es la capa de IDE en medio.',
     featuresTitle: '¿Qué hace a Cortex diferente?',
@@ -126,6 +129,7 @@ const translations: Record<Lang, Translations> = {
     badge: 'Acesso antecipado para VS Code',
     tagline: 'A experiência agentic do Cursor e Windsurf — no seu próprio VS Code, com a sua assinatura OpenCode.',
     ctaInstall: 'Instalar da Marketplace',
+    ctaOpenVsx: 'Instalar do Open VSX',
     ctaDocs: 'Ler a documentação',
     sub: 'Escolha qualquer modelo disponível no seu plano OpenCode. Você mantém o editor e a cobrança do OpenCode — o Cortex é a camada de IDE no meio.',
     featuresTitle: 'O que torna o Cortex diferente?',
@@ -165,6 +169,7 @@ const translations: Record<Lang, Translations> = {
     badge: 'Accès anticipé pour VS Code',
     tagline: 'L\'expérience agentic de Cursor et Windsurf — dans votre propre VS Code, alimentée par votre abonnement OpenCode.',
     ctaInstall: 'Installer depuis la Marketplace',
+    ctaOpenVsx: 'Installer depuis Open VSX',
     ctaDocs: 'Lire la documentation',
     sub: 'Choisissez n\'importe quel modèle disponible sur votre forfait OpenCode. Vous gardez votre éditeur et votre facturation OpenCode — Cortex est la couche IDE au milieu.',
     featuresTitle: 'Ce qui rend Cortex différent',
@@ -204,6 +209,7 @@ const translations: Record<Lang, Translations> = {
     badge: 'Early Access für VS Code',
     tagline: 'Das Agent-Erlebnis von Cursor und Windsurf — in Ihrem eigenen VS Code, mit Ihrem OpenCode-Abo.',
     ctaInstall: 'Vom Marketplace installieren',
+    ctaOpenVsx: 'Von Open VSX installieren',
     ctaDocs: 'Dokumentation lesen',
     sub: 'Wählen Sie jedes Modell aus Ihrem OpenCode-Plan. Sie behalten Ihren Editor und Ihre OpenCode-Abrechnung — Cortex ist die IDE-Schicht dazwischen.',
     featuresTitle: 'Was Cortex anders macht',
@@ -243,6 +249,7 @@ const translations: Record<Lang, Translations> = {
     badge: 'VS Code向け早期アクセス',
     tagline: 'CursorやWindsurfと同じエージェント体験を、自分のVS Codeで — OpenCodeサブスクリプションで動かします。',
     ctaInstall: 'Marketplaceからインストール',
+    ctaOpenVsx: 'Open VSXからインストール',
     ctaDocs: 'ドキュメントを読む',
     sub: 'OpenCodeプランで利用可能な任意のモデルを選択。エディタもOpenCodeの課金もあなたのまま — Cortexはその間のIDEレイヤーです。',
     featuresTitle: 'Cortexが異なる理由',
@@ -282,6 +289,7 @@ const translations: Record<Lang, Translations> = {
     badge: 'VS Code 抢先体验',
     tagline: 'Cursor 与 Windsurf 的代理体验——在你自己的 VS Code 中，由你的 OpenCode 订阅驱动。',
     ctaInstall: '从 Marketplace 安装',
+    ctaOpenVsx: '从 Open VSX 安装',
     ctaDocs: '阅读文档',
     sub: '选择你 OpenCode 套餐中可用的任意模型。编辑器与 OpenCode 账单仍归你——Cortex 是中间的 IDE 层。',
     featuresTitle: 'Cortex 的不同之处',

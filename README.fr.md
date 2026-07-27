@@ -39,4 +39,6 @@ npm run build  # build de production
 
 ## Licence
 
-MIT
+L'extension VS Code **Cortex Agent** est un logiciel propriétaire. Le code source n'est pas open source et n'est pas licencié pour une redistribution publique.
+
+Ce dépôt héberge uniquement le site web et la documentation publics.
