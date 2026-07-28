@@ -129,7 +129,7 @@ const translations: Record<Lang, Translations> = {
     installSteps: [
       { strong: 'Instala la extensión', p: 'Busca "Cortex Agent" en Extensiones, o instala cortex-labs.cortex-agent desde el Marketplace de VS Code o Open VSX.' },
       { strong: 'Conecta OpenCode', p: 'Abre el sidebar de Cortex y conecta tu cuenta de OpenCode. Los modelos vienen de tu suscripción de OpenCode — gestionada fuera de Cortex.' },
-      { strong: 'Empieza a codear con IA', p: 'Pregunta, genera código, refactorea — Cortex analiza, planifica y ejecuta. Tú apruebas cada cambio.' },
+      { strong: 'Empieza a codificar con IA', p: 'Pregunta, genera código, refactoriza — Cortex analiza, planifica y ejecuta. Tú apruebas cada cambio.' },
     ],
     footer: 'Built with ❤️ by',
   },

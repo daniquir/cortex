@@ -15,6 +15,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
         version: 'v0.1.1',
         date: 'Jul 28, 2026',
         items: [
+          'Spanish landing copy: codear → codificar, refactorea → refactoriza',
           'Second workspace no longer fails when opencodePort is busy — Cortex uses the next free port',
           'Hero demo slot on the landing (GIF/MP4 when available; placeholder until then)',
           'Portrait hero demo no longer cropped to 16:9',
@@ -60,6 +61,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
         version: 'v0.1.1',
         date: '28 jul 2026',
         items: [
+          'Copy en español de la landing: codear → codificar, refactorea → refactoriza',
           'Un segundo workspace ya no falla si opencodePort está ocupado — Cortex usa el siguiente puerto libre',
           'Slot de demo en el hero de la landing (GIF/MP4 cuando esté listo; placeholder mientras tanto)',
           'El demo vertical del hero ya no se recorta a 16:9',
@@ -105,6 +107,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
         version: 'v0.1.1',
         date: '28 jul 2026',
         items: [
+          'Copy em espanhol da landing: codear → codificar, refactorea → refactoriza',
           'Um segundo workspace já não falha se opencodePort estiver ocupado — o Cortex usa a próxima porta livre',
           'Slot de demo no hero da landing (GIF/MP4 quando disponível; placeholder até lá)',
           'O demo vertical do hero deixa de ser cortado em 16:9',
@@ -150,6 +153,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
         version: 'v0.1.1',
         date: '28 juil. 2026',
         items: [
+          'Textes espagnols de la landing : codear → codificar, refactorea → refactoriza',
           'Un second workspace ne échoue plus si opencodePort est occupé — Cortex utilise le prochain port libre',
           'Emplacement démo dans le hero de la landing (GIF/MP4 quand disponible ; placeholder en attendant)',
           'La démo portrait du hero n\'est plus rognée en 16:9',
@@ -195,6 +199,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
         version: 'v0.1.1',
         date: '28. Jul 2026',
         items: [
+          'Spanische Landing-Texte: codear → codificar, refactorea → refactoriza',
           'Ein zweites Workspace schlägt nicht mehr fehl, wenn opencodePort belegt ist — Cortex nutzt den nächsten freien Port',
           'Demo-Slot im Landing-Hero (GIF/MP4 wenn verfügbar; bis dahin Placeholder)',
           'Hochkant-Demo im Hero wird nicht mehr auf 16:9 beschnitten',
@@ -240,6 +245,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
         version: 'v0.1.1',
         date: '2026年7月28日',
         items: [
+          'スペイン語ランディング文言: codear → codificar、refactorea → refactoriza',
           'opencodePort が他ワークスペースで使用中でも、2つ目のワークスペースは次の空きポートで起動する',
           'ランディングヒーローにデモ枠を追加（GIF/MP4 対応、未配置時はプレースホルダー）',
           'ヒーローの縦型デモが 16:9 で切れないように修正',
@@ -285,6 +291,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
         version: 'v0.1.1',
         date: '2026年7月28日',
         items: [
+          '西班牙语落地页文案：codear → codificar，refactorea → refactoriza',
           '当 opencodePort 被其他工作区占用时，第二个工作区不再失败——Cortex 会使用下一个空闲端口',
           '落地页英雄区增加演示位（有 GIF/MP4 时显示；否则为占位）',
           '英雄区竖屏演示不再被裁成 16:9',
