@@ -17,6 +17,9 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
         items: [
           'Second workspace no longer fails when opencodePort is busy — Cortex uses the next free port',
           'Hero demo slot on the landing (GIF/MP4 when available; placeholder until then)',
+          'Portrait hero demo no longer cropped to 16:9',
+          'Landing header and favicon use the new Cortex logo',
+          'Removed legacy SVG brand assets; PNG only',
           'Comparison table: footprint, native OpenCode, and IDE UX vs Cursor / Windsurf',
           'Active product version shown in the nav and footer (links to changelog)',
           'Open VSX install CTA on the landing and install docs',
@@ -59,6 +62,9 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
         items: [
           'Un segundo workspace ya no falla si opencodePort está ocupado — Cortex usa el siguiente puerto libre',
           'Slot de demo en el hero de la landing (GIF/MP4 cuando esté listo; placeholder mientras tanto)',
+          'El demo vertical del hero ya no se recorta a 16:9',
+          'Header y favicon de la landing usan el nuevo logo de Cortex',
+          'Eliminados los SVG de marca; solo PNG',
           'Tabla comparativa: huella, OpenCode nativo y IDE UX frente a Cursor / Windsurf',
           'Versión activa del producto en la nav y el footer (enlace al changelog)',
           'CTA de instalación Open VSX en la landing y docs de install',
@@ -101,6 +107,9 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
         items: [
           'Um segundo workspace já não falha se opencodePort estiver ocupado — o Cortex usa a próxima porta livre',
           'Slot de demo no hero da landing (GIF/MP4 quando disponível; placeholder até lá)',
+          'O demo vertical do hero deixa de ser cortado em 16:9',
+          'Header e favicon da landing usam o novo logo do Cortex',
+          'SVGs de marca removidos; apenas PNG',
           'Tabela comparativa: pegada, OpenCode nativo e IDE UX vs Cursor / Windsurf',
           'Versão ativa do produto na nav e no footer (link para o changelog)',
           'CTA de instalação Open VSX na landing e docs de install',
@@ -143,6 +152,9 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
         items: [
           'Un second workspace ne échoue plus si opencodePort est occupé — Cortex utilise le prochain port libre',
           'Emplacement démo dans le hero de la landing (GIF/MP4 quand disponible ; placeholder en attendant)',
+          'La démo portrait du hero n\'est plus rognée en 16:9',
+          'Le header et le favicon de la landing utilisent le nouveau logo Cortex',
+          'Anciens assets SVG de marque retirés ; PNG uniquement',
           'Tableau comparatif : empreinte, OpenCode natif et IDE UX vs Cursor / Windsurf',
           'Version active du produit dans la nav et le footer (lien vers le changelog)',
           'CTA d\'installation Open VSX sur la landing et les docs d\'install',
@@ -185,6 +197,9 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
         items: [
           'Ein zweites Workspace schlägt nicht mehr fehl, wenn opencodePort belegt ist — Cortex nutzt den nächsten freien Port',
           'Demo-Slot im Landing-Hero (GIF/MP4 wenn verfügbar; bis dahin Placeholder)',
+          'Hochkant-Demo im Hero wird nicht mehr auf 16:9 beschnitten',
+          'Landing-Header und Favicon nutzen das neue Cortex-Logo',
+          'Alte Marken-SVGs entfernt; nur noch PNG',
           'Vergleichstabelle: Fußabdruck, natives OpenCode und IDE-UX vs Cursor / Windsurf',
           'Aktive Produktversion in Nav und Footer (Link zum Changelog)',
           'Open-VSX-Install-CTA auf Landing und Install-Docs',
@@ -227,6 +242,9 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
         items: [
           'opencodePort が他ワークスペースで使用中でも、2つ目のワークスペースは次の空きポートで起動する',
           'ランディングヒーローにデモ枠を追加（GIF/MP4 対応、未配置時はプレースホルダー）',
+          'ヒーローの縦型デモが 16:9 で切れないように修正',
+          'ランディングのヘッダーとファビコンに新しい Cortex ロゴを適用',
+          '旧ブランド SVG を削除し PNG のみに統一',
           '比較表：フットプリント、ネイティブ OpenCode、IDE UX を Cursor / Windsurf と比較',
           'ナビとフッターに製品の現行バージョンを表示（changelog へのリンク）',
           'ランディングとインストール docs に Open VSX インストール CTA を追加',
@@ -269,6 +287,9 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
         items: [
           '当 opencodePort 被其他工作区占用时，第二个工作区不再失败——Cortex 会使用下一个空闲端口',
           '落地页英雄区增加演示位（有 GIF/MP4 时显示；否则为占位）',
+          '英雄区竖屏演示不再被裁成 16:9',
+          '落地页导航与 favicon 使用新的 Cortex logo',
+          '移除旧品牌 SVG，统一使用 PNG',
           '对比表：体积、原生 OpenCode 与 IDE UX，对比 Cursor / Windsurf',
           '导航与页脚显示产品当前版本（链向更新日志）',
           '落地页与安装文档增加 Open VSX 安装 CTA',
