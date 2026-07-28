@@ -94,7 +94,7 @@ const en: DocsTranslations = {
   configTableHeaders: ['Setting', 'Default', 'Description'],
   configRows: [
     { setting: 'cortex.opencodeBinary', default: '"opencode"', desc: 'Path to the OpenCode CLI binary' },
-    { setting: 'cortex.opencodePort', default: '4096', desc: 'Local port for opencode serve' },
+    { setting: 'cortex.opencodePort', default: '4096', desc: 'Preferred port for opencode serve; if another workspace owns it, Cortex uses the next free port' },
     { setting: 'cortex.agent', default: '"build"', desc: 'Default OpenCode primary agent (e.g. build, plan)' },
     { setting: 'cortex.providerID', default: '"opencode"', desc: 'Preferred OpenCode provider id' },
     { setting: 'cortex.modelID', default: '"big-pickle"', desc: 'Preferred model id within that provider' },
@@ -191,7 +191,7 @@ export const docsTranslations: Record<Lang, DocsTranslations> = {
     configTableHeaders: ['Ajuste', 'Por defecto', 'Descripción'],
     configRows: [
       { setting: 'cortex.opencodeBinary', default: '"opencode"', desc: 'Ruta al binario de la CLI de OpenCode' },
-      { setting: 'cortex.opencodePort', default: '4096', desc: 'Puerto local para opencode serve' },
+      { setting: 'cortex.opencodePort', default: '4096', desc: 'Puerto preferido para opencode serve; si otro workspace lo usa, Cortex elige el siguiente libre' },
       { setting: 'cortex.agent', default: '"build"', desc: 'Agente primario de OpenCode por defecto (p. ej. build, plan)' },
       { setting: 'cortex.providerID', default: '"opencode"', desc: 'Id de proveedor OpenCode preferido' },
       { setting: 'cortex.modelID', default: '"big-pickle"', desc: 'Id de modelo preferido dentro de ese proveedor' },
@@ -284,7 +284,7 @@ export const docsTranslations: Record<Lang, DocsTranslations> = {
     configTableHeaders: ['Ajuste', 'Padrão', 'Descrição'],
     configRows: [
       { setting: 'cortex.opencodeBinary', default: '"opencode"', desc: 'Caminho para o binário da CLI OpenCode' },
-      { setting: 'cortex.opencodePort', default: '4096', desc: 'Porta local para opencode serve' },
+      { setting: 'cortex.opencodePort', default: '4096', desc: 'Porta preferida para opencode serve; se outro workspace a usar, o Cortex escolhe a próxima livre' },
       { setting: 'cortex.agent', default: '"build"', desc: 'Agente primário OpenCode padrão (ex.: build, plan)' },
       { setting: 'cortex.providerID', default: '"opencode"', desc: 'Id do provedor OpenCode preferido' },
       { setting: 'cortex.modelID', default: '"big-pickle"', desc: 'Id do modelo preferido dentro desse provedor' },
@@ -377,7 +377,7 @@ export const docsTranslations: Record<Lang, DocsTranslations> = {
     configTableHeaders: ['Réglage', 'Défaut', 'Description'],
     configRows: [
       { setting: 'cortex.opencodeBinary', default: '"opencode"', desc: 'Chemin vers le binaire CLI OpenCode' },
-      { setting: 'cortex.opencodePort', default: '4096', desc: 'Port local pour opencode serve' },
+      { setting: 'cortex.opencodePort', default: '4096', desc: 'Port préféré pour opencode serve ; si un autre workspace l’utilise, Cortex prend le prochain port libre' },
       { setting: 'cortex.agent', default: '"build"', desc: 'Agent primaire OpenCode par défaut (ex. build, plan)' },
       { setting: 'cortex.providerID', default: '"opencode"', desc: 'Id du fournisseur OpenCode préféré' },
       { setting: 'cortex.modelID', default: '"big-pickle"', desc: 'Id du modèle préféré dans ce fournisseur' },
@@ -470,7 +470,7 @@ export const docsTranslations: Record<Lang, DocsTranslations> = {
     configTableHeaders: ['Einstellung', 'Standard', 'Beschreibung'],
     configRows: [
       { setting: 'cortex.opencodeBinary', default: '"opencode"', desc: 'Pfad zur OpenCode-CLI-Binary' },
-      { setting: 'cortex.opencodePort', default: '4096', desc: 'Lokaler Port für opencode serve' },
+      { setting: 'cortex.opencodePort', default: '4096', desc: 'Bevorzugter Port für opencode serve; ist er von einem anderen Workspace belegt, nimmt Cortex den nächsten freien' },
       { setting: 'cortex.agent', default: '"build"', desc: 'Standard-OpenCode-Primäragent (z. B. build, plan)' },
       { setting: 'cortex.providerID', default: '"opencode"', desc: 'Bevorzugte OpenCode-Provider-ID' },
       { setting: 'cortex.modelID', default: '"big-pickle"', desc: 'Bevorzugte Modell-ID innerhalb dieses Providers' },
@@ -563,7 +563,7 @@ export const docsTranslations: Record<Lang, DocsTranslations> = {
     configTableHeaders: ['設定', 'デフォルト', '説明'],
     configRows: [
       { setting: 'cortex.opencodeBinary', default: '"opencode"', desc: 'OpenCode CLIバイナリへのパス' },
-      { setting: 'cortex.opencodePort', default: '4096', desc: 'opencode serve のローカルポート' },
+      { setting: 'cortex.opencodePort', default: '4096', desc: 'opencode serve の優先ポート。別ワークスペースが使用中なら次の空きポートを使う' },
       { setting: 'cortex.agent', default: '"build"', desc: 'デフォルトのOpenCodeプライマリエージェント（例: build、plan）' },
       { setting: 'cortex.providerID', default: '"opencode"', desc: '優先するOpenCodeプロバイダーID' },
       { setting: 'cortex.modelID', default: '"big-pickle"', desc: 'そのプロバイダー内の優先モデルID' },
@@ -656,7 +656,7 @@ export const docsTranslations: Record<Lang, DocsTranslations> = {
     configTableHeaders: ['设置', '默认值', '说明'],
     configRows: [
       { setting: 'cortex.opencodeBinary', default: '"opencode"', desc: 'OpenCode CLI 二进制路径' },
-      { setting: 'cortex.opencodePort', default: '4096', desc: 'opencode serve 的本地端口' },
+      { setting: 'cortex.opencodePort', default: '4096', desc: 'opencode serve 的首选端口；若被其他工作区占用，Cortex 会使用下一个空闲端口' },
       { setting: 'cortex.agent', default: '"build"', desc: '默认 OpenCode 主代理（如 build、plan）' },
       { setting: 'cortex.providerID', default: '"opencode"', desc: '首选 OpenCode 提供商 ID' },
       { setting: 'cortex.modelID', default: '"big-pickle"', desc: '该提供商内的首选模型 ID' },

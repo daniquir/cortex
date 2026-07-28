@@ -13,8 +13,12 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     entries: [
       {
         version: 'v0.1.1',
-        date: 'Jul 27, 2026',
+        date: 'Jul 28, 2026',
         items: [
+          'Second workspace no longer fails when opencodePort is busy — Cortex uses the next free port',
+          'Hero demo slot on the landing (GIF/MP4 when available; placeholder until then)',
+          'Comparison table: footprint, native OpenCode, and IDE UX vs Cursor / Windsurf',
+          'Active product version shown in the nav and footer (links to changelog)',
           'Open VSX install CTA on the landing and install docs',
           'Marketplace / Open VSX listing points to the public cortex repo (not the private source)',
           'End-user README only; proprietary license (source not open source)',
@@ -51,8 +55,12 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     entries: [
       {
         version: 'v0.1.1',
-        date: '27 jul 2026',
+        date: '28 jul 2026',
         items: [
+          'Un segundo workspace ya no falla si opencodePort está ocupado — Cortex usa el siguiente puerto libre',
+          'Slot de demo en el hero de la landing (GIF/MP4 cuando esté listo; placeholder mientras tanto)',
+          'Tabla comparativa: huella, OpenCode nativo y IDE UX frente a Cursor / Windsurf',
+          'Versión activa del producto en la nav y el footer (enlace al changelog)',
           'CTA de instalación Open VSX en la landing y docs de install',
           'La ficha de Marketplace / Open VSX apunta al repo público cortex (no al código privado)',
           'README solo para usuarios finales; licencia propietaria (el código no es open source)',
@@ -89,8 +97,12 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     entries: [
       {
         version: 'v0.1.1',
-        date: '27 jul 2026',
+        date: '28 jul 2026',
         items: [
+          'Um segundo workspace já não falha se opencodePort estiver ocupado — o Cortex usa a próxima porta livre',
+          'Slot de demo no hero da landing (GIF/MP4 quando disponível; placeholder até lá)',
+          'Tabela comparativa: pegada, OpenCode nativo e IDE UX vs Cursor / Windsurf',
+          'Versão ativa do produto na nav e no footer (link para o changelog)',
           'CTA de instalação Open VSX na landing e docs de install',
           'A listagem Marketplace / Open VSX aponta para o repo público cortex (não o código privado)',
           'README só para usuários finais; licença proprietária (código não é open source)',
@@ -127,8 +139,12 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     entries: [
       {
         version: 'v0.1.1',
-        date: '27 juil. 2026',
+        date: '28 juil. 2026',
         items: [
+          'Un second workspace ne échoue plus si opencodePort est occupé — Cortex utilise le prochain port libre',
+          'Emplacement démo dans le hero de la landing (GIF/MP4 quand disponible ; placeholder en attendant)',
+          'Tableau comparatif : empreinte, OpenCode natif et IDE UX vs Cursor / Windsurf',
+          'Version active du produit dans la nav et le footer (lien vers le changelog)',
           'CTA d\'installation Open VSX sur la landing et les docs d\'install',
           'La fiche Marketplace / Open VSX pointe vers le dépôt public cortex (pas le code privé)',
           'README réservé aux utilisateurs finaux ; licence propriétaire (le code n\'est pas open source)',
@@ -165,8 +181,12 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     entries: [
       {
         version: 'v0.1.1',
-        date: '27. Jul 2026',
+        date: '28. Jul 2026',
         items: [
+          'Ein zweites Workspace schlägt nicht mehr fehl, wenn opencodePort belegt ist — Cortex nutzt den nächsten freien Port',
+          'Demo-Slot im Landing-Hero (GIF/MP4 wenn verfügbar; bis dahin Placeholder)',
+          'Vergleichstabelle: Fußabdruck, natives OpenCode und IDE-UX vs Cursor / Windsurf',
+          'Aktive Produktversion in Nav und Footer (Link zum Changelog)',
           'Open-VSX-Install-CTA auf Landing und Install-Docs',
           'Marketplace- / Open-VSX-Eintrag verweist auf das öffentliche cortex-Repo (nicht den privaten Code)',
           'README nur für Endnutzer; proprietäre Lizenz (Quellcode nicht Open Source)',
@@ -203,8 +223,12 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     entries: [
       {
         version: 'v0.1.1',
-        date: '2026年7月27日',
+        date: '2026年7月28日',
         items: [
+          'opencodePort が他ワークスペースで使用中でも、2つ目のワークスペースは次の空きポートで起動する',
+          'ランディングヒーローにデモ枠を追加（GIF/MP4 対応、未配置時はプレースホルダー）',
+          '比較表：フットプリント、ネイティブ OpenCode、IDE UX を Cursor / Windsurf と比較',
+          'ナビとフッターに製品の現行バージョンを表示（changelog へのリンク）',
           'ランディングとインストール docs に Open VSX インストール CTA を追加',
           'Marketplace / Open VSX の掲載先を公開 cortex リポジトリに変更（非公開ソースではない）',
           'エンドユーザー向け README のみ；プロプライエタリライセンス（ソースはオープンソースではない）',
@@ -241,8 +265,12 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     entries: [
       {
         version: 'v0.1.1',
-        date: '2026年7月27日',
+        date: '2026年7月28日',
         items: [
+          '当 opencodePort 被其他工作区占用时，第二个工作区不再失败——Cortex 会使用下一个空闲端口',
+          '落地页英雄区增加演示位（有 GIF/MP4 时显示；否则为占位）',
+          '对比表：体积、原生 OpenCode 与 IDE UX，对比 Cursor / Windsurf',
+          '导航与页脚显示产品当前版本（链向更新日志）',
           '落地页与安装文档增加 Open VSX 安装 CTA',
           'Marketplace / Open VSX 列表指向公开 cortex 仓库（非私有源码）',
           '仅面向最终用户的 README；专有许可（源码非开源）',

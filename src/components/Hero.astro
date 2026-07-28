@@ -1,6 +1,8 @@
 ---
+import fs from 'node:fs';
+import path from 'node:path';
 import { getT, type Lang, defaultLang } from '../i18n/translations';
-import { langHref } from '../i18n/paths';
+import { getBase, langHref } from '../i18n/paths';
 
 interface Props {
   lang?: Lang;
@@ -8,6 +10,13 @@ interface Props {
 
 const { lang = defaultLang } = Astro.props;
 const t = getT(lang);
+const base = getBase();
+
+const publicDir = path.join(process.cwd(), 'public');
+const hasMp4 = fs.existsSync(path.join(publicDir, 'demo.mp4'));
+const hasGif = fs.existsSync(path.join(publicDir, 'demo.gif'));
+const hasPoster = fs.existsSync(path.join(publicDir, 'demo-poster.webp'));
+const demoKind: 'mp4' | 'gif' | 'placeholder' = hasMp4 ? 'mp4' : hasGif ? 'gif' : 'placeholder';
 ---
 <section class="hero">
   <div class="badge">{t.badge}</div>
@@ -25,6 +34,28 @@ const t = getT(lang);
     </a>
   </div>
   <p class="sub">{t.sub}</p>
+
+  <div class="demo">
+    {demoKind === 'mp4' ? (
+      <video
+        class="demo-media"
+        autoplay
+        muted
+        loop
+        playsinline
+        poster={hasPoster ? `${base}demo-poster.webp` : undefined}
+        aria-label={t.heroDemoAlt}
+      >
+        <source src={`${base}demo.mp4`} type="video/mp4" />
+      </video>
+    ) : demoKind === 'gif' ? (
+      <img class="demo-media" src={`${base}demo.gif`} alt={t.heroDemoAlt} width="1280" height="720" />
+    ) : (
+      <div class="demo-placeholder" role="img" aria-label={t.heroDemoAlt}>
+        <span class="demo-placeholder-label">{t.heroDemoPlaceholder}</span>
+      </div>
+    )}
+  </div>
 </section>
 
 <style>
@@ -95,6 +126,42 @@ const t = getT(lang);
     font-size: 0.85rem;
     color: var(--text-muted);
     max-width: 500px;
+    margin: 0 auto 2.5rem;
+  }
+  .demo {
+    width: 100%;
+    max-width: 900px;
     margin: 0 auto;
+  }
+  .demo-media {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background: var(--surface);
+  }
+  .demo-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 16 / 9;
+    border-radius: var(--radius);
+    border: 1px dashed var(--accent);
+    background:
+      linear-gradient(135deg, var(--accent-dim), transparent 55%),
+      var(--surface);
+  }
+  .demo-placeholder-label {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0 1.5rem;
+  }
+  @media (max-width: 640px) {
+    .hero h1 { font-size: 2.75rem; }
+    .demo { margin-inline: -0.25rem; }
   }
 </style>

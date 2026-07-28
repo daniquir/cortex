@@ -25,6 +25,8 @@ interface Translations {
   ctaOpenVsx: string;
   ctaDocs: string;
   sub: string;
+  heroDemoAlt: string;
+  heroDemoPlaceholder: string;
   // Features
   featuresTitle: string;
   features: { title: string; desc: string }[];
@@ -52,6 +54,8 @@ const translations: Record<Lang, Translations> = {
     ctaOpenVsx: 'Install from Open VSX',
     ctaDocs: 'Read the docs',
     sub: 'Pick any model available on your OpenCode plan. You keep your editor and your OpenCode billing — Cortex is the IDE layer in between.',
+    heroDemoAlt: 'Cortex in VS Code: context-aware code generation with OpenCode',
+    heroDemoPlaceholder: 'Product demo coming soon',
     featuresTitle: 'What makes Cortex different?',
     features: [
       { title: 'Complete agentic workflow', desc: 'Plan → Build: analyzes your code, proposes a plan with checklist, and executes step by step. The same flow as Cursor Agent, now in your VS Code.' },
@@ -62,10 +66,13 @@ const translations: Record<Lang, Translations> = {
       { title: 'OpenCode inside your IDE', desc: 'Uses OpenCode as the agentic runtime integrated into VS Code or any compatible fork. Same assisted programming feel as Cursor or Windsurf — without leaving your editor.' },
     ],
     compareTitle: 'Cortex vs the rest',
-    compareSubtitle: 'Same agentic power, more freedom.',
+    compareSubtitle: 'Lightweight, OpenCode-native, in your VS Code — same agentic power, more freedom.',
     compareNote: 'Cortex is a VS Code extension, not a fork. Keep your editor and settings. It integrates OpenCode so you get a Cursor/Windsurf-like agent experience while you control your own OpenCode subscription.',
     compareRows: [
       { feature: 'Editor', cortex: 'Your VS Code or compatible fork', cursor: 'Own editor (VS Code fork)', windsurf: 'Own editor (VS Code fork)' },
+      { feature: 'Footprint', cortex: 'Lightweight VS Code extension', cursor: 'Full fork editor', windsurf: 'Full fork editor' },
+      { feature: 'OpenCode', cortex: 'Native OpenCode.ai integration', cursor: 'Not OpenCode', windsurf: 'Not OpenCode' },
+      { feature: 'IDE UX', cortex: 'Polished agent UI in your VS Code', cursor: 'Built-in agent UX', windsurf: 'Built-in Cascade UX' },
       { feature: 'AI access', cortex: 'Your OpenCode subscription', cursor: 'Cursor subscription', windsurf: 'Windsurf subscription' },
       { feature: 'Cortex license', cortex: 'Free in early access; later one-time purchase', cursor: 'Subscription', windsurf: 'Subscription' },
       { feature: 'AI billing', cortex: 'OpenCode (external to Cortex)', cursor: 'Included in Cursor plan', windsurf: 'Included in Windsurf plan' },
@@ -92,6 +99,8 @@ const translations: Record<Lang, Translations> = {
     ctaOpenVsx: 'Instalar desde Open VSX',
     ctaDocs: 'Leer la documentación',
     sub: 'Elige cualquier modelo disponible en tu plan de OpenCode. Conservas tu editor y tu facturación de OpenCode — Cortex es la capa de IDE en medio.',
+    heroDemoAlt: 'Cortex en VS Code: generación de código context-aware con OpenCode',
+    heroDemoPlaceholder: 'Demo del producto próximamente',
     featuresTitle: '¿Qué hace a Cortex diferente?',
     features: [
       { title: 'Agentic workflow completo', desc: 'Plan → Build: analiza tu código, propone un plan con checklist, y ejecuta paso a paso. El mismo flow de Cursor Agent, ahora en tu VS Code.' },
@@ -102,10 +111,13 @@ const translations: Record<Lang, Translations> = {
       { title: 'OpenCode dentro de tu IDE', desc: 'Usa OpenCode como runtime agentico integrado en VS Code o cualquier fork compatible. La misma sensación de programación asistida que Cursor o Windsurf — sin dejar tu editor.' },
     ],
     compareTitle: 'Cortex vs los demás',
-    compareSubtitle: 'Misma potencia agentic, más libertad.',
+    compareSubtitle: 'Ligero, nativo de OpenCode, en tu VS Code — misma potencia agentic, más libertad.',
     compareNote: 'Cortex es una extensión de VS Code, no un fork. Conserva tu editor y tu configuración. Integra OpenCode para darte una experiencia agentic al estilo Cursor/Windsurf mientras tú controlas tu propia suscripción de OpenCode.',
     compareRows: [
       { feature: 'Editor', cortex: 'Tu VS Code o fork compatible', cursor: 'Editor propio (fork de VS Code)', windsurf: 'Editor propio (fork de VS Code)' },
+      { feature: 'Huella', cortex: 'Extensión ligera de VS Code', cursor: 'Editor fork completo', windsurf: 'Editor fork completo' },
+      { feature: 'OpenCode', cortex: 'Integración nativa con OpenCode.ai', cursor: 'No es OpenCode', windsurf: 'No es OpenCode' },
+      { feature: 'IDE UX', cortex: 'UI agentic pulida en tu VS Code', cursor: 'UX agentic integrada', windsurf: 'UX Cascade integrada' },
       { feature: 'Acceso a IA', cortex: 'Tu suscripción de OpenCode', cursor: 'Suscripción de Cursor', windsurf: 'Suscripción de Windsurf' },
       { feature: 'Licencia Cortex', cortex: 'Gratis en acceso anticipado; luego pago único', cursor: 'Suscripción', windsurf: 'Suscripción' },
       { feature: 'Facturación IA', cortex: 'OpenCode (externo a Cortex)', cursor: 'Incluida en el plan Cursor', windsurf: 'Incluida en el plan Windsurf' },
@@ -132,6 +144,8 @@ const translations: Record<Lang, Translations> = {
     ctaOpenVsx: 'Instalar do Open VSX',
     ctaDocs: 'Ler a documentação',
     sub: 'Escolha qualquer modelo disponível no seu plano OpenCode. Você mantém o editor e a cobrança do OpenCode — o Cortex é a camada de IDE no meio.',
+    heroDemoAlt: 'Cortex no VS Code: geração de código context-aware com OpenCode',
+    heroDemoPlaceholder: 'Demo do produto em breve',
     featuresTitle: 'O que torna o Cortex diferente?',
     features: [
       { title: 'Workflow agentic completo', desc: 'Plan → Build: analisa seu código, propõe um plano com checklist e executa passo a passo. O mesmo flow do Cursor Agent, agora no seu VS Code.' },
@@ -142,10 +156,13 @@ const translations: Record<Lang, Translations> = {
       { title: 'OpenCode dentro do seu IDE', desc: 'Usa o OpenCode como runtime agentic integrado ao VS Code ou qualquer fork compatível. A mesma sensação de programação assistida do Cursor ou Windsurf — sem sair do seu editor.' },
     ],
     compareTitle: 'Cortex vs os demais',
-    compareSubtitle: 'Mesma potência agentic, mais liberdade.',
+    compareSubtitle: 'Leve, nativo do OpenCode, no seu VS Code — mesma potência agentic, mais liberdade.',
     compareNote: 'O Cortex é uma extensão do VS Code, não um fork. Mantenha seu editor e configurações. Integra o OpenCode para oferecer uma experiência agentic no estilo Cursor/Windsurf enquanto você controla sua própria assinatura OpenCode.',
     compareRows: [
       { feature: 'Editor', cortex: 'Seu VS Code ou fork compatível', cursor: 'Editor próprio (fork do VS Code)', windsurf: 'Editor próprio (fork do VS Code)' },
+      { feature: 'Pegada', cortex: 'Extensão leve do VS Code', cursor: 'Editor fork completo', windsurf: 'Editor fork completo' },
+      { feature: 'OpenCode', cortex: 'Integração nativa com OpenCode.ai', cursor: 'Não é OpenCode', windsurf: 'Não é OpenCode' },
+      { feature: 'IDE UX', cortex: 'UI agentic polida no seu VS Code', cursor: 'UX agentic integrada', windsurf: 'UX Cascade integrada' },
       { feature: 'Acesso à IA', cortex: 'Sua assinatura OpenCode', cursor: 'Assinatura Cursor', windsurf: 'Assinatura Windsurf' },
       { feature: 'Licença Cortex', cortex: 'Grátis no acesso antecipado; depois compra única', cursor: 'Assinatura', windsurf: 'Assinatura' },
       { feature: 'Cobrança de IA', cortex: 'OpenCode (externo ao Cortex)', cursor: 'Incluída no plano Cursor', windsurf: 'Incluída no plano Windsurf' },
@@ -172,6 +189,8 @@ const translations: Record<Lang, Translations> = {
     ctaOpenVsx: 'Installer depuis Open VSX',
     ctaDocs: 'Lire la documentation',
     sub: 'Choisissez n\'importe quel modèle disponible sur votre forfait OpenCode. Vous gardez votre éditeur et votre facturation OpenCode — Cortex est la couche IDE au milieu.',
+    heroDemoAlt: 'Cortex dans VS Code : génération de code context-aware avec OpenCode',
+    heroDemoPlaceholder: 'Démo produit bientôt disponible',
     featuresTitle: 'Ce qui rend Cortex différent',
     features: [
       { title: 'Workflow agentic complet', desc: 'Plan → Build : analyse votre code, propose un plan avec checklist, et exécute étape par étape. Le même flow que Cursor Agent, maintenant dans votre VS Code.' },
@@ -182,10 +201,13 @@ const translations: Record<Lang, Translations> = {
       { title: 'OpenCode dans votre IDE', desc: 'Utilise OpenCode comme runtime agentic intégré à VS Code ou tout fork compatible. La même sensation de programmation assistée que Cursor ou Windsurf — sans quitter votre éditeur.' },
     ],
     compareTitle: 'Cortex vs les autres',
-    compareSubtitle: 'Même puissance agentic, plus de liberté.',
+    compareSubtitle: 'Léger, natif OpenCode, dans votre VS Code — même puissance agentic, plus de liberté.',
     compareNote: 'Cortex est une extension VS Code, pas un fork. Gardez votre éditeur et vos paramètres. Il intègre OpenCode pour offrir une expérience agentic façon Cursor/Windsurf tout en contrôlant votre propre abonnement OpenCode.',
     compareRows: [
       { feature: 'Éditeur', cortex: 'Votre VS Code ou fork compatible', cursor: 'Éditeur propre (fork de VS Code)', windsurf: 'Éditeur propre (fork de VS Code)' },
+      { feature: 'Empreinte', cortex: 'Extension VS Code légère', cursor: 'Éditeur fork complet', windsurf: 'Éditeur fork complet' },
+      { feature: 'OpenCode', cortex: 'Intégration native OpenCode.ai', cursor: 'Pas OpenCode', windsurf: 'Pas OpenCode' },
+      { feature: 'IDE UX', cortex: 'UI agentic soignée dans votre VS Code', cursor: 'UX agentic intégrée', windsurf: 'UX Cascade intégrée' },
       { feature: 'Accès IA', cortex: 'Votre abonnement OpenCode', cursor: 'Abonnement Cursor', windsurf: 'Abonnement Windsurf' },
       { feature: 'Licence Cortex', cortex: 'Gratuit en accès anticipé ; puis achat unique', cursor: 'Abonnement', windsurf: 'Abonnement' },
       { feature: 'Facturation IA', cortex: 'OpenCode (externe à Cortex)', cursor: 'Incluse dans le forfait Cursor', windsurf: 'Incluse dans le forfait Windsurf' },
@@ -212,6 +234,8 @@ const translations: Record<Lang, Translations> = {
     ctaOpenVsx: 'Von Open VSX installieren',
     ctaDocs: 'Dokumentation lesen',
     sub: 'Wählen Sie jedes Modell aus Ihrem OpenCode-Plan. Sie behalten Ihren Editor und Ihre OpenCode-Abrechnung — Cortex ist die IDE-Schicht dazwischen.',
+    heroDemoAlt: 'Cortex in VS Code: kontextbewusste Codegenerierung mit OpenCode',
+    heroDemoPlaceholder: 'Produktdemo folgt in Kürze',
     featuresTitle: 'Was Cortex anders macht',
     features: [
       { title: 'Vollständiger Agentic Workflow', desc: 'Plan → Build: Analysiert Ihren Code, schlägt einen Plan mit Checklist vor und führt Schritt für Schritt aus. Der gleiche Flow wie Cursor Agent, jetzt in Ihrem VS Code.' },
@@ -222,10 +246,13 @@ const translations: Record<Lang, Translations> = {
       { title: 'OpenCode in Ihrer IDE', desc: 'Nutzt OpenCode als agentischen Runtime integriert in VS Code oder jeden kompatiblen Fork. Das gleiche Assistenz-Gefühl wie Cursor oder Windsurf — ohne den Editor zu wechseln.' },
     ],
     compareTitle: 'Cortex vs die anderen',
-    compareSubtitle: 'Gleiche Agentic-Leistung, mehr Freiheit.',
+    compareSubtitle: 'Leichtgewichtig, OpenCode-nativ, in Ihrem VS Code — gleiche Agentic-Leistung, mehr Freiheit.',
     compareNote: 'Cortex ist eine VS Code-Erweiterung, kein Fork. Behalten Sie Editor und Einstellungen. Es integriert OpenCode für ein Cursor/Windsurf-ähnliches Agent-Erlebnis, während Sie Ihr eigenes OpenCode-Abo steuern.',
     compareRows: [
       { feature: 'Editor', cortex: 'Ihr VS Code oder kompatibler Fork', cursor: 'Eigener Editor (VS Code Fork)', windsurf: 'Eigener Editor (VS Code Fork)' },
+      { feature: 'Fußabdruck', cortex: 'Leichtgewichtige VS Code-Erweiterung', cursor: 'Vollständiger Fork-Editor', windsurf: 'Vollständiger Fork-Editor' },
+      { feature: 'OpenCode', cortex: 'Native OpenCode.ai-Integration', cursor: 'Nicht OpenCode', windsurf: 'Nicht OpenCode' },
+      { feature: 'IDE UX', cortex: 'Polierte Agent-UI in Ihrem VS Code', cursor: 'Eingebaute Agent-UX', windsurf: 'Eingebaute Cascade-UX' },
       { feature: 'KI-Zugang', cortex: 'Ihr OpenCode-Abo', cursor: 'Cursor-Abo', windsurf: 'Windsurf-Abo' },
       { feature: 'Cortex-Lizenz', cortex: 'Kostenlos im Early Access; später Einmalkauf', cursor: 'Abo', windsurf: 'Abo' },
       { feature: 'KI-Abrechnung', cortex: 'OpenCode (außerhalb von Cortex)', cursor: 'Im Cursor-Plan enthalten', windsurf: 'Im Windsurf-Plan enthalten' },
@@ -252,6 +279,8 @@ const translations: Record<Lang, Translations> = {
     ctaOpenVsx: 'Open VSXからインストール',
     ctaDocs: 'ドキュメントを読む',
     sub: 'OpenCodeプランで利用可能な任意のモデルを選択。エディタもOpenCodeの課金もあなたのまま — Cortexはその間のIDEレイヤーです。',
+    heroDemoAlt: 'VS Code上のCortex：OpenCodeによるコンテキスト対応コード生成',
+    heroDemoPlaceholder: '製品デモ準備中',
     featuresTitle: 'Cortexが異なる理由',
     features: [
       { title: '完全なアジェンティックワークフロー', desc: 'Plan → Build：コードを分析し、チェックリスト付きの計画を提案し、ステップバイステップで実行。Cursor Agentと同じフローがVS Codeで。' },
@@ -262,10 +291,13 @@ const translations: Record<Lang, Translations> = {
       { title: 'IDE内のOpenCode', desc: 'VS Codeまたは互換フォークに統合されたアジェンティックランタイムとしてOpenCodeを使用。CursorやWindsurfと同じアシスト感を、エディタを変えずに。' },
     ],
     compareTitle: 'Cortex vs 他社製品',
-    compareSubtitle: '同じアジェンティックパワー、より多くの自由。',
+    compareSubtitle: '軽量、OpenCodeネイティブ、あなたのVS Codeで — 同じアジェンティックパワー、より多くの自由。',
     compareNote: 'CortexはVS Codeの拡張機能であり、フォークではありません。エディタと設定はそのまま。OpenCodeを統合し、Cursor/Windsurf風のエージェント体験を、自分のOpenCodeサブスクリプションで制御できます。',
     compareRows: [
       { feature: 'エディタ', cortex: '現在のVS Codeまたは互換フォーク', cursor: '独自エディタ（VS Codeフォーク）', windsurf: '独自エディタ（VS Codeフォーク）' },
+      { feature: 'フットプリント', cortex: '軽量なVS Code拡張機能', cursor: 'フルフォークエディタ', windsurf: 'フルフォークエディタ' },
+      { feature: 'OpenCode', cortex: 'OpenCode.aiネイティブ統合', cursor: 'OpenCodeではない', windsurf: 'OpenCodeではない' },
+      { feature: 'IDE UX', cortex: 'VS Code内の洗練されたエージェントUI', cursor: '内蔵エージェントUX', windsurf: '内蔵Cascade UX' },
       { feature: 'AIアクセス', cortex: 'あなたのOpenCodeサブスクリプション', cursor: 'Cursorサブスクリプション', windsurf: 'Windsurfサブスクリプション' },
       { feature: 'Cortexライセンス', cortex: '早期アクセスは無料、後に買い切り', cursor: 'サブスクリプション', windsurf: 'サブスクリプション' },
       { feature: 'AI課金', cortex: 'OpenCode（Cortex外）', cursor: 'Cursorプランに含む', windsurf: 'Windsurfプランに含む' },
@@ -292,6 +324,8 @@ const translations: Record<Lang, Translations> = {
     ctaOpenVsx: '从 Open VSX 安装',
     ctaDocs: '阅读文档',
     sub: '选择你 OpenCode 套餐中可用的任意模型。编辑器与 OpenCode 账单仍归你——Cortex 是中间的 IDE 层。',
+    heroDemoAlt: 'VS Code 中的 Cortex：基于 OpenCode 的上下文感知代码生成',
+    heroDemoPlaceholder: '产品演示即将推出',
     featuresTitle: 'Cortex 的不同之处',
     features: [
       { title: '完整的代理式工作流', desc: 'Plan → Build：分析你的代码，提出带清单的计划，并逐步执行。与 Cursor Agent 相同的流程，现在就在你的 VS Code 中。' },
@@ -302,10 +336,13 @@ const translations: Record<Lang, Translations> = {
       { title: 'IDE 内的 OpenCode', desc: '将 OpenCode 作为代理运行时集成到 VS Code 或任何兼容分支。与 Cursor 或 Windsurf 相同的辅助编程体验——无需离开你的编辑器。' },
     ],
     compareTitle: 'Cortex 与其他产品对比',
-    compareSubtitle: '同样的代理能力，更多的自由。',
+    compareSubtitle: '轻量、OpenCode 原生、在你的 VS Code 中——同样的代理能力，更多的自由。',
     compareNote: 'Cortex 是 VS Code 扩展，不是分支。保留你的编辑器与设置。它集成 OpenCode，提供类似 Cursor/Windsurf 的代理体验，同时由你控制自己的 OpenCode 订阅。',
     compareRows: [
       { feature: '编辑器', cortex: '你的 VS Code 或兼容分支', cursor: '自有编辑器（VS Code 分支）', windsurf: '自有编辑器（VS Code 分支）' },
+      { feature: '体积', cortex: '轻量级 VS Code 扩展', cursor: '完整分支编辑器', windsurf: '完整分支编辑器' },
+      { feature: 'OpenCode', cortex: '原生 OpenCode.ai 集成', cursor: '非 OpenCode', windsurf: '非 OpenCode' },
+      { feature: 'IDE UX', cortex: '在你的 VS Code 中打磨的代理 UI', cursor: '内置代理 UX', windsurf: '内置 Cascade UX' },
       { feature: 'AI 访问', cortex: '你的 OpenCode 订阅', cursor: 'Cursor 订阅', windsurf: 'Windsurf 订阅' },
       { feature: 'Cortex 许可', cortex: '抢先体验免费；之后一次性购买', cursor: '订阅', windsurf: '订阅' },
       { feature: 'AI 账单', cortex: 'OpenCode（独立于 Cortex）', cursor: '包含在 Cursor 套餐中', windsurf: '包含在 Windsurf 套餐中' },

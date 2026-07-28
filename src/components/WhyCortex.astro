@@ -8,7 +8,7 @@ interface Props {
 const { lang = defaultLang } = Astro.props;
 const t = getT(lang);
 ---
-<section class="compare">
+<section class="compare" id="why">
   <h2>{t.compareTitle}</h2>
   <p class="subtitle">{t.compareSubtitle}</p>
   <div class="table-wrap">

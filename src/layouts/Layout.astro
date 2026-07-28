@@ -1,6 +1,7 @@
 ---
 import { getT, type Lang, defaultLang } from '../i18n/translations';
 import { getBase, langHref } from '../i18n/paths';
+import { PRODUCT_VERSION } from '../i18n/version';
 import LanguageSwitcher from '../components/LanguageSwitcher.astro';
 
 interface Props {
@@ -68,6 +69,13 @@ const base = getBase();
       display: block;
       border-radius: 6px;
     }
+    nav .logo .nav-version {
+      margin-left: 0.1rem;
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      letter-spacing: 0.02em;
+    }
     nav .right { display: flex; align-items: center; gap: 1.5rem; }
     nav .links { display: flex; gap: 1.5rem; }
     nav .links a { color: var(--text-muted); font-size: 0.9rem; font-weight: 500; }
@@ -77,6 +85,13 @@ const base = getBase();
       text-align: center; color: var(--text-muted); font-size: 0.85rem;
     }
     footer a { color: var(--accent); }
+    footer .footer-version {
+      display: inline-block;
+      margin-top: 0.35rem;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+    footer .footer-version:hover { color: var(--accent); }
   </style>
 </head>
 <body>
@@ -85,6 +100,7 @@ const base = getBase();
       <a class="logo" href={langHref(lang)}>
         <img src={`${base}logo.svg`} alt="" width="32" height="32" />
         Cortex
+        <span class="nav-version">v{PRODUCT_VERSION}</span>
       </a>
       <div class="right">
         <div class="links">
@@ -100,6 +116,7 @@ const base = getBase();
     </main>
     <footer>
       <p>{t.footer} <a href="https://github.com/daniquir">daniquir</a></p>
+      <a class="footer-version" href={langHref(lang, 'changelog/')}>v{PRODUCT_VERSION}</a>
     </footer>
   </div>
 </body>
