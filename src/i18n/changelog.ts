@@ -12,6 +12,20 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
+        version: 'v0.1.2',
+        date: 'Jul 28, 2026',
+        items: [
+          'Logo next to the "Cortex" title in the chat sidebar header',
+          'Policy Brain: multi-tier rules/skills/memory/hooks (compatible with .cursor/rules and .cortex/rules)',
+          'Policy Inspector, global user rules, and built-in changelog gate',
+          'Parallel chat tabs no longer mix thinking spinners or stream progress across chats',
+          'Undo/Reject/Restore Checkpoint only reverse that chat\'s file delta — other chats\' non-overlapping edits are kept',
+          'File diff cards stay above the final assistant reply (edits happen during tools) instead of under the summary text',
+          'Policy stats and retrieval stay out of the chat; Policy Inspector is per chat',
+          'Resend / fork no longer appends (or stacks) a language hint onto the user message',
+        ],
+      },
+      {
         version: 'v0.1.1',
         date: 'Jul 28, 2026',
         items: [
@@ -57,6 +71,20 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     metaTitle: 'Changelog — Cortex',
     title: 'Changelog',
     entries: [
+      {
+        version: 'v0.1.2',
+        date: '28 jul 2026',
+        items: [
+          'Logo junto al título "Cortex" en la cabecera del chat lateral',
+          'Policy Brain: reglas/skills/memoria/hooks multicapa (compatible con .cursor/rules y .cortex/rules)',
+          'Policy Inspector, user rules globales y changelog gate integrado',
+          'Las pestañas de chat en paralelo ya no cruzan spinners de pensamiento ni el progreso del stream',
+          'Undo/Reject/Restore Checkpoint solo revierten el delta de ese chat — se conservan ediciones no solapadas de otros chats',
+          'Las cards de diff quedan encima de la respuesta final del asistente (las ediciones ocurren durante las tools), no debajo del resumen',
+          'Las stats de Policy y el retrieval ya no aparecen en el chat; el Policy Inspector es por chat',
+          'Reenviar / fork ya no añade (ni acumula) un hint de idioma al mensaje del usuario',
+        ],
+      },
       {
         version: 'v0.1.1',
         date: '28 jul 2026',
@@ -104,6 +132,20 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
+        version: 'v0.1.2',
+        date: '28 jul 2026',
+        items: [
+          'Logotipo ao lado do título "Cortex" no cabeçalho do chat lateral',
+          'Policy Brain: rules/skills/memória/hooks em camadas (compatível com .cursor/rules e .cortex/rules)',
+          'Policy Inspector, user rules globais e changelog gate integrado',
+          'Separadores de chat em paralelo já não misturam spinners de pensamento nem o progresso do stream',
+          'Undo/Reject/Restore Checkpoint revertem só o delta desse chat — edições não sobrepostas de outros chats são mantidas',
+          'Cards de diff ficam acima da resposta final do assistente (edições ocorrem durante as tools), não abaixo do resumo',
+          'Stats de Policy e retrieval ficam fora do chat; Policy Inspector é por chat',
+          'Reenviar / fork já não acrescenta (nem acumula) um hint de idioma na mensagem do utilizador',
+        ],
+      },
+      {
         version: 'v0.1.1',
         date: '28 jul 2026',
         items: [
@@ -149,6 +191,20 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     metaTitle: 'Changelog — Cortex',
     title: 'Changelog',
     entries: [
+      {
+        version: 'v0.1.2',
+        date: '28 juil. 2026',
+        items: [
+          'Logo à côté du titre "Cortex" dans l\'en-tête du chat latéral',
+          'Policy Brain : rules/skills/mémoire/hooks multi-niveaux (compatible .cursor/rules et .cortex/rules)',
+          'Policy Inspector, user rules globales et changelog gate intégré',
+          'Les onglets de chat parallèles ne mélangent plus les spinners de réflexion ni la progression du stream',
+          'Undo/Reject/Restore Checkpoint n\'annulent que le delta de ce chat — les edits non chevauchants des autres chats sont conservés',
+          'Les cartes de diff restent au-dessus de la réponse finale de l\'assistant (les edits ont lieu pendant les tools), pas sous le résumé',
+          'Les stats Policy et le retrieval restent hors du chat ; Policy Inspector est par chat',
+          'Renvoyer / fork n\'ajoute plus (ni n\'empile) d\'indication de langue au message utilisateur',
+        ],
+      },
       {
         version: 'v0.1.1',
         date: '28 juil. 2026',
@@ -196,6 +252,20 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
+        version: 'v0.1.2',
+        date: '28. Juli 2026',
+        items: [
+          'Logo neben dem Titel "Cortex" in der Chat-Sidebar-Header',
+          'Policy Brain: mehrschichtige Rules/Skills/Memory/Hooks (kompatibel mit .cursor/rules und .cortex/rules)',
+          'Policy Inspector, globale User Rules und integrierte Changelog-Gate',
+          'Parallele Chat-Tabs vermischen keine Thinking-Spinner und keinen Stream-Fortschritt mehr zwischen Chats',
+          'Undo/Reject/Restore Checkpoint machen nur das Delta dieses Chats rückgängig — nicht überlappende Edits anderer Chats bleiben',
+          'Diff-Karten bleiben über der finalen Assistentenantwort (Edits während der Tools), nicht unter dem Zusammenfassungstext',
+          'Policy-Stats und Retrieval bleiben außerhalb des Chats; Policy Inspector ist pro Chat',
+          'Erneut senden / Fork hängt keinen Sprachhinweis mehr an die User-Nachricht (und stapelt ihn nicht)',
+        ],
+      },
+      {
         version: 'v0.1.1',
         date: '28. Jul 2026',
         items: [
@@ -242,6 +312,20 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: '変更履歴',
     entries: [
       {
+        version: 'v0.1.2',
+        date: '2026年7月28日',
+        items: [
+          'チャットサイドバーのヘッダーに「Cortex」タイトルの横にロゴを追加',
+          'Policy Brain：多層の rules/skills/memory/hooks（.cursor/rules と .cortex/rules に対応）',
+          'Policy Inspector、グローバル user rules、組み込み changelog gate',
+          '並行チャットタブで思考スピナーやストリーム進捗が別チャットに混ざらなくなった',
+          'Undo/Reject/Restore Checkpoint はそのチャットの差分だけを戻す — 他チャットの非重複編集は保持',
+          'ファイル diff カードは最終アシスタント返信の上に表示（編集は tools 中）し、要約テキストの下には出さない',
+          'Policy の統計と retrieval はチャットに出さない；Policy Inspector はチャットごと',
+          '再送信 / Fork でユーザーメッセージに言語ヒントが付与・蓄積されなくなった',
+        ],
+      },
+      {
         version: 'v0.1.1',
         date: '2026年7月28日',
         items: [
@@ -287,6 +371,20 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     metaTitle: '更新日志 — Cortex',
     title: '更新日志',
     entries: [
+      {
+        version: 'v0.1.2',
+        date: '2026年7月28日',
+        items: [
+          '在聊天侧边栏标题"Cortex"旁添加 Logo',
+          'Policy Brain：多层 rules/skills/memory/hooks（兼容 .cursor/rules 与 .cortex/rules）',
+          'Policy Inspector、全局 user rules 与内置 changelog gate',
+          '并行聊天标签页不再互相串用思考转圈或流式进度',
+          'Undo/Reject/Restore Checkpoint 仅回滚该聊天的文件增量 — 保留其他聊天的非重叠编辑',
+          '文件 diff 卡片显示在最终助手回复上方（编辑发生在 tools 期间），而不是摘要文字下方',
+          'Policy 统计与检索不再出现在聊天中；Policy Inspector 按对话区分',
+          '重新发送 / Fork 不再把语言提示追加（或堆叠）到用户消息上',
+        ],
+      },
       {
         version: 'v0.1.1',
         date: '2026年7月28日',
