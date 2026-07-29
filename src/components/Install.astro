@@ -10,6 +10,7 @@ const t = getT(lang);
 ---
 <section class="install">
   <h2>{t.installTitle}</h2>
+  <p class="install-note">{t.installNote}</p>
   <div class="steps">
     {t.installSteps.map((step, i) => (
       <div class="step">
@@ -28,8 +29,16 @@ const t = getT(lang);
   .install h2 {
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 0.75rem;
     letter-spacing: -0.02em;
+  }
+  .install-note {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    max-width: 36rem;
+    margin: 0 auto 2.5rem;
+    line-height: 1.55;
   }
   .steps { max-width: 600px; margin: 0 auto; }
   .step {

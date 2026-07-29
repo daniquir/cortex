@@ -12,6 +12,19 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
+        version: 'v0.1.3',
+        date: 'Jul 29, 2026',
+        items: [
+          'Landing: Auto 2.0, Policy Brain, editor parity; OpenCode-first get-started (no Cortex account)',
+          'Auto 2.0 intelligent routing — intent + complexity picks model tier; Auto switches Plan/Build',
+          'Model availability filtering — unavailable models dimmed; free Zen unlocked; paid Zen/BYOK opt-in',
+          'Retrieval Performance/Quality toggle in chat (hash ↔ MiniLM)',
+          'Active editor file auto-attached each turn; context detail popup on the meter',
+          'Hint when the active model is free/light (even with paid access unlocked)',
+          'Cursor-like per-hunk diffs; Plan mode can save/refine plans under .cortex/plans/',
+        ],
+      },
+      {
         version: 'v0.1.2',
         date: 'Jul 28, 2026',
         items: [
@@ -71,6 +84,19 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     metaTitle: 'Changelog — Cortex',
     title: 'Changelog',
     entries: [
+      {
+        version: 'v0.1.3',
+        date: '29 jul 2026',
+        items: [
+          'Landing: Auto 2.0, Policy Brain, paridad de editor; empezar con OpenCode primero (sin cuenta Cortex)',
+          'Auto 2.0 — enrutado por intención + complejidad; Auto cambia Plan/Build',
+          'Filtrado de disponibilidad de modelos — no disponibles atenuados; Zen free desbloqueado; Zen de pago/BYOK con opt-in',
+          'Interruptor Rendimiento/Calidad de retrieval en el chat (hash ↔ MiniLM)',
+          'Archivo activo adjunto en cada turno; popup de detalle en el medidor de contexto',
+          'Aviso si el modelo activo es gratis/ligero (también con acceso de pago)',
+          'Diffs por hunk al estilo Cursor; Plan puede guardar/refinar planes en .cortex/plans/',
+        ],
+      },
       {
         version: 'v0.1.2',
         date: '28 jul 2026',
@@ -132,6 +158,19 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
+        version: 'v0.1.3',
+        date: '29 jul 2026',
+        items: [
+          'Landing: Auto 2.0, Policy Brain, paridade de editor; começar com OpenCode primeiro (sem conta Cortex)',
+          'Auto 2.0 — roteamento por intenção + complexidade; Auto troca Plan/Build',
+          'Filtro de disponibilidade de modelos — indisponíveis atenuados; Zen free liberado; Zen pago/BYOK com opt-in',
+          'Alternador Desempenho/Qualidade de retrieval no chat (hash ↔ MiniLM)',
+          'Arquivo ativo anexado a cada turno; popup de detalhe no medidor de contexto',
+          'Aviso se o modelo ativo for gratuito/leve (também com acesso pago)',
+          'Diffs por hunk no estilo Cursor; Plan pode guardar/refinar planos em .cortex/plans/',
+        ],
+      },
+      {
         version: 'v0.1.2',
         date: '28 jul 2026',
         items: [
@@ -191,6 +230,19 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     metaTitle: 'Changelog — Cortex',
     title: 'Changelog',
     entries: [
+      {
+        version: 'v0.1.3',
+        date: '29 juil. 2026',
+        items: [
+          'Landing : Auto 2.0, Policy Brain, parité éditeur ; démarrage OpenCode d\'abord (pas de compte Cortex)',
+          'Auto 2.0 — routage par intention + complexité ; Auto bascule Plan/Build',
+          'Filtrage de disponibilité des modèles — indisponibles grisés ; Zen gratuit débloqué ; Zen payant/BYOK en opt-in',
+          'Basculer Performance/Qualité du retrieval dans le chat (hash ↔ MiniLM)',
+          'Fichier actif joint à chaque tour ; popup de détail sur le compteur de contexte',
+          'Indication si le modèle actif est gratuit/léger (même avec accès payant)',
+          'Diffs par hunk façon Cursor ; Plan peut enregistrer/affiner des plans sous .cortex/plans/',
+        ],
+      },
       {
         version: 'v0.1.2',
         date: '28 juil. 2026',
@@ -252,6 +304,19 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
+        version: 'v0.1.3',
+        date: '29. Juli 2026',
+        items: [
+          'Landing: Auto 2.0, Policy Brain, Editor-Parität; OpenCode-first Start (kein Cortex-Konto)',
+          'Auto 2.0 — Routing nach Absicht + Komplexität; Auto wechselt Plan/Build',
+          'Modell-Verfügbarkeitsfilter — nicht verfügbare ausgegraut; Free Zen freigeschaltet; Paid Zen/BYOK mit Opt-in',
+          'Retrieval Leistung/Qualität-Schalter im Chat (hash ↔ MiniLM)',
+          'Aktive Datei bei jedem Turn angehängt; Detail-Popup am Kontext-Meter',
+          'Hinweis bei aktivem Free/Light-Modell (auch mit freigeschaltetem Paid-Zugang)',
+          'Cursor-ähnliche Hunk-Diffs; Plan kann Pläne unter .cortex/plans/ speichern/verfeinern',
+        ],
+      },
+      {
         version: 'v0.1.2',
         date: '28. Juli 2026',
         items: [
@@ -312,6 +377,19 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: '変更履歴',
     entries: [
       {
+        version: 'v0.1.3',
+        date: '2026年7月29日',
+        items: [
+          'ランディング：Auto 2.0、Policy Brain、エディタparity；OpenCode優先の開始（Cortexアカウント不要）',
+          'Auto 2.0 — 意図＋複雑さでモデル階層を選択；AutoがPlan/Buildを切替',
+          'モデル可用性フィルタ — 利用不可は薄表示；無料Zenは解除；有料Zen/BYOKはopt-in',
+          'チャットのretrieval高速/品質切替（hash ↔ MiniLM）',
+          'アクティブファイルを各ターンで自動添付；コンテキストメーターの詳細ポップアップ',
+          'アクティブモデルが無料／軽量のときのヒント（有料アクセス有効時も含む）',
+          'Cursor風のhunk単位diff；Planが.cortex/plans/に計画を保存・更新可能',
+        ],
+      },
+      {
         version: 'v0.1.2',
         date: '2026年7月28日',
         items: [
@@ -371,6 +449,19 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     metaTitle: '更新日志 — Cortex',
     title: '更新日志',
     entries: [
+      {
+        version: 'v0.1.3',
+        date: '2026年7月29日',
+        items: [
+          '落地页：Auto 2.0、Policy Brain、编辑器对等；OpenCode 优先上手（无需 Cortex 账户）',
+          'Auto 2.0 — 按意图 + 复杂度路由模型层级；Auto 切换 Plan/Build',
+          '模型可用性过滤 — 不可用项变灰；免费 Zen 始终解锁；付费 Zen/BYOK 需显式开启',
+          '聊天中的检索性能/质量切换（hash ↔ MiniLM）',
+          '每轮自动附加当前编辑文件；上下文仪表详情弹层',
+          '当前模型为免费/轻量时显示提示（即使已解锁付费访问）',
+          'Cursor 风格按块差异；Plan 可在 .cortex/plans/ 保存/完善计划',
+        ],
+      },
       {
         version: 'v0.1.2',
         date: '2026年7月28日',
