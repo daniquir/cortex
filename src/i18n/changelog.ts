@@ -12,9 +12,21 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
+        version: 'v0.1.4',
+        date: 'Jul 30, 2026',
+        items: [
+          'Chat opens as a right editor panel (not secondary sidebar) so Cursor tab icons stay intact',
+          'Connect redesign: Get API key → paste → Save; keys from OpenCode local auth; Models for Go/paid Zen/BYOK',
+          'Auto/Turbo with OpenCode Go: prefer Go models first; free Zen only as fallback; paid Zen/BYOK stay behind Models toggles',
+        ],
+      },
+      {
         version: 'v0.1.3',
         date: 'Jul 29, 2026',
         items: [
+          'Credentials: one OpenCode card (key mask + catalog); no Zen/Go switch or duplicate Back',
+          'Auto-detect OpenCode Go after unlock (non-blocking) and switch automatically',
+          'Enable OpenCode Go from Credentials (reuses Zen API key; no TUI) — Subscribe link for billing',
           'Landing: Auto 2.0, Policy Brain, editor parity; OpenCode-first get-started (no Cortex account)',
           'Auto 2.0 intelligent routing — intent + complexity picks model tier; Auto switches Plan/Build',
           'Model availability filtering — unavailable models dimmed; free Zen unlocked; paid Zen/BYOK opt-in',
@@ -85,9 +97,21 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
+        version: 'v0.1.4',
+        date: '30 jul 2026',
+        items: [
+          'El chat se abre como panel de editor a la derecha (no secondary sidebar) para no romper los iconos de pestañas de Cursor',
+          'Rediseño Connect: Get API key → pegar → Save; keys del auth local de OpenCode; Models para Go/Zen de pago/BYOK',
+          'Auto/Turbo con OpenCode Go: prioriza modelos Go; Zen gratis solo como fallback; Zen de pago/BYOK tras toggles de Models',
+        ],
+      },
+      {
         version: 'v0.1.3',
         date: '29 jul 2026',
         items: [
+          'Credentials: una tarjeta OpenCode (máscara de key + catálogo); sin cambio Zen/Go ni Atrás duplicado',
+          'Auto-detecta OpenCode Go tras el unlock (sin bloquear) y cambia automáticamente',
+          'Activar OpenCode Go desde Credentials (reutiliza la API key de Zen; sin TUI) — enlace Suscribirse para facturación',
           'Landing: Auto 2.0, Policy Brain, paridad de editor; empezar con OpenCode primero (sin cuenta Cortex)',
           'Auto 2.0 — enrutado por intención + complejidad; Auto cambia Plan/Build',
           'Filtrado de disponibilidad de modelos — no disponibles atenuados; Zen free desbloqueado; Zen de pago/BYOK con opt-in',
@@ -158,9 +182,21 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
+        version: 'v0.1.4',
+        date: '30 jul 2026',
+        items: [
+          'O chat abre como painel de editor à direita (não secondary sidebar) para manter os ícones das abas do Cursor',
+          'Redesign Connect: Get API key → colar → Save; keys do auth local do OpenCode; Models para Go/Zen pago/BYOK',
+          'Auto/Turbo com OpenCode Go: prioriza modelos Go; Zen gratuito só como fallback; Zen pago/BYOK atrás dos toggles de Models',
+        ],
+      },
+      {
         version: 'v0.1.3',
         date: '29 jul 2026',
         items: [
+          'Credentials: um cartão OpenCode (máscara da key + catálogo); sem troca Zen/Go nem Back duplicado',
+          'Detecta automaticamente o OpenCode Go após o unlock (sem bloquear) e alterna sozinho',
+          'Ativar OpenCode Go em Credentials (reutiliza a API key do Zen; sem TUI) — link Assinar para cobrança',
           'Landing: Auto 2.0, Policy Brain, paridade de editor; começar com OpenCode primeiro (sem conta Cortex)',
           'Auto 2.0 — roteamento por intenção + complexidade; Auto troca Plan/Build',
           'Filtro de disponibilidade de modelos — indisponíveis atenuados; Zen free liberado; Zen pago/BYOK com opt-in',
@@ -231,9 +267,21 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
+        version: 'v0.1.4',
+        date: '30 juil. 2026',
+        items: [
+          'Le chat s\'ouvre en panneau d\'éditeur à droite (pas secondary sidebar) pour garder les icônes d\'onglets Cursor',
+          'Refonte Connect : Get API key → coller → Save ; clés de l\'auth locale OpenCode ; Models pour Go/Zen payant/BYOK',
+          'Auto/Turbo avec OpenCode Go : modèles Go en priorité ; Zen gratuit en secours seulement ; Zen payant/BYOK derrière les toggles Models',
+        ],
+      },
+      {
         version: 'v0.1.3',
         date: '29 juil. 2026',
         items: [
+          'Credentials : une carte OpenCode (masque de clé + catalogue) ; pas de bascule Zen/Go ni Retour en double',
+          'Détection auto d\'OpenCode Go après déverrouillage (non bloquante) avec bascule automatique',
+          'Activer OpenCode Go depuis Credentials (réutilise la clé API Zen ; pas de TUI) — lien S\'abonner pour la facturation',
           'Landing : Auto 2.0, Policy Brain, parité éditeur ; démarrage OpenCode d\'abord (pas de compte Cortex)',
           'Auto 2.0 — routage par intention + complexité ; Auto bascule Plan/Build',
           'Filtrage de disponibilité des modèles — indisponibles grisés ; Zen gratuit débloqué ; Zen payant/BYOK en opt-in',
@@ -304,9 +352,21 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
+        version: 'v0.1.4',
+        date: '30. Juli 2026',
+        items: [
+          'Chat öffnet sich als rechtes Editor-Panel (nicht Secondary Sidebar), damit Cursor-Tab-Icons bleiben',
+          'Connect-Redesign: Get API key → einfügen → Save; Keys aus lokaler OpenCode-Auth; Models für Go/Paid Zen/BYOK',
+          'Auto/Turbo mit OpenCode Go: Go-Modelle zuerst; Free Zen nur als Fallback; Paid Zen/BYOK hinter Models-Toggles',
+        ],
+      },
+      {
         version: 'v0.1.3',
         date: '29. Juli 2026',
         items: [
+          'Credentials: eine OpenCode-Karte (Key-Maske + Katalog); kein Zen/Go-Wechsel, kein doppeltes Zurück',
+          'OpenCode Go nach Unlock erkennen (ohne Boot zu blockieren) und automatisch umschalten',
+          'OpenCode Go aus Credentials aktivieren (nutzt Zen-API-Schlüssel erneut; kein TUI) — Abonnieren-Link für Abrechnung',
           'Landing: Auto 2.0, Policy Brain, Editor-Parität; OpenCode-first Start (kein Cortex-Konto)',
           'Auto 2.0 — Routing nach Absicht + Komplexität; Auto wechselt Plan/Build',
           'Modell-Verfügbarkeitsfilter — nicht verfügbare ausgegraut; Free Zen freigeschaltet; Paid Zen/BYOK mit Opt-in',
@@ -377,9 +437,21 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: '変更履歴',
     entries: [
       {
+        version: 'v0.1.4',
+        date: '2026年7月30日',
+        items: [
+          'チャットは右側のエディタパネルで開く（secondary sidebarではない）ため、Cursorのタブアイコンが消えない',
+          'Connect刷新：Get API key → 貼り付け → Save；OpenCodeローカル認証のキー；ModelsでGo/有料Zen/BYOK',
+          'OpenCode Go 時の Auto/Turbo：Go モデルを優先、無料 Zen はフォールバックのみ；有料 Zen/BYOK は Models のトグル後',
+        ],
+      },
+      {
         version: 'v0.1.3',
         date: '2026年7月29日',
         items: [
+          'Credentials: OpenCodeカード1枚（キーマスク＋カタログ）；Zen/Go切替なし・戻るの重複なし',
+          'アンロック後に OpenCode Go を自動検出（起動をブロックしない）して切り替え',
+          'CredentialsからOpenCode Goを有効化（ZenのAPIキーを再利用；TUI不要）— 課金用の登録リンク',
           'ランディング：Auto 2.0、Policy Brain、エディタparity；OpenCode優先の開始（Cortexアカウント不要）',
           'Auto 2.0 — 意図＋複雑さでモデル階層を選択；AutoがPlan/Buildを切替',
           'モデル可用性フィルタ — 利用不可は薄表示；無料Zenは解除；有料Zen/BYOKはopt-in',
@@ -450,9 +522,21 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: '更新日志',
     entries: [
       {
+        version: 'v0.1.4',
+        date: '2026年7月30日',
+        items: [
+          '聊天以右侧编辑器面板打开（非 secondary sidebar），避免 Cursor 标签图标消失',
+          'Connect 重设计：Get API key → 粘贴 → Save；密钥来自 OpenCode 本地认证；Models 管理 Go/付费 Zen/BYOK',
+          'OpenCode Go 下的 Auto/Turbo：优先 Go 模型；免费 Zen 仅作回退；付费 Zen/BYOK 仍受 Models 开关控制',
+        ],
+      },
+      {
         version: 'v0.1.3',
         date: '2026年7月29日',
         items: [
+          'Credentials：一张 OpenCode 卡片（密钥掩码 + 目录）；无 Zen/Go 切换、无重复返回',
+          '解锁后自动检测并切换到 OpenCode Go（不阻塞启动）',
+          '从 Credentials 启用 OpenCode Go（复用 Zen API key；无需 TUI）— 订阅链接用于计费',
           '落地页：Auto 2.0、Policy Brain、编辑器对等；OpenCode 优先上手（无需 Cortex 账户）',
           'Auto 2.0 — 按意图 + 复杂度路由模型层级；Auto 切换 Plan/Build',
           '模型可用性过滤 — 不可用项变灰；免费 Zen 始终解锁；付费 Zen/BYOK 需显式开启',
