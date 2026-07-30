@@ -33,6 +33,24 @@ const d = getDocs(lang);
     </tbody>
   </table>
 
+  <h2>{d.configShortcuts}</h2>
+  <p>{d.configShortcutsIntro}</p>
+  <table>
+    <thead>
+      <tr>
+        {d.configShortcutHeaders.map((h) => <th>{h}</th>)}
+      </tr>
+    </thead>
+    <tbody>
+      {d.configShortcutRows.map((row) => (
+        <tr>
+          <td><code>{row.keys}</code></td>
+          <td>{row.action}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+
   <h2>{d.configModels}</h2>
   <p>{d.configModelsIntro}</p>
   <ul>

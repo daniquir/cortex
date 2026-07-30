@@ -12,7 +12,7 @@ Cortex es una extensión de VS Code que integra [OpenCode](https://opencode.ai) 
 - **Tus modelos de OpenCode** — elige cualquier modelo disponible en tu suscripción de OpenCode
 - **Contexto inteligente** — búsqueda léxica + semántica sobre tu codebase
 - **Diffs inline** — aceptar/rechazar sugerencias con preview de diferencias
-- **Chat lateral** — historial completo con timeline de uso de herramientas
+- **Chat como panel de editor a la derecha** — historial, timeline de tools, pestañas en paralelo
 - **Tu editor** — VS Code o cualquier fork compatible; la facturación de OpenCode queda fuera de Cortex
 
 ## Instalación
