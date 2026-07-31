@@ -434,7 +434,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
         date: '28 juil. 2026',
         items: [
           'Textes espagnols de la landing : codear → codificar, refactorea → refactoriza',
-          'Un second workspace n'échoue plus si opencodePort est occupé — Cortex utilise le prochain port libre',
+          'Un second workspace n\'échoue plus si opencodePort est occupé — Cortex utilise le prochain port libre',
           'Emplacement démo dans le hero de la landing (GIF/MP4 quand disponible ; placeholder en attendant)',
           'La démo portrait du hero n\'est plus rognée en 16:9',
           'Le header et le favicon de la landing utilisent le nouveau logo Cortex',
