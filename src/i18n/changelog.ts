@@ -12,6 +12,14 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
+        version: 'v0.1.6',
+        date: 'Jul 31, 2026',
+        items: [
+          'Windows: OpenCode CLI detection uses PATH (where.exe) and known install dirs — no longer fails when opencode is only on PATH',
+          'Windows: npm .cmd shims for OpenCode spawn correctly via shell',
+        ],
+      },
+      {
         version: 'v0.1.5',
         date: 'Jul 31, 2026',
         items: [
@@ -26,7 +34,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
           'Paste API key in onboarding or Connect — saved to OpenCode auth.json even if the local server is not up yet',
           'Chat without a project folder — uses your home directory for general / system questions',
           'Windows: path case mismatch (C:\\ vs c:\\) no longer blocks OpenCode Connect or chat boot',
-          'Windows: finds opencode.exe and uses the correct PATH delimiter',
+          'Windows: OpenCode install check uses PATH (where.exe) and known install dirs, not cwd-relative opencode',
           'Clearer error when the OpenCode binary is missing on startup',
           'Chat timeline chronology and command-output defaults; affected-files bar pinned above the composer',
           'Progress panel no longer leaks across chat tabs — each tab caches its own progress state',
@@ -128,6 +136,14 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
+        version: 'v0.1.6',
+        date: '31 jul 2026',
+        items: [
+          'Windows: la detección de OpenCode CLI usa PATH (where.exe) y rutas de instalación conocidas — ya no falla si opencode solo está en el PATH',
+          'Windows: los shims .cmd de npm para OpenCode se lanzan correctamente con shell',
+        ],
+      },
+      {
         version: 'v0.1.5',
         date: '31 jul 2026',
         items: [
@@ -142,7 +158,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
           'Pega la API key en onboarding o Connect — se guarda en auth.json de OpenCode aunque el servidor local aún no esté listo',
           'Chat sin carpeta de proyecto — usa tu directorio home para preguntas generales / de sistema',
           'Windows: la diferencia de mayúsculas en rutas (C:\\ vs c:\\) ya no bloquea Connect ni el arranque del chat',
-          'Windows: encuentra opencode.exe y usa el delimitador correcto de PATH',
+          'Windows: el check de OpenCode usa PATH (where.exe) y rutas conocidas, no opencode relativo al cwd',
           'Error más claro si falta el binario de OpenCode al arrancar',
           'Cronología del chat y salida de comandos; barra de archivos afectados fijada encima del composer',
           'El panel de progreso ya no se queda pegado al cambiar de pestaña — cada chat guarda su propio estado',
@@ -244,6 +260,14 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
+        version: 'v0.1.6',
+        date: '31 jul 2026',
+        items: [
+          'Windows: a detecção da CLI OpenCode usa PATH (where.exe) e pastas de instalação conhecidas — não falha mais se o opencode estiver só no PATH',
+          'Windows: shims .cmd do npm para OpenCode iniciam corretamente via shell',
+        ],
+      },
+      {
         version: 'v0.1.5',
         date: '31 jul 2026',
         items: [
@@ -258,7 +282,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
           'Cole a API key no onboarding ou Connect — salva no auth.json do OpenCode mesmo se o servidor local ainda não estiver pronto',
           'Chat sem pasta de projeto — usa o diretório home para perguntas gerais / de sistema',
           'Windows: diferença de maiúsculas em caminhos (C:\\ vs c:\\) não bloqueia mais o Connect nem o boot do chat',
-          'Windows: encontra opencode.exe e usa o delimitador correto do PATH',
+          'Windows: a verificação do OpenCode usa PATH (where.exe) e pastas conhecidas, não opencode relativo ao cwd',
           'Erro mais claro se o binário do OpenCode estiver ausente na inicialização',
           'Cronologia do chat e saída de comandos; barra de arquivos afetados fixada acima do composer',
           'O painel de progresso não vaza mais entre abas — cada chat guarda seu próprio estado',
@@ -360,6 +384,14 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
+        version: 'v0.1.6',
+        date: '31 jul 2026',
+        items: [
+          'Windows : la détection de la CLI OpenCode utilise le PATH (where.exe) et les dossiers d\'installation connus — ne échoue plus si opencode n\'est que dans le PATH',
+          'Windows : les shims .cmd npm pour OpenCode démarrent correctement via shell',
+        ],
+      },
+      {
         version: 'v0.1.5',
         date: '31 jul 2026',
         items: [
@@ -374,7 +406,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
           'Collez l\'API key dans l\'onboarding ou Connect — enregistrée dans auth.json d\'OpenCode même si le serveur local n\'est pas encore prêt',
           'Chat sans dossier de projet — utilise votre répertoire home pour les questions générales / système',
           'Windows : l\'écart de casse des chemins (C:\\ vs c:\\) ne bloque plus Connect ni le démarrage du chat',
-          'Windows : trouve opencode.exe et utilise le bon délimiteur PATH',
+          'Windows : le check OpenCode utilise le PATH (where.exe) et des dossiers connus, pas opencode relatif au cwd',
           'Erreur plus claire si le binaire OpenCode est manquant au démarrage',
           'Chronologie du chat et sorties de commandes ; barre des fichiers affectés fixée au-dessus du composer',
           'Le panneau de progression ne fuite plus entre les onglets — chaque chat garde son propre état',
@@ -476,6 +508,14 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
+        version: 'v0.1.6',
+        date: '31. Jul 2026',
+        items: [
+          'Windows: OpenCode-CLI-Erkennung nutzt PATH (where.exe) und bekannte Installationspfade — scheitert nicht mehr, wenn opencode nur im PATH liegt',
+          'Windows: npm-.cmd-Shims für OpenCode starten korrekt über die Shell',
+        ],
+      },
+      {
         version: 'v0.1.5',
         date: '31. Jul 2026',
         items: [
@@ -490,7 +530,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
           'API key im Onboarding oder Connect einfügen — speichert in OpenCode auth.json, auch wenn der lokale Server noch nicht bereit ist',
           'Chat ohne Projektordner — nutzt dein Home-Verzeichnis für allgemeine / Systemfragen',
           'Windows: Pfad-Groß-/Kleinschreibung (C:\\ vs c:\\) blockiert Connect und Chat-Start nicht mehr',
-          'Windows: findet opencode.exe und nutzt den richtigen PATH-Trenner',
+          'Windows: OpenCode-Check nutzt PATH (where.exe) und bekannte Installationspfade, nicht cwd-relatives opencode',
           'Klarere Fehlermeldung, wenn die OpenCode-Binary beim Start fehlt',
           'Chat-Chronologie und Befehlsausgaben; Affected-Files-Leiste über dem Composer',
           'Fortschrittspanel bleibt nicht mehr in anderen Tabs hängen — jeder Chat speichert seinen eigenen Stand',
@@ -592,6 +632,14 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: '変更履歴',
     entries: [
       {
+        version: 'v0.1.6',
+        date: '2026年7月31日',
+        items: [
+          'Windows：OpenCode CLI 検出が PATH（where.exe）と既知のインストール先を使用 — PATH 上のみでも失敗しなくなった',
+          'Windows：OpenCode の npm .cmd シムを shell 経由で正しく起動',
+        ],
+      },
+      {
         version: 'v0.1.5',
         date: '2026年7月31日',
         items: [
@@ -606,7 +654,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
           'オンボーディングまたは Connect で API key を貼り付け — ローカルサーバー未起動でも OpenCode の auth.json に保存',
           'プロジェクトフォルダーなしでチャット — ホームディレクトリで一般／システム質問に対応',
           'Windows：パスの大文字小文字差（C:\\ vs c:\\）で Connect / チャット起動が失敗しなくなった',
-          'Windows：opencode.exe を検出し、正しい PATH 区切りを使用',
+          'Windows：OpenCode の有無チェックは PATH（where.exe）と既知のインストール先を使う（cwd 相対の opencode ではない）',
           '起動時に OpenCode バイナリが見つからない場合のエラー表示を改善',
           'チャット時系列とコマンド出力；影響ファイルバーを composer 上に固定',
           '進捗パネルがタブ間で漏れなくなりました — 各チャットが自身の状態をキャッシュ',
@@ -708,6 +756,14 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: '更新日志',
     entries: [
       {
+        version: 'v0.1.6',
+        date: '2026年7月31日',
+        items: [
+          'Windows：OpenCode CLI 检测使用 PATH（where.exe）和已知安装目录 — 仅在 PATH 上时不再失败',
+          'Windows：通过 shell 正确启动 OpenCode 的 npm .cmd 垫片',
+        ],
+      },
+      {
         version: 'v0.1.5',
         date: '2026年7月31日',
         items: [
@@ -722,7 +778,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
           '在引导或 Connect 中粘贴 API key — 即使本地服务器尚未就绪也会写入 OpenCode auth.json',
           '无需打开项目文件夹即可聊天 — 使用用户主目录处理一般 / 系统问题',
           'Windows：路径大小写差异（C:\\ vs c:\\）不再阻断 Connect 或聊天启动',
-          'Windows：可发现 opencode.exe，并使用正确的 PATH 分隔符',
+          'Windows：OpenCode 安装检查使用 PATH（where.exe）和已知安装目录，而非相对 cwd 的 opencode',
           '启动时缺少 OpenCode 二进制时的错误提示更清晰',
           '聊天时间线与命令输出；受影响文件栏固定在输入框上方',
           '进度面板不再跨标签页残留 — 每个聊天缓存自己的进度状态',
