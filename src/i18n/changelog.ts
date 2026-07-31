@@ -12,6 +12,27 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
+        version: 'v0.1.5',
+        date: 'Jul 31, 2026',
+        items: [
+          'Opening a chat from History no longer closes the Cortex panel in Cursor',
+          'Quality (MiniLM): native onnxruntime in ~/.cache (runtime-v2, not in VSIX); unlock target ≤~30s',
+          'Quality: send locked until ready (meter on send button); no silent Performance fallback',
+          'Quality file changes re-embed only touched files (no full reindex / % reset)',
+          'Docs: Quality MiniLM cache, send gate, and incremental index documented in config/architecture',
+          'Quality MiniLM starts after chat unlock — does not freeze onboarding/boot',
+          'Quality MiniLM progress shown as % in the status bar and chat toolbar',
+          'Onboarding wizard: OpenCode CLI + API key checklist with language and context mode',
+          'Paste API key in onboarding or Connect — saved to OpenCode auth.json even if the local server is not up yet',
+          'Chat without a project folder — uses your home directory for general / system questions',
+          'Windows: path case mismatch (C:\\ vs c:\\) no longer blocks OpenCode Connect or chat boot',
+          'Windows: finds opencode.exe and uses the correct PATH delimiter',
+          'Clearer error when the OpenCode binary is missing on startup',
+          'Chat timeline chronology and command-output defaults; affected-files bar pinned above the composer',
+          'Progress panel no longer leaks across chat tabs — each tab caches its own progress state',
+        ],
+      },
+      {
         version: 'v0.1.4',
         date: 'Jul 30, 2026',
         items: [
@@ -106,6 +127,27 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     metaTitle: 'Changelog — Cortex',
     title: 'Changelog',
     entries: [
+      {
+        version: 'v0.1.5',
+        date: '31 jul 2026',
+        items: [
+          'Abrir un chat del Historial ya no cierra el panel de Cortex en Cursor',
+          'Quality (MiniLM): onnxruntime nativo en ~/.cache (runtime-v2, no en el VSIX); desbloqueo objetivo ≤~30s',
+          'Quality: envío bloqueado hasta listo (medidor en el botón); sin fallback silencioso a Rendimiento',
+          'Quality: cambios de archivo solo re-embeben lo tocado (sin reindex completo / reset del %)',
+          'Docs: caché MiniLM Quality, bloqueo de envío e índice incremental documentados en config/arquitectura',
+          'Quality MiniLM arranca tras desbloquear el chat — no congela onboarding/arranque',
+          'Progreso de MiniLM Quality en % en la barra de estado y la barra del chat',
+          'Asistente de onboarding: checklist de OpenCode CLI + API key con idioma y modo de contexto',
+          'Pega la API key en onboarding o Connect — se guarda en auth.json de OpenCode aunque el servidor local aún no esté listo',
+          'Chat sin carpeta de proyecto — usa tu directorio home para preguntas generales / de sistema',
+          'Windows: la diferencia de mayúsculas en rutas (C:\\ vs c:\\) ya no bloquea Connect ni el arranque del chat',
+          'Windows: encuentra opencode.exe y usa el delimitador correcto de PATH',
+          'Error más claro si falta el binario de OpenCode al arrancar',
+          'Cronología del chat y salida de comandos; barra de archivos afectados fijada encima del composer',
+          'El panel de progreso ya no se queda pegado al cambiar de pestaña — cada chat guarda su propio estado',
+        ],
+      },
       {
         version: 'v0.1.4',
         date: '30 jul 2026',
@@ -202,6 +244,27 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
+        version: 'v0.1.5',
+        date: '31 jul 2026',
+        items: [
+          'Abrir um chat do Histórico já não fecha o painel do Cortex no Cursor',
+          'Quality (MiniLM): onnxruntime nativo em ~/.cache (runtime-v2, não no VSIX); desbloqueio alvo ≤~30s',
+          'Quality: envio bloqueado até pronto (medidor no botão); sem fallback silencioso para Desempenho',
+          'Quality: alterações de ficheiro só re-embebem o tocado (sem reindex completo / reset do %)',
+          'Docs: cache MiniLM Quality, bloqueio de envio e índice incremental documentados em config/arquitetura',
+          'Quality MiniLM inicia após desbloquear o chat — não congela onboarding/boot',
+          'Progresso MiniLM Quality em % na barra de status e do chat',
+          'Assistente de onboarding: checklist OpenCode CLI + API key com idioma e modo de contexto',
+          'Cole a API key no onboarding ou Connect — salva no auth.json do OpenCode mesmo se o servidor local ainda não estiver pronto',
+          'Chat sem pasta de projeto — usa o diretório home para perguntas gerais / de sistema',
+          'Windows: diferença de maiúsculas em caminhos (C:\\ vs c:\\) não bloqueia mais o Connect nem o boot do chat',
+          'Windows: encontra opencode.exe e usa o delimitador correto do PATH',
+          'Erro mais claro se o binário do OpenCode estiver ausente na inicialização',
+          'Cronologia do chat e saída de comandos; barra de arquivos afetados fixada acima do composer',
+          'O painel de progresso não vaza mais entre abas — cada chat guarda seu próprio estado',
+        ],
+      },
+      {
         version: 'v0.1.4',
         date: '30 jul 2026',
         items: [
@@ -297,6 +360,27 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
+        version: 'v0.1.5',
+        date: '31 jul 2026',
+        items: [
+          'Ouvrir un chat depuis l’Historique ne ferme plus le panneau Cortex dans Cursor',
+          'Quality (MiniLM) : onnxruntime natif dans ~/.cache (runtime-v2, pas dans le VSIX) ; déblocage cible ≤~30 s',
+          'Quality : envoi bloqué jusqu’à prêt (compteur sur le bouton) ; pas de repli silencieux Performance',
+          'Quality : les fichiers modifiés sont re-embeddés seuls (pas de réindexation / reset du %)',
+          'Docs : cache MiniLM Quality, verrou d’envoi et index incrémental documentés dans config/architecture',
+          'Quality MiniLM démarre après le déblocage du chat — ne fige plus onboarding/démarrage',
+          'Progression MiniLM Quality en % dans la barre d’état et du chat',
+          'Assistant d\'onboarding : checklist OpenCode CLI + API key avec langue et mode de contexte',
+          'Collez l\'API key dans l\'onboarding ou Connect — enregistrée dans auth.json d\'OpenCode même si le serveur local n\'est pas encore prêt',
+          'Chat sans dossier de projet — utilise votre répertoire home pour les questions générales / système',
+          'Windows : l\'écart de casse des chemins (C:\\ vs c:\\) ne bloque plus Connect ni le démarrage du chat',
+          'Windows : trouve opencode.exe et utilise le bon délimiteur PATH',
+          'Erreur plus claire si le binaire OpenCode est manquant au démarrage',
+          'Chronologie du chat et sorties de commandes ; barre des fichiers affectés fixée au-dessus du composer',
+          'Le panneau de progression ne fuite plus entre les onglets — chaque chat garde son propre état',
+        ],
+      },
+      {
         version: 'v0.1.4',
         date: '30 juil. 2026',
         items: [
@@ -350,7 +434,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
         date: '28 juil. 2026',
         items: [
           'Textes espagnols de la landing : codear → codificar, refactorea → refactoriza',
-          'Un second workspace ne échoue plus si opencodePort est occupé — Cortex utilise le prochain port libre',
+          'Un second workspace n'échoue plus si opencodePort est occupé — Cortex utilise le prochain port libre',
           'Emplacement démo dans le hero de la landing (GIF/MP4 quand disponible ; placeholder en attendant)',
           'La démo portrait du hero n\'est plus rognée en 16:9',
           'Le header et le favicon de la landing utilisent le nouveau logo Cortex',
@@ -392,6 +476,27 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
+        version: 'v0.1.5',
+        date: '31. Jul 2026',
+        items: [
+          'Einen Chat aus dem Verlauf öffnen schließt das Cortex-Panel in Cursor nicht mehr',
+          'Quality (MiniLM): natives onnxruntime in ~/.cache (runtime-v2, nicht im VSIX); Freigabe-Ziel ≤~30 s',
+          'Quality: Senden gesperrt bis bereit (Meter am Button); kein stiller Leistungs-Fallback',
+          'Quality: Dateiänderungen re-embedden nur Betroffenes (kein Full-Reindex / %-Reset)',
+          'Docs: Quality-MiniLM-Cache, Sendesperre und inkrementeller Index in Config/Architektur dokumentiert',
+          'Quality MiniLM startet nach Chat-Freigabe — blockiert Onboarding/Boot nicht',
+          'MiniLM-Quality-Fortschritt in % in Statusleiste und Chat-Leiste',
+          'Onboarding-Assistent: Checkliste OpenCode CLI + API key mit Sprache und Kontextmodus',
+          'API key im Onboarding oder Connect einfügen — speichert in OpenCode auth.json, auch wenn der lokale Server noch nicht bereit ist',
+          'Chat ohne Projektordner — nutzt dein Home-Verzeichnis für allgemeine / Systemfragen',
+          'Windows: Pfad-Groß-/Kleinschreibung (C:\\ vs c:\\) blockiert Connect und Chat-Start nicht mehr',
+          'Windows: findet opencode.exe und nutzt den richtigen PATH-Trenner',
+          'Klarere Fehlermeldung, wenn die OpenCode-Binary beim Start fehlt',
+          'Chat-Chronologie und Befehlsausgaben; Affected-Files-Leiste über dem Composer',
+          'Fortschrittspanel bleibt nicht mehr in anderen Tabs hängen — jeder Chat speichert seinen eigenen Stand',
+        ],
+      },
+      {
         version: 'v0.1.4',
         date: '30. Juli 2026',
         items: [
@@ -432,7 +537,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
         items: [
           'Logo neben dem Titel "Cortex" in der Chat-Sidebar-Header',
           'Policy Brain: mehrschichtige Rules/Skills/Memory/Hooks (kompatibel mit .cursor/rules und .cortex/rules)',
-          'Policy Inspector, globale User Rules und integrierte Changelog-Gate',
+          'Policy Inspector, globale User Rules und integriertes Changelog-Gate',
           'Parallele Chat-Tabs vermischen keine Thinking-Spinner und keinen Stream-Fortschritt mehr zwischen Chats',
           'Undo/Reject/Restore Checkpoint machen nur das Delta dieses Chats rückgängig — nicht überlappende Edits anderer Chats bleiben',
           'Diff-Karten bleiben über der finalen Assistentenantwort (Edits während der Tools), nicht unter dem Zusammenfassungstext',
@@ -466,7 +571,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
         items: [
           'Sidebar-Chat mit OpenCode-Integration',
           'Lokale Workspace-Indexierung (auto/manuell)',
-          'Lexikalische Retrieval (TF·IDF + Path-Boost) mit Hash-Embeddings (optional MiniLM)',
+          'Lexikalisches Retrieval (TF·IDF + Path-Boost) mit Hash-Embeddings (optional MiniLM)',
           'Symbolbewusstes Chunking (LSP DocumentSymbol)',
           'Kontextvorschau in der UI',
           'Streaming-Antworten über OpenCode SSE',
@@ -486,6 +591,27 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     metaTitle: '変更履歴 — Cortex',
     title: '変更履歴',
     entries: [
+      {
+        version: 'v0.1.5',
+        date: '2026年7月31日',
+        items: [
+          '履歴からチャットを開いても Cursor で Cortex パネルが閉じなくなった',
+          'Quality（MiniLM）：~/.cache のネイティブ onnxruntime（runtime-v2、VSIX 非同梱）；解除目標 ≤約30秒',
+          'Quality: 準備まで送信ロック（送信ボタンがメーター）；高速への黙認フォールバックなし',
+          'Quality: 変更ファイルのみ再埋め込み（全体再インデックス／% リセットなし）',
+          'Docs: Quality MiniLM のキャッシュ・送信ゲート・増分インデックスを config/architecture に記載',
+          'Quality MiniLM はチャット解除後に開始 — オンボーディング／起動を凍結しない',
+          'Quality MiniLM の進捗を % でステータスバーとチャットに表示',
+          'オンボーディングウィザード：OpenCode CLI + API key のチェックリスト（言語・コンテキストモード付き）',
+          'オンボーディングまたは Connect で API key を貼り付け — ローカルサーバー未起動でも OpenCode の auth.json に保存',
+          'プロジェクトフォルダーなしでチャット — ホームディレクトリで一般／システム質問に対応',
+          'Windows：パスの大文字小文字差（C:\\ vs c:\\）で Connect / チャット起動が失敗しなくなった',
+          'Windows：opencode.exe を検出し、正しい PATH 区切りを使用',
+          '起動時に OpenCode バイナリが見つからない場合のエラー表示を改善',
+          'チャット時系列とコマンド出力；影響ファイルバーを composer 上に固定',
+          '進捗パネルがタブ間で漏れなくなりました — 各チャットが自身の状態をキャッシュ',
+        ],
+      },
       {
         version: 'v0.1.4',
         date: '2026年7月30日',
@@ -581,6 +707,27 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     metaTitle: '更新日志 — Cortex',
     title: '更新日志',
     entries: [
+      {
+        version: 'v0.1.5',
+        date: '2026年7月31日',
+        items: [
+          '从历史打开聊天时，Cursor 中不再关闭 Cortex 面板',
+          'Quality（MiniLM）：~/.cache 原生 onnxruntime（runtime-v2，不进 VSIX）；目标约 ≤30 秒解锁',
+          'Quality：就绪前锁定发送（发送按钮为进度环）；不会静默回退性能模式',
+          'Quality：仅对改动文件重新嵌入（无全量重建 / % 重置）',
+          'Docs：配置/架构文档补充 Quality MiniLM 缓存、发送门控与增量索引',
+          'Quality MiniLM 在聊天解锁后启动 — 不冻结引导/启动',
+          'Quality MiniLM 进度以 % 显示在状态栏与聊天工具栏',
+          '引导向导：OpenCode CLI + API key 检查清单（含语言与上下文模式）',
+          '在引导或 Connect 中粘贴 API key — 即使本地服务器尚未就绪也会写入 OpenCode auth.json',
+          '无需打开项目文件夹即可聊天 — 使用用户主目录处理一般 / 系统问题',
+          'Windows：路径大小写差异（C:\\ vs c:\\）不再阻断 Connect 或聊天启动',
+          'Windows：可发现 opencode.exe，并使用正确的 PATH 分隔符',
+          '启动时缺少 OpenCode 二进制时的错误提示更清晰',
+          '聊天时间线与命令输出；受影响文件栏固定在输入框上方',
+          '进度面板不再跨标签页残留 — 每个聊天缓存自己的进度状态',
+        ],
+      },
       {
         version: 'v0.1.4',
         date: '2026年7月30日',

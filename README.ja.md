@@ -12,7 +12,7 @@ Cortex は [OpenCode](https://opencode.ai) をアジェンティックランタ�
 - **あなたの OpenCode モデル** — OpenCode サブスクリプションで利用可能な任意のモデルを選択
 - **スマートコンテキスト** — コードベースに対するレキシカル＋セマンティック検索
 - **インラインdiff** — 差分プレビュー付きで提案を承認/却下
-- **右側エディタパネルのチャット** — 履歴、ツールタイムライン、並列タブ
+- **右側エディタパネルのチャット** — 履歴、ツールタイムライン、並列タブ；プロジェクトフォルダーの有無どちらでも可（一般的な質問はホーム）
 - **あなたのエディタ** — VS Code または互換フォーク；OpenCode の課金は Cortex の外
 
 ## インストール
@@ -25,7 +25,7 @@ code --install-extension cortex-labs.cortex-agent
 ovsx install cortex-labs.cortex-agent
 ```
 
-または拡張機能で **Cortex Agent** を検索してください。
+または拡張機能で **Cortex Agent** を検索してください。初回起動：OpenCode CLI を入れ、オンボーディングまたは Connect で API key を貼り付け（サーバー未起動でも OpenCode のローカル認証に保存されます）。
 
 ## 開発
 

@@ -12,7 +12,7 @@ Cortex is a VS Code extension that integrates [OpenCode](https://opencode.ai) as
 - **Your OpenCode models** — pick any model available on your OpenCode subscription
 - **Smart context** — lexical + semantic search over your codebase
 - **Inline diffs** — accept/reject suggestions with diff preview
-- **Chat as a right editor panel** — history, tool timeline, parallel tabs
+- **Chat as a right editor panel** — history, tool timeline, parallel tabs; works with or without a project folder (home directory for general questions)
 - **Your editor** — VS Code or any compatible fork; OpenCode billing stays outside Cortex
 
 ## Install
@@ -25,7 +25,7 @@ code --install-extension cortex-labs.cortex-agent
 ovsx install cortex-labs.cortex-agent
 ```
 
-Or search **Cortex Agent** in Extensions.
+Or search **Cortex Agent** in Extensions. First run: install the OpenCode CLI, paste your API key in onboarding or Connect (saved to OpenCode’s local auth even before the server is up).
 
 ## Development
 

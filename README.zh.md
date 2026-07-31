@@ -12,7 +12,7 @@ Cortex 是一个将 [OpenCode](https://opencode.ai) 作为代理运行时集成�
 - **你的 OpenCode 模型** — 选择 OpenCode 订阅中可用的任意模型
 - **智能上下文** — 对代码库进行词法 + 语义搜索
 - **内联差异** — 接受/拒绝建议并预览差异
-- **右侧编辑器面板中的聊天** — 历史记录、工具时间线、并行标签
+- **右侧编辑器面板中的聊天** — 历史记录、工具时间线、并行标签；有无项目文件夹均可（一般问题使用用户主目录）
 - **你的编辑器** — VS Code 或任何兼容分支；OpenCode 账单独立于 Cortex
 
 ## 安装
@@ -25,7 +25,7 @@ code --install-extension cortex-labs.cortex-agent
 ovsx install cortex-labs.cortex-agent
 ```
 
-或在扩展中搜索 **Cortex Agent**。
+或在扩展中搜索 **Cortex Agent**。首次运行：安装 OpenCode CLI，在引导或 Connect 中粘贴 API key（即使服务器尚未就绪也会写入 OpenCode 本地认证）。
 
 ## 开发
 
