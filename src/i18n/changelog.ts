@@ -12,6 +12,13 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
+        version: 'v0.2.2',
+        date: 'Aug 3, 2026',
+        items: [
+          'Tool hang watchdog no longer aborts while waiting on question cards or bash permission prompts',
+        ],
+      },
+      {
         version: 'v0.2.1',
         date: 'Aug 3, 2026',
         items: [
@@ -189,6 +196,13 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
+        version: 'v0.2.2',
+        date: 'Aug 3, 2026',
+        items: [
+          'El watchdog de tools colgados ya no aborta mientras esperas cards de pregunta o permisos de bash',
+        ],
+      },
+      {
         version: 'v0.2.1',
         date: 'Aug 3, 2026',
         items: [
@@ -364,6 +378,13 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     metaTitle: 'Changelog — Cortex',
     title: 'Changelog',
     entries: [
+      {
+        version: 'v0.2.2',
+        date: 'Aug 3, 2026',
+        items: [
+          'O watchdog de tools presos já não aborta enquanto esperas cards de pergunta ou pedidos de permissão bash',
+        ],
+      },
       {
         version: 'v0.2.1',
         date: 'Aug 3, 2026',
@@ -542,6 +563,13 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
+        version: 'v0.2.2',
+        date: 'Aug 3, 2026',
+        items: [
+          'Le watchdog des tools bloqués n’abandonne plus pendant l’attente des cartes question ou des permissions bash',
+        ],
+      },
+      {
         version: 'v0.2.1',
         date: 'Aug 3, 2026',
         items: [
@@ -718,6 +746,13 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     metaTitle: 'Changelog — Cortex',
     title: 'Changelog',
     entries: [
+      {
+        version: 'v0.2.2',
+        date: 'Aug 3, 2026',
+        items: [
+          'Tool-Hang-Watchdog bricht nicht mehr ab, während Frage-Karten oder Bash-Berechtigungen warten',
+        ],
+      },
       {
         version: 'v0.2.1',
         date: 'Aug 3, 2026',
@@ -896,6 +931,13 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: '変更履歴',
     entries: [
       {
+        version: 'v0.2.2',
+        date: 'Aug 3, 2026',
+        items: [
+          'ツールハング監視は質問カードや bash 権限の待機中に中断しなくなりました',
+        ],
+      },
+      {
         version: 'v0.2.1',
         date: 'Aug 3, 2026',
         items: [
@@ -1072,6 +1114,13 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     metaTitle: '更新日志 — Cortex',
     title: '更新日志',
     entries: [
+      {
+        version: 'v0.2.2',
+        date: 'Aug 3, 2026',
+        items: [
+          '工具卡住看门狗在等待问题卡片或 bash 权限时不再中止',
+        ],
+      },
       {
         version: 'v0.2.1',
         date: 'Aug 3, 2026',
