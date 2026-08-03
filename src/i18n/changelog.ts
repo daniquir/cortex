@@ -12,6 +12,13 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
+        version: 'v0.2.1',
+        date: 'Aug 3, 2026',
+        items: [
+          'New session watermark: OpenCode Desktop Inter font + Cortex logo behind Cortex/opencode; empty composer lower, brand stays upper; boot and empty share the same layers (no resize jump)',
+        ],
+      },
+      {
         version: 'v0.2.0',
         date: 'Aug 3, 2026',
         items: [
@@ -182,6 +189,13 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
+        version: 'v0.2.1',
+        date: 'Aug 3, 2026',
+        items: [
+          'Marca de nueva sesión: fuente Inter de OpenCode Desktop + logo Cortex detrás de Cortex/opencode; composer vacío más abajo, marca arriba; boot y vacío comparten capas (sin salto de tamaño)',
+        ],
+      },
+      {
         version: 'v0.2.0',
         date: 'Aug 3, 2026',
         items: [
@@ -350,6 +364,13 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     metaTitle: 'Changelog — Cortex',
     title: 'Changelog',
     entries: [
+      {
+        version: 'v0.2.1',
+        date: 'Aug 3, 2026',
+        items: [
+          'Marca de nova sessão: fonte Inter do OpenCode Desktop + logo Cortex atrás de Cortex/opencode; composer vazio mais abaixo, marca em cima; boot e vazio partilham camadas (sem salto de tamanho)',
+        ],
+      },
       {
         version: 'v0.2.0',
         date: 'Aug 3, 2026',
@@ -521,6 +542,13 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
+        version: 'v0.2.1',
+        date: 'Aug 3, 2026',
+        items: [
+          'Filigrane nouvelle session : police Inter OpenCode Desktop + logo Cortex derrière Cortex/opencode ; composer vide plus bas, marque en haut ; boot et vide partagent les mêmes calques (sans saut de taille)',
+        ],
+      },
+      {
         version: 'v0.2.0',
         date: 'Aug 3, 2026',
         items: [
@@ -690,6 +718,13 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     metaTitle: 'Changelog — Cortex',
     title: 'Changelog',
     entries: [
+      {
+        version: 'v0.2.1',
+        date: 'Aug 3, 2026',
+        items: [
+          'Neue-Session-Wasserzeichen: OpenCode-Desktop-Inter-Schrift + Cortex-Logo hinter Cortex/opencode; leerer Composer tiefer, Marke oben; Boot und Leerzustand teilen dieselben Ebenen (kein Größensprung)',
+        ],
+      },
       {
         version: 'v0.2.0',
         date: 'Aug 3, 2026',
@@ -861,6 +896,13 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: '変更履歴',
     entries: [
       {
+        version: 'v0.2.1',
+        date: 'Aug 3, 2026',
+        items: [
+          '新規セッションの透かし: OpenCode Desktop の Inter フォント + Cortex/opencode の背後に Cortex ロゴ。空の Composer は下、ブランドは上。boot と空状態で同じレイヤーを共有（サイズジャンプなし）',
+        ],
+      },
+      {
         version: 'v0.2.0',
         date: 'Aug 3, 2026',
         items: [
@@ -1030,6 +1072,13 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     metaTitle: '更新日志 — Cortex',
     title: '更新日志',
     entries: [
+      {
+        version: 'v0.2.1',
+        date: 'Aug 3, 2026',
+        items: [
+          '新会话水印：OpenCode Desktop 的 Inter 字体 + Cortex/opencode 背后的 Cortex 标志；空会话输入框靠下、品牌靠上；boot 与空状态共用同一图层（无尺寸跳动）',
+        ],
+      },
       {
         version: 'v0.2.0',
         date: 'Aug 3, 2026',
