@@ -16,6 +16,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
         date: 'Aug 3, 2026',
         items: [
           'Tool hang watchdog no longer aborts while waiting on question cards or bash permission prompts',
+          'Hardware fit tip for Performance/Quality: detects RAM/CPU, shows if Quality (~150 MB MiniLM) suits this machine, caps embed concurrency on tighter PCs',
         ],
       },
       {
@@ -200,6 +201,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
         date: 'Aug 3, 2026',
         items: [
           'El watchdog de tools colgados ya no aborta mientras esperas cards de pregunta o permisos de bash',
+          'Aviso de aptitud de hardware para Rendimiento/Calidad: detecta RAM/CPU, indica si Calidad (~150 MB MiniLM) va bien, y limita la concurrencia en PCs justos',
         ],
       },
       {
@@ -383,6 +385,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
         date: 'Aug 3, 2026',
         items: [
           'O watchdog de tools presos já não aborta enquanto esperas cards de pergunta ou pedidos de permissão bash',
+          'Dica de aptidão de hardware para Desempenho/Qualidade: deteta RAM/CPU, indica se Qualidade (~150 MB MiniLM) serve, e limita concorrência em PCs justos',
         ],
       },
       {
@@ -567,6 +570,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
         date: 'Aug 3, 2026',
         items: [
           'Le watchdog des tools bloqués n’abandonne plus pendant l’attente des cartes question ou des permissions bash',
+          'Indication d’aptitude matérielle Performance/Qualité : détecte RAM/CPU, indique si Qualité (~150 Mo MiniLM) convient, plafonne la concurrence sur les machines justes',
         ],
       },
       {
@@ -751,6 +755,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
         date: 'Aug 3, 2026',
         items: [
           'Tool-Hang-Watchdog bricht nicht mehr ab, während Frage-Karten oder Bash-Berechtigungen warten',
+          'Hardware-Eignungshinweis für Leistung/Qualität: erkennt RAM/CPU, zeigt ob Qualität (~150 MB MiniLM) passt, begrenzt Parallelität auf knappen Rechnern',
         ],
       },
       {
@@ -935,6 +940,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
         date: 'Aug 3, 2026',
         items: [
           'ツールハング監視は質問カードや bash 権限の待機中に中断しなくなりました',
+          '高速/品質のハードウェア適性ヒント: RAM/CPU を検出し、品質（MiniLM 約150MB）が向くか表示。余裕の少ない PC では埋め込み並列を制限',
         ],
       },
       {
@@ -1119,6 +1125,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
         date: 'Aug 3, 2026',
         items: [
           '工具卡住看门狗在等待问题卡片或 bash 权限时不再中止',
+          '性能/质量的硬件适配提示：检测内存/CPU，显示本机是否适合质量（MiniLM 约150MB），并在紧张机器上限制嵌入并发',
         ],
       },
       {
