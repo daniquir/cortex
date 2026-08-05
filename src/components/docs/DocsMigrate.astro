@@ -1,0 +1,49 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getDocs } from '../../i18n/docs';
+import type { Lang } from '../../i18n/translations';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const d = getDocs(lang);
+---
+<Layout title={d.migrateMetaTitle} lang={lang}>
+  <h1>{d.migrateTitle}</h1>
+  <p class="intro">{d.migrateIntro}</p>
+
+  {d.migrateSections.map((section) => (
+    <section class="migrate-section">
+      <h2>{section.title}</h2>
+      <ul>
+        {section.items.map((item) => <li>{item}</li>)}
+      </ul>
+    </section>
+  ))}
+</Layout>
+
+<style>
+  h1 { margin-top: 3rem; margin-bottom: 0.75rem; }
+  .intro {
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+    max-width: 48rem;
+    line-height: 1.55;
+  }
+  .migrate-section {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .migrate-section h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+  ul {
+    margin-left: 1.5rem;
+    color: var(--text-muted);
+  }
+  li { margin-bottom: 0.45rem; line-height: 1.5; }
+</style>

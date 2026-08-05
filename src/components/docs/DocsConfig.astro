@@ -51,6 +51,24 @@ const d = getDocs(lang);
     </tbody>
   </table>
 
+  <h2>{d.configCommands}</h2>
+  <p>{d.configCommandsIntro}</p>
+  <table>
+    <thead>
+      <tr>
+        {d.configCommandHeaders.map((h) => <th>{h}</th>)}
+      </tr>
+    </thead>
+    <tbody>
+      {d.configCommandRows.map((row) => (
+        <tr>
+          <td><code>{row.command}</code></td>
+          <td>{row.desc}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+
   <h2>{d.configModels}</h2>
   <p>{d.configModelsIntro}</p>
   <ul>

@@ -18,6 +18,7 @@ interface Translations {
   metaDesc: string;
   navDocs: string;
   navChangelog: string;
+  navCompare: string;
   // Hero
   badge: string;
   tagline: string;
@@ -49,6 +50,7 @@ const translations: Record<Lang, Translations> = {
     metaDesc: 'Cortex — Agentic AI coding in VS Code with OpenCode',
     navDocs: 'Docs',
     navChangelog: 'Changelog',
+    navCompare: 'Compare',
     badge: 'Early access for VS Code',
     tagline: 'Cursor-class agents in your VS Code — Auto routes models and Plan/Build, powered by your OpenCode subscription.',
     ctaInstall: 'Install from Marketplace',
@@ -98,6 +100,7 @@ const translations: Record<Lang, Translations> = {
     metaDesc: 'Cortex — Agentic AI coding en VS Code con OpenCode',
     navDocs: 'Docs',
     navChangelog: 'Changelog',
+    navCompare: 'Comparar',
     badge: 'Acceso anticipado para VS Code',
     tagline: 'Agentes de nivel Cursor en tu VS Code — Auto elige los modelos y Plan/Build, impulsado por tu suscripción de OpenCode.',
     ctaInstall: 'Instalar desde Marketplace',
@@ -147,6 +150,7 @@ const translations: Record<Lang, Translations> = {
     metaDesc: 'Cortex — Agentic AI coding no VS Code com OpenCode',
     navDocs: 'Docs',
     navChangelog: 'Changelog',
+    navCompare: 'Comparar',
     badge: 'Acesso antecipado para VS Code',
     tagline: 'Agentes de nível Cursor no seu VS Code — Auto escolhe modelos e Plan/Build, com a sua assinatura OpenCode.',
     ctaInstall: 'Instalar da Marketplace',
@@ -196,6 +200,7 @@ const translations: Record<Lang, Translations> = {
     metaDesc: 'Cortex — Agentic AI coding dans VS Code avec OpenCode',
     navDocs: 'Docs',
     navChangelog: 'Changelog',
+    navCompare: 'Comparer',
     badge: 'Accès anticipé pour VS Code',
     tagline: 'Des agents de niveau Cursor dans votre VS Code — Auto choisit modèles et Plan/Build, alimenté par votre abonnement OpenCode.',
     ctaInstall: 'Installer depuis la Marketplace',
@@ -245,6 +250,7 @@ const translations: Record<Lang, Translations> = {
     metaDesc: 'Cortex — Agentic AI Coding in VS Code mit OpenCode',
     navDocs: 'Docs',
     navChangelog: 'Changelog',
+    navCompare: 'Vergleich',
     badge: 'Early Access für VS Code',
     tagline: 'Cursor-Klasse Agents in Ihrem VS Code — Auto wählt Modelle und Plan/Build, mit Ihrem OpenCode-Abo.',
     ctaInstall: 'Vom Marketplace installieren',
@@ -294,6 +300,7 @@ const translations: Record<Lang, Translations> = {
     metaDesc: 'Cortex — OpenCodeでVS CodeにアジェンティックAIコーディング',
     navDocs: 'ドキュメント',
     navChangelog: '変更履歴',
+    navCompare: '比較',
     badge: 'VS Code向け早期アクセス',
     tagline: '自分のVS CodeでCursor級エージェント — AutoがモデルとPlan/Buildを選び、OpenCodeサブスクリプションで駆動。',
     ctaInstall: 'Marketplaceからインストール',
@@ -343,6 +350,7 @@ const translations: Record<Lang, Translations> = {
     metaDesc: 'Cortex — 通过 OpenCode 在 VS Code 中进行代理式 AI 编程',
     navDocs: '文档',
     navChangelog: '更新日志',
+    navCompare: '对比',
     badge: 'VS Code 抢先体验',
     tagline: '在你自己的 VS Code 中获得 Cursor 级代理 — Auto 路由模型与 Plan/Build，由你的 OpenCode 订阅驱动。',
     ctaInstall: '从 Marketplace 安装',
@@ -395,3 +403,4 @@ export function getT(lang: Lang): Translations {
 
 export { getDocs } from './docs';
 export { getChangelog } from './changelog';
+export { getCompare } from './compare';

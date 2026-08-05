@@ -1,0 +1,118 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCompare } from '../i18n/compare';
+import { langHref } from '../i18n/paths';
+import type { Lang } from '../i18n/translations';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const c = getCompare(lang);
+const [empty, ...cols] = c.headers;
+---
+<Layout title={c.metaTitle} lang={lang}>
+  <h1>{c.title}</h1>
+  <p class="intro">{c.intro}</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>{empty}</th>
+          {cols.map((h, i) => (
+            <th class={i === 0 ? 'highlight' : undefined}>{h}</th>
+          ))}
+        </tr>
+      </thead>
+      <tbody>
+        {c.rows.map((r) => (
+          <tr>
+            <td class="feature">{r.feature}</td>
+            <td class="highlight">{r.cortex}</td>
+            <td>{r.cursor}</td>
+            <td>{r.devin}</td>
+            <td>{r.zoo}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <p class="note">{c.note}</p>
+
+  <p class="ctas">
+    <a class="btn" href={langHref(lang, 'docs/')}>{c.ctaDocs}</a>
+    <a class="btn ghost" href={langHref(lang, 'docs/migrate/')}>{c.ctaMigrate}</a>
+  </p>
+</Layout>
+
+<style>
+  h1 { margin-top: 3rem; margin-bottom: 0.75rem; }
+  .intro {
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+    max-width: 52rem;
+    line-height: 1.55;
+  }
+  .table-wrap {
+    overflow-x: auto;
+    margin-bottom: 1.5rem;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    min-width: 720px;
+  }
+  th, td {
+    padding: 0.85rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  th {
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  th.highlight, td.highlight {
+    color: var(--accent);
+    font-weight: 600;
+  }
+  td.feature {
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .note {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    max-width: 48rem;
+  }
+  .ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 3rem;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.65rem 1.1rem;
+    border-radius: var(--radius);
+    background: var(--accent);
+    color: #0a0e12;
+    font-weight: 650;
+    text-decoration: none;
+  }
+  .btn.ghost {
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--border);
+  }
+  .btn.ghost:hover { border-color: var(--accent); }
+</style>
