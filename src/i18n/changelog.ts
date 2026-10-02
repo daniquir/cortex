@@ -12,6 +12,13 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
+        version: 'v1.0.1',
+        date: 'Oct 2, 2026',
+        items: [
+          'Fixed new chat tab showing the previous tab’s transcript on the first message',
+        ],
+      },
+      {
         version: 'v1.0.0',
         date: 'Aug 5, 2026',
         items: [
@@ -228,6 +235,13 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
+        version: 'v1.0.1',
+        date: 'Oct 2, 2026',
+        items: [
+          'Corregido: una pestaña de chat nueva ya no mezcla el historial de la pestaña anterior al enviar el primer mensaje',
+        ],
+      },
+      {
         version: 'v1.0.0',
         date: 'Aug 5, 2026',
         items: [
@@ -442,6 +456,13 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     metaTitle: 'Changelog — Cortex',
     title: 'Changelog',
     entries: [
+      {
+        version: 'v1.0.1',
+        date: 'Oct 2, 2026',
+        items: [
+          'Corrigido: uma nova aba de chat não mistura mais o histórico da aba anterior ao enviar a primeira mensagem',
+        ],
+      },
       {
         version: 'v1.0.0',
         date: 'Aug 5, 2026',
@@ -659,6 +680,13 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
+        version: 'v1.0.1',
+        date: 'Oct 2, 2026',
+        items: [
+          'Correction : un nouvel onglet de chat ne mélange plus l’historique de l’onglet précédent lors du premier message',
+        ],
+      },
+      {
         version: 'v1.0.0',
         date: 'Aug 5, 2026',
         items: [
@@ -874,6 +902,13 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     metaTitle: 'Changelog — Cortex',
     title: 'Changelog',
     entries: [
+      {
+        version: 'v1.0.1',
+        date: 'Oct 2, 2026',
+        items: [
+          'Behoben: Ein neuer Chat-Tab mischt beim ersten Senden nicht mehr den Verlauf des vorherigen Tabs',
+        ],
+      },
       {
         version: 'v1.0.0',
         date: 'Aug 5, 2026',
@@ -1091,6 +1126,13 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: '変更履歴',
     entries: [
       {
+        version: 'v1.0.1',
+        date: 'Oct 2, 2026',
+        items: [
+          '修正: 新しいチャットタブで最初のメッセージを送っても、前のタブの履歴が混ざらない',
+        ],
+      },
+      {
         version: 'v1.0.0',
         date: 'Aug 5, 2026',
         items: [
@@ -1306,6 +1348,13 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     metaTitle: '更新日志 — Cortex',
     title: '更新日志',
     entries: [
+      {
+        version: 'v1.0.1',
+        date: 'Oct 2, 2026',
+        items: [
+          '修复：新建聊天标签发送首条消息时不再混入上一标签的记录',
+        ],
+      },
       {
         version: 'v1.0.0',
         date: 'Aug 5, 2026',
