@@ -12,7 +12,7 @@ Cortex is a VS Code extension that integrates [OpenCode](https://opencode.ai) as
 - **Your OpenCode models** — pick any model available on your OpenCode subscription
 - **Smart context** — lexical + semantic search over your codebase
 - **Inline diffs** — accept/reject suggestions with diff preview
-- **Chat as a right editor panel** — history, tool timeline, parallel tabs; works with or without a project folder (home directory for general questions)
+- **Chat in the Activity Bar sidebar by default** — history, tool timeline, parallel tabs; set `cortex.chat.layout` to `editor` for the right editor tab. Works with or without a project folder (home directory for general questions)
 - **OpenCode themes + notifications** — desktop themes in chat, optional notifications and sounds
 - **Your editor** — VS Code or any compatible fork; OpenCode billing stays outside Cortex
 
