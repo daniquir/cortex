@@ -13,7 +13,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     entries: [
       {
         version: 'v1.0.1',
-        date: 'Oct 2, 2026',
+        date: 'Oct 3, 2026',
         items: [
           'Models/Providers sticky header blends with the Cortex theme (no hard grey box over the list)',
           'Chat timeline streaming patches assistant text in place (less flicker; OpenCode Desktop–aligned)',
@@ -245,7 +245,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     entries: [
       {
         version: 'v1.0.1',
-        date: 'Oct 2, 2026',
+        date: 'Oct 3, 2026',
         items: [
           'La cabecera fija de Modelos/Proveedores se funde con el tema Cortex (sin caja gris dura sobre la lista)',
           'El streaming del timeline parchea el texto del asistente in situ (menos parpadeo; alineado con OpenCode Desktop)',
@@ -476,7 +476,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     entries: [
       {
         version: 'v1.0.1',
-        date: 'Oct 2, 2026',
+        date: 'Oct 3, 2026',
         items: [
           'O cabeçalho fixo de Modelos/Provedores mistura-se ao tema Cortex (sem caixa cinza dura sobre a lista)',
           'O streaming do timeline atualiza o texto do assistente in-place (menos flicker; alinhado ao OpenCode Desktop)',
@@ -708,7 +708,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     entries: [
       {
         version: 'v1.0.1',
-        date: 'Oct 2, 2026',
+        date: 'Oct 3, 2026',
         items: [
           'L’en-tête sticky Modèles/Fournisseurs se fond dans le thème Cortex (plus de bandeau gris net)',
           'Le streaming du timeline met à jour le texte assistant sur place (moins de scintillement ; aligné OpenCode Desktop)',
@@ -940,7 +940,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     entries: [
       {
         version: 'v1.0.1',
-        date: 'Oct 2, 2026',
+        date: 'Oct 3, 2026',
         items: [
           'Sticky-Kopf von Modelle/Anbieter fügt sich in das Cortex-Theme ein (kein harter grauer Kasten)',
           'Timeline-Streaming patcht Assistententext an Ort und Stelle (weniger Flackern; OpenCode-Desktop-ähnlich)',
@@ -1172,7 +1172,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     entries: [
       {
         version: 'v1.0.1',
-        date: 'Oct 2, 2026',
+        date: 'Oct 3, 2026',
         items: [
           'Models/Providers のスティッキー見出しが Cortex テーマに馴染む（リスト上の硬いグレー枠を解消）',
           'チャットタイムラインのストリーミングはアシスタント文をその場で更新（ちらつき低減、OpenCode Desktop 準拠）',
@@ -1404,7 +1404,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     entries: [
       {
         version: 'v1.0.1',
-        date: 'Oct 2, 2026',
+        date: 'Oct 3, 2026',
         items: [
           '模型/提供商粘性标题与 Cortex 主题融合（不再出现硬灰块）',
           '聊天时间线流式输出就地更新助手文本（减少闪烁；对齐 OpenCode Desktop）',
