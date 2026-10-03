@@ -15,6 +15,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
         version: 'v1.0.1',
         date: 'Oct 2, 2026',
         items: [
+          'Models/Providers sticky header blends with the Cortex theme (no hard grey box over the list)',
           'Inactive OpenCode Go subscriptions no longer leave broken Go models in the picker (stale auth is revoked; falls back to Ollama / Zen)',
           'Local Ollama catalogs stay easier to find (expanded when small; sorted above the Zen/Go flood)',
           'Free/light-model upgrade hint only for OpenCode Zen free — not for Ollama or other local providers',
@@ -241,6 +242,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
         version: 'v1.0.1',
         date: 'Oct 2, 2026',
         items: [
+          'La cabecera fija de Modelos/Proveedores se funde con el tema Cortex (sin caja gris dura sobre la lista)',
           'Si cancelas OpenCode Go, ya no quedan modelos Go rotos en el selector (se revoca el auth stale; fallback a Ollama / Zen)',
           'Los catálogos locales de Ollama se encuentran más fácil (expandidos si son pequeños; por encima del diluvio Zen/Go)',
           'El aviso de modelo gratis/ligero solo para Zen free de OpenCode — no para Ollama ni otros proveedores locales',
@@ -466,6 +468,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
         version: 'v1.0.1',
         date: 'Oct 2, 2026',
         items: [
+          'O cabeçalho fixo de Modelos/Provedores mistura-se ao tema Cortex (sem caixa cinza dura sobre a lista)',
           'Assinaturas OpenCode Go inativas não deixam mais modelos Go quebrados no seletor (auth obsoleta é revogada; fallback para Ollama / Zen)',
           'Catálogos locais do Ollama ficam mais fáceis de achar (expandidos se forem pequenos; acima do dilúvio Zen/Go)',
           'Aviso de modelo grátis/leve só para Zen free do OpenCode — não para Ollama nem outros provedores locais',
@@ -692,6 +695,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
         version: 'v1.0.1',
         date: 'Oct 2, 2026',
         items: [
+          'L’en-tête sticky Modèles/Fournisseurs se fond dans le thème Cortex (plus de bandeau gris net)',
           'Un abonnement OpenCode Go inactif ne laisse plus de modèles Go cassés dans le sélecteur (auth obsolète révoquée ; repli sur Ollama / Zen)',
           'Les catalogues Ollama locaux sont plus faciles à trouver (ouverts s’ils sont petits ; au-dessus du flot Zen/Go)',
           'L’avertissement modèle gratuit/léger uniquement pour le Zen free OpenCode — pas pour Ollama ni d’autres fournisseurs locaux',
@@ -918,6 +922,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
         version: 'v1.0.1',
         date: 'Oct 2, 2026',
         items: [
+          'Sticky-Kopf von Modelle/Anbieter fügt sich in das Cortex-Theme ein (kein harter grauer Kasten)',
           'Inaktive OpenCode-Go-Abos hinterlassen keine kaputten Go-Modelle mehr im Picker (veraltete Auth wird widerrufen; Fallback auf Ollama / Zen)',
           'Lokale Ollama-Kataloge sind leichter zu finden (aufgeklappt wenn klein; über der Zen/Go-Flut)',
           'Hinweis zu kostenlosem/leichtem Modell nur für OpenCode Zen free — nicht für Ollama oder andere lokale Anbieter',
@@ -1144,6 +1149,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
         version: 'v1.0.1',
         date: 'Oct 2, 2026',
         items: [
+          'Models/Providers のスティッキー見出しが Cortex テーマに馴染む（リスト上の硬いグレー枠を解消）',
           '無効な OpenCode Go 契約で壊れた Go モデルがピッカーに残らない（古い認証を取り消し、Ollama / Zen にフォールバック）',
           'ローカル Ollama のカタログが見つけやすい（少数なら展開、Zen/Go の列の上に表示）',
           '無料／軽量モデルの注意は OpenCode Zen free のみ — Ollama などローカルには出さない',
@@ -1370,6 +1376,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
         version: 'v1.0.1',
         date: 'Oct 2, 2026',
         items: [
+          '模型/提供商粘性标题与 Cortex 主题融合（不再出现硬灰块）',
           '取消 OpenCode Go 后不再在选择器中留下失效的 Go 模型（撤销过期凭证；回退到 Ollama / Zen）',
           '本地 Ollama 目录更容易找到（模型少时展开；排在 Zen/Go 长列表之上）',
           '免费/轻量模型提示仅针对 OpenCode Zen 免费档 — 不针对 Ollama 等本地提供商',
