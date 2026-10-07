@@ -18,6 +18,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
           'Picking a local Ollama (or other) model no longer falsely reports “provider not responding” on cold/slow load — select uses a soft check; live test stays on Probar',
           'Project analysis asks investigate like OpenCode /init (read package.json, CI, tests) instead of inventing generic stacks; soft RAG skips vague/stopword-only queries',
           'Multi-folder VS Code workspaces: agent cwd follows the active editor folder; sibling folders are listed as references the agent can read with tools',
+          'Plan mode: generic improvement answers are not auto-saved unless the agent explored the repo with read/search tools first',
         ],
       },
       {
@@ -259,6 +260,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
           'Elegir un modelo Ollama local (u otro) ya no marca falsamente “el proveedor no responde” en carga en frío/lenta — la selección usa una comprobación suave; la prueba en vivo queda en Probar',
           'Las preguntas de análisis del proyecto investigan como OpenCode /init (package.json, CI, tests) en lugar de inventar stacks genéricos; el RAG suave omite consultas vagas/solo stopwords',
           'Workspaces VS Code con varias carpetas: el cwd del agente sigue la del editor activo; las carpetas hermanas se listan como references legibles con tools',
+          'Modo Plan: no se guarda un plan genérico de mejoras si el agente no exploró el repo con herramientas de lectura/búsqueda',
         ],
       },
       {
@@ -499,6 +501,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
           'Escolher um modelo Ollama local (ou outro) já não reporta falsamente “fornecedor não responde” em carga fria/lenta — a seleção usa verificação suave; o teste ao vivo fica no Probar',
           'Perguntas de análise do projeto investigam como o OpenCode /init (package.json, CI, tests) em vez de inventar stacks genéricos; o RAG suave ignora consultas vagas/só stopwords',
           'Workspaces VS Code com várias pastas: o cwd do agente segue a pasta do editor ativo; pastas irmãs listam-se como references legíveis com tools',
+          'Modo Plan: respostas genéricas de melhoria não são guardadas automaticamente sem exploração do repo com ferramentas de leitura/pesquisa',
         ],
       },
       {
@@ -740,6 +743,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
           'Choisir un modèle Ollama local (ou autre) ne signale plus à tort « le fournisseur ne répond pas » au démarrage à froid/lent — la sélection utilise une vérif douce ; le test live reste sur Probar',
           'Les questions d’analyse projet enquêtent comme OpenCode /init (package.json, CI, tests) au lieu d’inventer des stacks génériques ; le RAG doux ignore les requêtes vagues/stopwords',
           'Workspaces VS Code multi-dossiers : le cwd de l’agent suit le dossier de l’éditeur actif ; les dossiers frères sont listés comme references lisibles via tools',
+          'Mode Plan : les réponses génériques d’amélioration ne sont pas enregistrées sans exploration du dépôt via outils lecture/recherche',
         ],
       },
       {
@@ -981,6 +985,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
           'Die Wahl eines lokalen Ollama- (oder anderen) Modells meldet bei kaltem/langsamem Start nicht mehr fälschlich „Anbieter antwortet nicht“ — Auswahl prüft soft; Live-Test bleibt bei Probar',
           'Projektanalyse fragt wie OpenCode /init nach (package.json, CI, Tests) statt generischer Stacks; weiches RAG überspringt vage/Stopwort-Queries',
           'VS-Code-Workspaces mit mehreren Ordnern: Agent-Cwd folgt dem aktiven Editor-Ordner; Geschwisterordner erscheinen als tool-lesbare References',
+          'Plan-Modus: generische Verbesserungsantworten werden nicht gespeichert, wenn der Agent das Repo nicht mit Lese-/Suchtools erkundet hat',
         ],
       },
       {
@@ -1222,6 +1227,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
           'ローカル Ollama（など）のモデル選択時、コールド/低速起動で誤って「プロバイダーが応答しません」と出ない — 選択はソフト確認、ライブテストは Probar のみ',
           'プロジェクト分析は OpenCode /init と同様に package.json・CI・テストを調べ、汎用スタックの捏造を避ける。曖昧/ストップワードだけのクエリはソフト RAG をスキップ',
           'VS Code の複数フォルダワークスペース: エージェントの cwd はアクティブエディタのフォルダに追随。兄弟フォルダは tools で読める references として提示',
+          'Plan モード: read/検索ツールでリポジトリを調べていない一般的な改善回答は自動保存されません',
         ],
       },
       {
@@ -1463,6 +1469,7 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
           '选择本地 Ollama（或其他）模型时，冷启动/较慢加载不再误报“提供商无响应”——选择使用软检查；实时测试仍在 Probar',
           '项目分析按 OpenCode /init 方式先查 package.json、CI、测试，避免凭空堆栈；模糊/仅停用词查询会跳过软 RAG',
           'VS Code 多文件夹工作区：代理 cwd 跟随活动编辑器文件夹；兄弟文件夹以可工具读取的 references 列出',
+          'Plan 模式：若代理未用 read/搜索 工具探索仓库，不会自动保存泛泛的改进计划',
         ],
       },
       {
