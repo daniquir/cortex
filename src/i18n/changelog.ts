@@ -12,6 +12,13 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
+        version: 'v1.0.2',
+        date: 'Oct 7, 2026',
+        items: [
+          'Picking a local Ollama (or other) model no longer falsely reports “provider not responding” on cold/slow load — select uses a soft check; live test stays on Probar',
+        ],
+      },
+      {
         version: 'v1.0.1',
         date: 'Oct 3, 2026',
         items: [
@@ -244,6 +251,13 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
+        version: 'v1.0.2',
+        date: 'Oct 7, 2026',
+        items: [
+          'Elegir un modelo Ollama local (u otro) ya no marca falsamente “el proveedor no responde” en carga en frío/lenta — la selección usa una comprobación suave; la prueba en vivo queda en Probar',
+        ],
+      },
+      {
         version: 'v1.0.1',
         date: 'Oct 3, 2026',
         items: [
@@ -474,6 +488,13 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     metaTitle: 'Changelog — Cortex',
     title: 'Changelog',
     entries: [
+      {
+        version: 'v1.0.2',
+        date: 'Oct 7, 2026',
+        items: [
+          'Escolher um modelo Ollama local (ou outro) já não reporta falsamente “fornecedor não responde” em carga fria/lenta — a seleção usa verificação suave; o teste ao vivo fica no Probar',
+        ],
+      },
       {
         version: 'v1.0.1',
         date: 'Oct 3, 2026',
@@ -707,6 +728,13 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
+        version: 'v1.0.2',
+        date: 'Oct 7, 2026',
+        items: [
+          'Choisir un modèle Ollama local (ou autre) ne signale plus à tort « le fournisseur ne répond pas » au démarrage à froid/lent — la sélection utilise une vérif douce ; le test live reste sur Probar',
+        ],
+      },
+      {
         version: 'v1.0.1',
         date: 'Oct 3, 2026',
         items: [
@@ -938,6 +966,13 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     metaTitle: 'Changelog — Cortex',
     title: 'Changelog',
     entries: [
+      {
+        version: 'v1.0.2',
+        date: 'Oct 7, 2026',
+        items: [
+          'Die Wahl eines lokalen Ollama- (oder anderen) Modells meldet bei kaltem/langsamem Start nicht mehr fälschlich „Anbieter antwortet nicht“ — Auswahl prüft soft; Live-Test bleibt bei Probar',
+        ],
+      },
       {
         version: 'v1.0.1',
         date: 'Oct 3, 2026',
@@ -1171,6 +1206,13 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: '変更履歴',
     entries: [
       {
+        version: 'v1.0.2',
+        date: 'Oct 7, 2026',
+        items: [
+          'ローカル Ollama（など）のモデル選択時、コールド/低速起動で誤って「プロバイダーが応答しません」と出ない — 選択はソフト確認、ライブテストは Probar のみ',
+        ],
+      },
+      {
         version: 'v1.0.1',
         date: 'Oct 3, 2026',
         items: [
@@ -1402,6 +1444,13 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     metaTitle: '更新日志 — Cortex',
     title: '更新日志',
     entries: [
+      {
+        version: 'v1.0.2',
+        date: 'Oct 7, 2026',
+        items: [
+          '选择本地 Ollama（或其他）模型时，冷启动/较慢加载不再误报“提供商无响应”——选择使用软检查；实时测试仍在 Probar',
+        ],
+      },
       {
         version: 'v1.0.1',
         date: 'Oct 3, 2026',
