@@ -12,13 +12,13 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
-        version: 'v1.0.2',
-        date: 'Oct 7, 2026',
+        version: 'v2.0.0',
+        date: 'Oct 19, 2026',
         items: [
+          'Breaking: Cortex 2.0 requires OpenCode CLI ≥ 2.0 (V2 API only) — upgrade at opencode.ai before updating; OpenCode 1.x is no longer supported',
           'Follow-up delivery (steer/queue), session archive/fork, MCP·skills·plugins panel, saved permissions matrix, and multi-account switch on Providers (OpenCode V2 Wave 1)',
           'Worktrees in Settings; OpenCode server pairing codes on Servers; session cost in the context meter (OpenCode V2 Wave 2)',
           'Websearch providers in the MCP panel; Background tools moves foreground tools to background observation (OpenCode V2 Wave 3)',
-          'Requires OpenCode CLI ≥ 2.0 (V2 API only) — install/upgrade via opencode.ai; Cortex no longer speaks OpenCode 1.x',
           'Permission prompts, question forms, and undo align with the OpenCode V2 protocol (action/resources, form answers, revert stage/commit)',
           'Picking a local Ollama (or other) model no longer falsely reports “provider not responding” on cold/slow load — select uses a soft check; live test stays on Probar',
           'Project analysis asks investigate like OpenCode /init (read package.json, CI, tests) instead of inventing generic stacks; soft RAG skips vague/stopword-only queries',
@@ -259,13 +259,13 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
-        version: 'v1.0.2',
-        date: 'Oct 7, 2026',
+        version: 'v2.0.0',
+        date: 'Oct 19, 2026',
         items: [
+          'Breaking: Cortex 2.0 requiere OpenCode CLI ≥ 2.0 (solo API V2) — actualiza en opencode.ai antes de actualizar la extensión; OpenCode 1.x ya no es compatible',
           'Entrega de seguimiento (steer/queue), archivar/bifurcar sesiones, panel MCP·skills·plugins, matriz de permisos guardados y cambio multi-cuenta en Providers (OpenCode V2 Wave 1)',
           'Worktrees en Ajustes; códigos de emparejamiento de servidor OpenCode en Servers; coste de sesión en el medidor de contexto (OpenCode V2 Wave 2)',
           'Proveedores de websearch en el panel MCP; Background tools pasa herramientas en primer plano a observación en segundo plano (OpenCode V2 Wave 3)',
-          'Requiere OpenCode CLI ≥ 2.0 (solo API V2) — instala/actualiza en opencode.ai; Cortex ya no habla OpenCode 1.x',
           'Permisos, formularios de preguntas y deshacer alineados con el protocolo OpenCode V2 (action/resources, respuestas de form, revert stage/commit)',
           'Elegir un modelo Ollama local (u otro) ya no marca falsamente “el proveedor no responde” en carga en frío/lenta — la selección usa una comprobación suave; la prueba en vivo queda en Probar',
           'Las preguntas de análisis del proyecto investigan como OpenCode /init (package.json, CI, tests) en lugar de inventar stacks genéricos; el RAG suave omite consultas vagas/solo stopwords',
@@ -505,13 +505,13 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
-        version: 'v1.0.2',
-        date: 'Oct 7, 2026',
+        version: 'v2.0.0',
+        date: 'Oct 19, 2026',
         items: [
+          'Breaking: Cortex 2.0 requer OpenCode CLI ≥ 2.0 (somente API V2) — atualize em opencode.ai antes de atualizar a extensão; OpenCode 1.x deixou de ser suportado',
           'Entrega de follow-up (steer/queue), arquivar/bifurcar sessões, painel MCP·skills·plugins, matriz de permissões salvas e troca multi-conta em Providers (OpenCode V2 Wave 1)',
           'Worktrees em Definições; códigos de emparelhamento de servidor OpenCode em Servers; custo da sessão no medidor de contexto (OpenCode V2 Wave 2)',
           'Fornecedores de websearch no painel MCP; Background tools move ferramentas em primeiro plano para observação em segundo plano (OpenCode V2 Wave 3)',
-          'Requer OpenCode CLI ≥ 2.0 (somente API V2) — instale/atualize em opencode.ai; o Cortex não fala mais OpenCode 1.x',
           'Pedidos de permissão, formulários de perguntas e undo alinhados ao protocolo OpenCode V2 (action/resources, respostas de form, revert stage/commit)',
           'Escolher um modelo Ollama local (ou outro) já não reporta falsamente “fornecedor não responde” em carga fria/lenta — a seleção usa verificação suave; o teste ao vivo fica no Probar',
           'Perguntas de análise do projeto investigam como o OpenCode /init (package.json, CI, tests) em vez de inventar stacks genéricos; o RAG suave ignora consultas vagas/só stopwords',
@@ -752,13 +752,13 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
-        version: 'v1.0.2',
-        date: 'Oct 7, 2026',
+        version: 'v2.0.0',
+        date: 'Oct 19, 2026',
         items: [
+          'Breaking : Cortex 2.0 nécessite OpenCode CLI ≥ 2.0 (API V2 uniquement) — mettez à jour via opencode.ai avant l’extension ; OpenCode 1.x n’est plus pris en charge',
           'Livraison de suivi (steer/queue), archivage/fork de sessions, panneau MCP·skills·plugins, matrice de permissions enregistrées et bascule multi-compte dans Providers (OpenCode V2 Wave 1)',
           'Worktrees dans Réglages; codes d’appariement serveur OpenCode dans Servers; coût de session dans le compteur de contexte (OpenCode V2 Wave 2)',
           'Fournisseurs websearch dans le panneau MCP; Background tools déplace les outils au premier plan en observation d’arrière-plan (OpenCode V2 Wave 3)',
-          'Nécessite OpenCode CLI ≥ 2.0 (API V2 uniquement) — installer/mettre à jour via opencode.ai ; Cortex ne parle plus OpenCode 1.x',
           'Invites de permission, formulaires de questions et undo alignés sur le protocole OpenCode V2 (action/resources, réponses de form, revert stage/commit)',
           'Choisir un modèle Ollama local (ou autre) ne signale plus à tort « le fournisseur ne répond pas » au démarrage à froid/lent — la sélection utilise une vérif douce ; le test live reste sur Probar',
           'Les questions d’analyse projet enquêtent comme OpenCode /init (package.json, CI, tests) au lieu d’inventer des stacks génériques ; le RAG doux ignore les requêtes vagues/stopwords',
@@ -999,13 +999,13 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: 'Changelog',
     entries: [
       {
-        version: 'v1.0.2',
-        date: 'Oct 7, 2026',
+        version: 'v2.0.0',
+        date: 'Oct 19, 2026',
         items: [
+          'Breaking: Cortex 2.0 benötigt OpenCode CLI ≥ 2.0 (nur V2-API) — vor dem Extension-Update über opencode.ai aktualisieren; OpenCode 1.x wird nicht mehr unterstützt',
           'Follow-up-Zustellung (steer/queue), Sitzungen archivieren/forken, MCP·Skills·Plugins-Panel, gespeicherte Berechtigungsmatrix und Multi-Account-Wechsel unter Providers (OpenCode V2 Wave 1)',
           'Worktrees in Einstellungen; OpenCode-Server-Kopplungscodes unter Servers; Sitzungskosten im Kontext-Zähler (OpenCode V2 Wave 2)',
           'Websearch-Anbieter im MCP-Panel; Background tools verschiebt Vordergrund-Tools in die Hintergrundbeobachtung (OpenCode V2 Wave 3)',
-          'Benötigt OpenCode CLI ≥ 2.0 (nur V2-API) — Installation/Update über opencode.ai; Cortex spricht kein OpenCode 1.x mehr',
           'Berechtigungsdialoge, Frageformulare und Undo am OpenCode-V2-Protokoll ausgerichtet (action/resources, Form-Antworten, Revert stage/commit)',
           'Die Wahl eines lokalen Ollama- (oder anderen) Modells meldet bei kaltem/langsamem Start nicht mehr fälschlich „Anbieter antwortet nicht“ — Auswahl prüft soft; Live-Test bleibt bei Probar',
           'Projektanalyse fragt wie OpenCode /init nach (package.json, CI, Tests) statt generischer Stacks; weiches RAG überspringt vage/Stopwort-Queries',
@@ -1246,13 +1246,13 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: '変更履歴',
     entries: [
       {
-        version: 'v1.0.2',
-        date: 'Oct 7, 2026',
+        version: 'v2.0.0',
+        date: 'Oct 19, 2026',
         items: [
+          'Breaking: Cortex 2.0 は OpenCode CLI ≥ 2.0（V2 APIのみ）が必要 — 拡張機能の更新前に opencode.ai でアップグレード。OpenCode 1.x は非対応',
           'フォローアップ配信（steer/queue）、セッションのアーカイブ/フォーク、MCP·skills·plugins パネル、保存済み権限マトリクス、Providers のマルチアカウント切替（OpenCode V2 Wave 1）',
           '設定の Worktrees、Servers の OpenCode ペアリングコード、コンテキストメーターのセッションコスト（OpenCode V2 Wave 2）',
           'MCP パネルの websearch プロバイダー、Background tools でフォアグラウンドツールをバックグラウンド観測へ（OpenCode V2 Wave 3）',
-          'OpenCode CLI ≥ 2.0（V2 APIのみ）が必要 — opencode.ai で導入/更新。Cortex は OpenCode 1.x 非対応',
           '権限プロンプト・質問フォーム・取り消しを OpenCode V2 プロトコルに整合（action/resources、form 回答、revert stage/commit）',
           'ローカル Ollama（など）のモデル選択時、コールド/低速起動で誤って「プロバイダーが応答しません」と出ない — 選択はソフト確認、ライブテストは Probar のみ',
           'プロジェクト分析は OpenCode /init と同様に package.json・CI・テストを調べ、汎用スタックの捏造を避ける。曖昧/ストップワードだけのクエリはソフト RAG をスキップ',
@@ -1493,13 +1493,13 @@ export const changelogTranslations: Record<Lang, ChangelogTranslations> = {
     title: '更新日志',
     entries: [
       {
-        version: 'v1.0.2',
-        date: 'Oct 7, 2026',
+        version: 'v2.0.0',
+        date: 'Oct 19, 2026',
         items: [
+          'Breaking：Cortex 2.0 需要 OpenCode CLI ≥ 2.0（仅 V2 API）— 更新扩展前请先在 opencode.ai 升级；不再支持 OpenCode 1.x',
           '跟进投递（steer/queue）、会话归档/分叉、MCP·skills·plugins 面板、已保存权限矩阵，以及 Providers 多账户切换（OpenCode V2 Wave 1）',
           '设置中的 Worktrees；Servers 上的 OpenCode 配对代码；上下文计量器中的会话费用（OpenCode V2 Wave 2）',
           'MCP 面板中的 websearch 提供方；Background tools 将前台工具移至后台观察（OpenCode V2 Wave 3）',
-          '需要 OpenCode CLI ≥ 2.0（仅 V2 API）— 请从 opencode.ai 安装/升级；Cortex 不再支持 OpenCode 1.x',
           '权限提示、问题表单与撤销对齐 OpenCode V2 协议（action/resources、form 应答、revert stage/commit）',
           '选择本地 Ollama（或其他）模型时，冷启动/较慢加载不再误报“提供商无响应”——选择使用软检查；实时测试仍在 Probar',
           '项目分析按 OpenCode /init 方式先查 package.json、CI、测试，避免凭空堆栈；模糊/仅停用词查询会跳过软 RAG',

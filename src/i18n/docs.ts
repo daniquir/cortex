@@ -8,6 +8,11 @@ export interface DocsTranslations {
 
   installMetaTitle: string;
   installTitle: string;
+  /** Prominent OpenCode V2 / Cortex 2.0 notice on docs index + install. */
+  installAlertLabel: string;
+  installAlertTitle: string;
+  installAlertBody: string;
+  installAlertLinkLabel: string;
   installFromMarketplace: string;
   installMarketplaceSteps: string[];
   installMarketplaceCmd: string;
@@ -73,6 +78,10 @@ const en: DocsTranslations = {
 
   installMetaTitle: 'Installation — Cortex',
   installTitle: 'Installation',
+  installAlertLabel: 'Important',
+  installAlertTitle: 'Cortex 2.0 requires OpenCode V2',
+  installAlertBody: 'Cortex Agent 2.0 talks only to the OpenCode V2 HTTP API (/api/*). Install or upgrade the OpenCode CLI to ≥ 2.0.0 before updating the extension. OpenCode 1.x is no longer supported.',
+  installAlertLinkLabel: 'Get OpenCode ≥ 2.0',
   installFromMarketplace: 'From VS Code Marketplace',
   installMarketplaceSteps: [
     'Open VS Code (or a compatible fork)',
@@ -90,7 +99,7 @@ const en: DocsTranslations = {
   installFirstRun: 'First Run',
   installFirstRunSteps: [
     { before: 'Create or use an ', strong: 'OpenCode account', after: ' at opencode.ai — that is your AI billing. Cortex has no separate signup.' },
-    { before: 'Install the ', strong: 'OpenCode CLI', after: ' and ensure it is on your PATH (or set cortex.opencodeBinary). On Windows, Cortex looks for opencode.exe.' },
+    { before: 'Install the ', strong: 'OpenCode CLI ≥ 2.0.0', after: ' (V2 required) and ensure it is on your PATH (or set cortex.opencodeBinary). On Windows, Cortex looks for opencode.exe.' },
 { before: 'Install Cortex, then open chat (status bar or Ctrl/Cmd+Alt+C). Default host is the Activity Bar sidebar; pick sidebar vs editor tab during onboarding or via cortex.chat.layout. A project folder is optional; without one, Cortex uses your home directory for general questions.' },
     { before: 'Complete the ', strong: 'onboarding', after: ' checklist (or open Providers): connect Zen or any OpenCode provider (API key / OAuth), pick a chat theme, and choose layout when available. Cortex writes OpenCode’s local auth.json even if the local server is not up yet. Stronger models are under Models.' },
     { before: 'Pick a model (or leave Auto) and start chatting' },
@@ -99,7 +108,7 @@ const en: DocsTranslations = {
   installReqItems: [
     'VS Code 1.100+ (or a compatible fork)',
     'An OpenCode account / subscription (the only AI account — no Cortex signup)',
-    'OpenCode CLI ≥ 1.18.0 on PATH (or cortex.opencodeBinary)',
+    'OpenCode CLI ≥ 2.0.0 on PATH (or cortex.opencodeBinary) — V2 API only; OpenCode 1.x is not supported',
     'Final build v1.0.0 expires ~6 months after its release date (183 days; cortex.beta.expirationDate). After that, install a newer VSIX from GitHub Releases, or set cortex.beta.enabled to false.',
   ],
 
@@ -109,7 +118,7 @@ const en: DocsTranslations = {
   configSettingsIntro: 'Configure Cortex in VS Code Settings (search for “Cortex”). Settings live under the cortex.* namespace — they are not a project config.json.',
   configTableHeaders: ['Setting', 'Default', 'Description'],
   configRows: [
-    { setting: 'cortex.opencodeBinary', default: '"opencode"', desc: 'Path to the OpenCode CLI binary' },
+    { setting: 'cortex.opencodeBinary', default: '"opencode"', desc: 'Path to the OpenCode CLI binary (≥ 2.0.0 required)' },
     { setting: 'cortex.opencodePort', default: '4096', desc: 'Preferred port for opencode serve; if another workspace owns it, Cortex uses the next free port' },
     { setting: 'cortex.agent', default: '"build"', desc: 'Default OpenCode primary agent (e.g. build, plan)' },
     { setting: 'cortex.providerID', default: '"opencode"', desc: 'Deprecated offline mirror — default model is OpenCode opencode.json `model`' },
@@ -290,6 +299,10 @@ export const docsTranslations: Record<Lang, DocsTranslations> = {
     ],
     installMetaTitle: 'Instalación — Cortex',
     installTitle: 'Instalación',
+    installAlertLabel: 'Importante',
+    installAlertTitle: 'Cortex 2.0 requiere OpenCode V2',
+    installAlertBody: 'Cortex Agent 2.0 habla solo con la API HTTP V2 de OpenCode (/api/*). Instala o actualiza la CLI de OpenCode a ≥ 2.0.0 antes de actualizar la extensión. OpenCode 1.x ya no es compatible.',
+    installAlertLinkLabel: 'Obtener OpenCode ≥ 2.0',
     installFromMarketplace: 'Desde el Marketplace de VS Code',
     installMarketplaceSteps: [
       'Abre VS Code (o un fork compatible)',
@@ -304,7 +317,7 @@ export const docsTranslations: Record<Lang, DocsTranslations> = {
     installFirstRun: 'Primer uso',
     installFirstRunSteps: [
       { before: 'Crea o usa una ', strong: 'cuenta de OpenCode', after: ' en opencode.ai — ahí está tu facturación de IA. Cortex no tiene registro propio.' },
-      { before: 'Instala la ', strong: 'CLI de OpenCode', after: ' y asegúrate de que esté en el PATH (o configura cortex.opencodeBinary). En Windows, Cortex busca opencode.exe.' },
+      { before: 'Instala la ', strong: 'CLI de OpenCode ≥ 2.0.0', after: ' (V2 obligatorio) y asegúrate de que esté en el PATH (o configura cortex.opencodeBinary). En Windows, Cortex busca opencode.exe.' },
 { before: 'Instala Cortex y abre el chat (barra de estado o Ctrl/Cmd+Alt+C). Por defecto va a la barra lateral del Activity Bar; elige sidebar vs pestaña de editor en el onboarding o con cortex.chat.layout. La carpeta de proyecto es opcional; sin ella, Cortex usa tu directorio home para preguntas generales.' },
       { before: 'Completa el ', strong: 'onboarding', after: ' (o abre Providers): conecta Zen o cualquier proveedor OpenCode (API key / OAuth), elige tema del chat y la disposición si está disponible. Cortex escribe el auth.json local de OpenCode aunque el servidor aún no esté listo. Modelos más potentes en Models.' },
       { before: 'Elige un modelo (o deja Auto) y empieza a chatear' },
@@ -313,7 +326,7 @@ export const docsTranslations: Record<Lang, DocsTranslations> = {
     installReqItems: [
       'VS Code 1.100+ (o un fork compatible)',
       'Una cuenta / suscripción de OpenCode (la única cuenta de IA — sin registro Cortex)',
-      'OpenCode CLI ≥ 1.18.0 en PATH (o cortex.opencodeBinary)',
+      'OpenCode CLI ≥ 2.0.0 en PATH (o cortex.opencodeBinary) — solo API V2; OpenCode 1.x no es compatible',
       'El build final v1.0.0 caduca ~6 meses tras su fecha de release (183 días; cortex.beta.expirationDate). Después, instala un VSIX más reciente desde GitHub Releases, o pon cortex.beta.enabled en false.',
     ],
     configMetaTitle: 'Configuración — Cortex',
@@ -322,7 +335,7 @@ export const docsTranslations: Record<Lang, DocsTranslations> = {
     configSettingsIntro: 'Configura Cortex en los Ajustes de VS Code (busca “Cortex”). Los ajustes viven bajo el espacio de nombres cortex.* — no son un config.json del proyecto.',
     configTableHeaders: ['Ajuste', 'Por defecto', 'Descripción'],
     configRows: [
-      { setting: 'cortex.opencodeBinary', default: '"opencode"', desc: 'Ruta al binario de la CLI de OpenCode' },
+      { setting: 'cortex.opencodeBinary', default: '"opencode"', desc: 'Ruta al binario de la CLI de OpenCode (≥ 2.0.0 obligatorio)' },
       { setting: 'cortex.opencodePort', default: '4096', desc: 'Puerto preferido para opencode serve; si otro workspace lo usa, Cortex elige el siguiente libre' },
       { setting: 'cortex.agent', default: '"build"', desc: 'Agente primario de OpenCode por defecto (p. ej. build, plan)' },
       { setting: 'cortex.providerID', default: '"opencode"', desc: 'Espejo offline deprecado — el modelo por defecto es `model` en opencode.json' },
@@ -498,6 +511,10 @@ export const docsTranslations: Record<Lang, DocsTranslations> = {
     ],
     installMetaTitle: 'Instalação — Cortex',
     installTitle: 'Instalação',
+    installAlertLabel: 'Importante',
+    installAlertTitle: 'Cortex 2.0 requer OpenCode V2',
+    installAlertBody: 'O Cortex Agent 2.0 fala apenas com a API HTTP V2 do OpenCode (/api/*). Instale ou atualize a CLI do OpenCode para ≥ 2.0.0 antes de atualizar a extensão. O OpenCode 1.x deixou de ser suportado.',
+    installAlertLinkLabel: 'Obter OpenCode ≥ 2.0',
     installFromMarketplace: 'Da Marketplace do VS Code',
     installMarketplaceSteps: [
       'Abra o VS Code (ou um fork compatível)',
@@ -512,7 +529,7 @@ export const docsTranslations: Record<Lang, DocsTranslations> = {
     installFirstRun: 'Primeira execução',
     installFirstRunSteps: [
       { before: 'Crie ou use uma ', strong: 'conta OpenCode', after: ' em opencode.ai — aí está a cobrança de IA. O Cortex não tem cadastro próprio.' },
-      { before: 'Instale a ', strong: 'CLI do OpenCode', after: ' e garanta que esteja no PATH (ou configure cortex.opencodeBinary). No Windows, o Cortex procura opencode.exe.' },
+      { before: 'Instale a ', strong: 'CLI do OpenCode ≥ 2.0.0', after: ' (V2 obrigatório) e garanta que esteja no PATH (ou configure cortex.opencodeBinary). No Windows, o Cortex procura opencode.exe.' },
       { before: 'Instale o Cortex e abra o chat (barra de status ou Ctrl/Cmd+Alt+C). O padrão é a barra lateral do Activity Bar; escolha sidebar vs aba de editor no onboarding ou com cortex.chat.layout. A pasta do projeto é opcional; sem ela, o Cortex usa o diretório home para perguntas gerais.' },
       { before: 'Conclua o ', strong: 'onboarding', after: ' (ou abra Connect): Get API key → colar → Save. O Cortex grava o auth.json local do OpenCode mesmo se o servidor ainda não estiver pronto. Modelos mais fortes em Models.' },
       { before: 'Escolha um modelo (ou deixe Auto) e comece a conversar' },
@@ -521,7 +538,7 @@ export const docsTranslations: Record<Lang, DocsTranslations> = {
     installReqItems: [
       'VS Code 1.100+ (ou um fork compatível)',
       'Uma conta / assinatura OpenCode (a única conta de IA — sem cadastro Cortex)',
-      'OpenCode CLI ≥ 1.18.0 no PATH (ou cortex.opencodeBinary)',
+      'OpenCode CLI ≥ 2.0.0 no PATH (ou cortex.opencodeBinary) — somente API V2; OpenCode 1.x não é suportado',
       'O build final v1.0.0 expira ~6 meses após a data de release (183 dias; cortex.beta.expirationDate). Depois, instala um VSIX mais recente nos GitHub Releases, ou define cortex.beta.enabled como false.',
     ],
     configMetaTitle: 'Configuração — Cortex',
@@ -530,7 +547,7 @@ export const docsTranslations: Record<Lang, DocsTranslations> = {
     configSettingsIntro: 'Configure o Cortex nas Configurações do VS Code (pesquise “Cortex”). Os ajustes ficam no namespace cortex.* — não são um config.json do projeto.',
     configTableHeaders: ['Ajuste', 'Padrão', 'Descrição'],
     configRows: [
-      { setting: 'cortex.opencodeBinary', default: '"opencode"', desc: 'Caminho para o binário da CLI OpenCode' },
+      { setting: 'cortex.opencodeBinary', default: '"opencode"', desc: 'Caminho para o binário da CLI OpenCode (≥ 2.0.0 obrigatório)' },
       { setting: 'cortex.opencodePort', default: '4096', desc: 'Porta preferida para opencode serve; se outro workspace a usar, o Cortex escolhe a próxima livre' },
       { setting: 'cortex.agent', default: '"build"', desc: 'Agente primário OpenCode padrão (ex.: build, plan)' },
       { setting: 'cortex.providerID', default: '"opencode"', desc: 'Espelho offline obsoleto — o modelo predefinido é `model` em opencode.json' },
@@ -706,6 +723,10 @@ export const docsTranslations: Record<Lang, DocsTranslations> = {
     ],
     installMetaTitle: 'Installation — Cortex',
     installTitle: 'Installation',
+    installAlertLabel: 'Important',
+    installAlertTitle: 'Cortex 2.0 nécessite OpenCode V2',
+    installAlertBody: 'Cortex Agent 2.0 ne parle qu’à l’API HTTP V2 d’OpenCode (/api/*). Installez ou mettez à jour la CLI OpenCode en ≥ 2.0.0 avant de mettre à jour l’extension. OpenCode 1.x n’est plus pris en charge.',
+    installAlertLinkLabel: 'Obtenir OpenCode ≥ 2.0',
     installFromMarketplace: 'Depuis la Marketplace VS Code',
     installMarketplaceSteps: [
       'Ouvrez VS Code (ou un fork compatible)',
@@ -720,7 +741,7 @@ export const docsTranslations: Record<Lang, DocsTranslations> = {
     installFirstRun: 'Premier lancement',
     installFirstRunSteps: [
       { before: 'Créez ou utilisez un ', strong: 'compte OpenCode', after: ' sur opencode.ai — c\'est votre facturation IA. Cortex n\'a pas d\'inscription séparée.' },
-      { before: 'Installez la ', strong: 'CLI OpenCode', after: ' et assurez-vous qu\'elle soit dans le PATH (ou définissez cortex.opencodeBinary). Sous Windows, Cortex cherche opencode.exe.' },
+      { before: 'Installez la ', strong: 'CLI OpenCode ≥ 2.0.0', after: ' (V2 obligatoire) et assurez-vous qu\'elle soit dans le PATH (ou définissez cortex.opencodeBinary). Sous Windows, Cortex cherche opencode.exe.' },
       { before: 'Installez Cortex, puis ouvrez le chat (barre d\'état ou Ctrl/Cmd+Alt+C). L\'hôte par défaut est la barre latérale Activity Bar ; choisissez sidebar vs onglet éditeur à l\'onboarding ou via cortex.chat.layout. Un dossier de projet est optionnel ; sans dossier, Cortex utilise votre répertoire home pour les questions générales.' },
       { before: 'Terminez l\'', strong: 'onboarding', after: ' (ou ouvrez Connect) : Get API key → coller → Save. Cortex écrit l\'auth.json local d\'OpenCode même si le serveur n\'est pas encore prêt. Modèles plus puissants sous Models.' },
       { before: 'Choisissez un modèle (ou laissez Auto) et commencez à discuter' },
@@ -729,7 +750,7 @@ export const docsTranslations: Record<Lang, DocsTranslations> = {
     installReqItems: [
       'VS Code 1.100+ (ou un fork compatible)',
       'Un compte / abonnement OpenCode (le seul compte IA — pas d\'inscription Cortex)',
-      'OpenCode CLI ≥ 1.18.0 dans le PATH (ou cortex.opencodeBinary)',
+      'OpenCode CLI ≥ 2.0.0 dans le PATH (ou cortex.opencodeBinary) — API V2 uniquement ; OpenCode 1.x non pris en charge',
       'Le build final v1.0.0 expire ~6 mois après sa date de release (183 jours ; cortex.beta.expirationDate). Ensuite, installez un VSIX plus récent depuis GitHub Releases, ou mettez cortex.beta.enabled à false.',
     ],
     configMetaTitle: 'Configuration — Cortex',
@@ -738,7 +759,7 @@ export const docsTranslations: Record<Lang, DocsTranslations> = {
     configSettingsIntro: 'Configurez Cortex dans les Paramètres VS Code (recherchez « Cortex »). Les réglages sont sous le namespace cortex.* — ce n\'est pas un config.json de projet.',
     configTableHeaders: ['Réglage', 'Défaut', 'Description'],
     configRows: [
-      { setting: 'cortex.opencodeBinary', default: '"opencode"', desc: 'Chemin vers le binaire CLI OpenCode' },
+      { setting: 'cortex.opencodeBinary', default: '"opencode"', desc: 'Chemin vers le binaire CLI OpenCode (≥ 2.0.0 requis)' },
       { setting: 'cortex.opencodePort', default: '4096', desc: 'Port préféré pour opencode serve ; si un autre workspace l’utilise, Cortex prend le prochain port libre' },
       { setting: 'cortex.agent', default: '"build"', desc: 'Agent primaire OpenCode par défaut (ex. build, plan)' },
       { setting: 'cortex.providerID', default: '"opencode"', desc: 'Miroir hors ligne déprécié — le modèle par défaut est `model` dans opencode.json' },
@@ -914,6 +935,10 @@ export const docsTranslations: Record<Lang, DocsTranslations> = {
     ],
     installMetaTitle: 'Installation — Cortex',
     installTitle: 'Installation',
+    installAlertLabel: 'Wichtig',
+    installAlertTitle: 'Cortex 2.0 benötigt OpenCode V2',
+    installAlertBody: 'Cortex Agent 2.0 spricht nur die OpenCode-V2-HTTP-API (/api/*). Installieren oder aktualisieren Sie die OpenCode-CLI auf ≥ 2.0.0, bevor Sie die Erweiterung aktualisieren. OpenCode 1.x wird nicht mehr unterstützt.',
+    installAlertLinkLabel: 'OpenCode ≥ 2.0 holen',
     installFromMarketplace: 'Vom VS Code Marketplace',
     installMarketplaceSteps: [
       'Öffnen Sie VS Code (oder einen kompatiblen Fork)',
@@ -928,7 +953,7 @@ export const docsTranslations: Record<Lang, DocsTranslations> = {
     installFirstRun: 'Erster Start',
     installFirstRunSteps: [
       { before: 'Erstellen oder nutzen Sie ein ', strong: 'OpenCode-Konto', after: ' auf opencode.ai — dort liegt Ihre KI-Abrechnung. Cortex hat keine eigene Registrierung.' },
-      { before: 'Installieren Sie die ', strong: 'OpenCode-CLI', after: ' und stellen Sie sicher, dass sie im PATH liegt (oder setzen Sie cortex.opencodeBinary). Unter Windows sucht Cortex nach opencode.exe.' },
+      { before: 'Installieren Sie die ', strong: 'OpenCode-CLI ≥ 2.0.0', after: ' (V2 erforderlich) und stellen Sie sicher, dass sie im PATH liegt (oder setzen Sie cortex.opencodeBinary). Unter Windows sucht Cortex nach opencode.exe.' },
       { before: 'Installieren Sie Cortex und öffnen Sie den Chat (Statusleiste oder Ctrl/Cmd+Alt+C). Standard ist die Activity-Bar-Seitenleiste; wählen Sie Sidebar vs Editor-Tab im Onboarding oder mit cortex.chat.layout. Ein Projektordner ist optional; ohne Ordner nutzt Cortex Ihr Home-Verzeichnis für allgemeine Fragen.' },
       { before: 'Schließen Sie das ', strong: 'Onboarding', after: ' ab (oder öffnen Sie Connect): Get API key → einfügen → Save. Cortex schreibt die lokale OpenCode-auth.json, auch wenn der Server noch nicht bereit ist. Stärkere Modelle unter Models.' },
       { before: 'Wählen Sie ein Modell (oder lassen Sie Auto) und starten Sie den Chat' },
@@ -937,7 +962,7 @@ export const docsTranslations: Record<Lang, DocsTranslations> = {
     installReqItems: [
       'VS Code 1.100+ (oder kompatibler Fork)',
       'Ein OpenCode-Konto / -Abo (das einzige KI-Konto — keine Cortex-Anmeldung)',
-      'OpenCode CLI ≥ 1.18.0 im PATH (oder cortex.opencodeBinary)',
+      'OpenCode CLI ≥ 2.0.0 im PATH (oder cortex.opencodeBinary) — nur V2-API; OpenCode 1.x wird nicht unterstützt',
       'Das finale Build v1.0.0 läuft ~6 Monate nach dem Release-Datum ab (183 Tage; cortex.beta.expirationDate). Danach ein neueres VSIX von GitHub Releases installieren oder cortex.beta.enabled auf false setzen.',
     ],
     configMetaTitle: 'Konfiguration — Cortex',
@@ -946,7 +971,7 @@ export const docsTranslations: Record<Lang, DocsTranslations> = {
     configSettingsIntro: 'Konfigurieren Sie Cortex in den VS Code-Einstellungen (suchen Sie nach „Cortex“). Einstellungen liegen unter dem Namespace cortex.* — das ist keine Projekt-config.json.',
     configTableHeaders: ['Einstellung', 'Standard', 'Beschreibung'],
     configRows: [
-      { setting: 'cortex.opencodeBinary', default: '"opencode"', desc: 'Pfad zur OpenCode-CLI-Binary' },
+      { setting: 'cortex.opencodeBinary', default: '"opencode"', desc: 'Pfad zur OpenCode-CLI-Binary (≥ 2.0.0 erforderlich)' },
       { setting: 'cortex.opencodePort', default: '4096', desc: 'Bevorzugter Port für opencode serve; ist er von einem anderen Workspace belegt, nimmt Cortex den nächsten freien' },
       { setting: 'cortex.agent', default: '"build"', desc: 'Standard-OpenCode-Primäragent (z. B. build, plan)' },
       { setting: 'cortex.providerID', default: '"opencode"', desc: 'Veralteter Offline-Spiegel — Standardmodell ist `model` in opencode.json' },
@@ -1122,6 +1147,10 @@ export const docsTranslations: Record<Lang, DocsTranslations> = {
     ],
     installMetaTitle: 'インストール — Cortex',
     installTitle: 'インストール',
+    installAlertLabel: '重要',
+    installAlertTitle: 'Cortex 2.0 には OpenCode V2 が必要です',
+    installAlertBody: 'Cortex Agent 2.0 は OpenCode V2 HTTP API（/api/*）のみに対応します。拡張機能の更新前に OpenCode CLI を ≥ 2.0.0 へ導入/更新してください。OpenCode 1.x は非対応です。',
+    installAlertLinkLabel: 'OpenCode ≥ 2.0 を入手',
     installFromMarketplace: 'VS Code Marketplaceから',
     installMarketplaceSteps: [
       'VS Code（または互換フォーク）を開く',
@@ -1136,7 +1165,7 @@ export const docsTranslations: Record<Lang, DocsTranslations> = {
     installFirstRun: '初回起動',
     installFirstRunSteps: [
       { before: '', strong: 'OpenCodeアカウント', after: 'を opencode.ai で作成または利用 — それがAI課金です。Cortexに別登録はありません。' },
-      { before: '', strong: 'OpenCode CLI', after: 'をインストールし、PATH上にあることを確認（または cortex.opencodeBinary を設定）。Windowsでは Cortex が opencode.exe を探します。' },
+      { before: '', strong: 'OpenCode CLI ≥ 2.0.0', after: '（V2 必須）をインストールし、PATH上にあることを確認（または cortex.opencodeBinary を設定）。Windowsでは Cortex が opencode.exe を探します。' },
       { before: 'Cortexをインストールし、チャットを開く（ステータスバーまたは Ctrl/Cmd+Alt+C）。既定は Activity Bar サイドバー；オンボーディングまたは cortex.chat.layout で sidebar / エディタタブを選択。プロジェクトフォルダーは任意；ない場合、一般的な質問にはホームディレクトリを使います。' },
       { before: '', strong: 'オンボーディング', after: 'を完了（または Connect を開く）：Get API key → 貼り付け → Save。ローカルサーバー未起動でも OpenCode の auth.json に書き込みます。より強いモデルは Models。' },
       { before: 'モデルを選ぶ（または Auto のまま）してチャット開始' },
@@ -1145,7 +1174,7 @@ export const docsTranslations: Record<Lang, DocsTranslations> = {
     installReqItems: [
       'VS Code 1.100+（または互換フォーク）',
       'OpenCodeアカウント / サブスクリプション（唯一のAIアカウント — Cortex登録なし）',
-      'PATH 上の OpenCode CLI ≥ 1.18.0（または cortex.opencodeBinary）',
+      'PATH 上の OpenCode CLI ≥ 2.0.0（または cortex.opencodeBinary）— V2 API のみ；OpenCode 1.x 非対応',
       '最終ビルド v1.0.0 はリリース日から約 6 か月で期限切れ（183 日；cortex.beta.expirationDate）。その後は GitHub Releases の新しい VSIX を入れるか、cortex.beta.enabled を false にしてください。',
     ],
     configMetaTitle: '設定 — Cortex',
@@ -1154,7 +1183,7 @@ export const docsTranslations: Record<Lang, DocsTranslations> = {
     configSettingsIntro: 'VS Codeの設定でCortexを構成します（「Cortex」で検索）。設定は cortex.* 名前空間にあり、プロジェクトのconfig.jsonではありません。',
     configTableHeaders: ['設定', 'デフォルト', '説明'],
     configRows: [
-      { setting: 'cortex.opencodeBinary', default: '"opencode"', desc: 'OpenCode CLIバイナリへのパス' },
+      { setting: 'cortex.opencodeBinary', default: '"opencode"', desc: 'OpenCode CLIバイナリへのパス（≥ 2.0.0 必須）' },
       { setting: 'cortex.opencodePort', default: '4096', desc: 'opencode serve の優先ポート。別ワークスペースが使用中なら次の空きポートを使う' },
       { setting: 'cortex.agent', default: '"build"', desc: 'デフォルトのOpenCodeプライマリエージェント（例: build、plan）' },
       { setting: 'cortex.providerID', default: '"opencode"', desc: '非推奨のオフラインミラー — デフォルトモデルは opencode.json の `model`' },
@@ -1330,6 +1359,10 @@ export const docsTranslations: Record<Lang, DocsTranslations> = {
     ],
     installMetaTitle: '安装 — Cortex',
     installTitle: '安装',
+    installAlertLabel: '重要',
+    installAlertTitle: 'Cortex 2.0 需要 OpenCode V2',
+    installAlertBody: 'Cortex Agent 2.0 仅对接 OpenCode V2 HTTP API（/api/*）。更新扩展前请先将 OpenCode CLI 安装/升级到 ≥ 2.0.0。不再支持 OpenCode 1.x。',
+    installAlertLinkLabel: '获取 OpenCode ≥ 2.0',
     installFromMarketplace: '从 VS Code Marketplace',
     installMarketplaceSteps: [
       '打开 VS Code（或兼容分支）',
@@ -1344,7 +1377,7 @@ export const docsTranslations: Record<Lang, DocsTranslations> = {
     installFirstRun: '首次运行',
     installFirstRunSteps: [
       { before: '在 opencode.ai 创建或使用 ', strong: 'OpenCode 账户', after: ' — 那是你的 AI 账单。Cortex 无单独注册。' },
-      { before: '安装 ', strong: 'OpenCode CLI', after: ' 并确保在 PATH 上（或设置 cortex.opencodeBinary）。在 Windows 上，Cortex 会查找 opencode.exe。' },
+      { before: '安装 ', strong: 'OpenCode CLI ≥ 2.0.0', after: '（必须 V2）并确保在 PATH 上（或设置 cortex.opencodeBinary）。在 Windows 上，Cortex 会查找 opencode.exe。' },
       { before: '安装 Cortex，然后打开聊天（状态栏或 Ctrl/Cmd+Alt+C）。默认在 Activity Bar 侧边栏；可在引导或通过 cortex.chat.layout 选择侧边栏/编辑器标签。项目文件夹可选；没有时，Cortex 用用户主目录处理一般问题。' },
       { before: '完成 ', strong: '引导', after: '（或打开 Connect）：Get API key → 粘贴 → Save。即使本地服务器尚未就绪，Cortex 也会写入 OpenCode 的本地 auth.json。更强模型在 Models。' },
       { before: '选择模型（或保持 Auto）并开始聊天' },
@@ -1353,7 +1386,7 @@ export const docsTranslations: Record<Lang, DocsTranslations> = {
     installReqItems: [
       'VS Code 1.100+（或兼容分支）',
       'OpenCode 账户 / 订阅（唯一的 AI 账户 — 无需 Cortex 注册）',
-      'PATH 上的 OpenCode CLI ≥ 1.18.0（或 cortex.opencodeBinary）',
+      'PATH 上的 OpenCode CLI ≥ 2.0.0（或 cortex.opencodeBinary）— 仅 V2 API；不支持 OpenCode 1.x',
       '最终构建 v1.0.0 在发布日后约 6 个月过期（183 天；cortex.beta.expirationDate）。之后请从 GitHub Releases 安装更新的 VSIX，或将 cortex.beta.enabled 设为 false。',
     ],
     configMetaTitle: '配置 — Cortex',
@@ -1362,7 +1395,7 @@ export const docsTranslations: Record<Lang, DocsTranslations> = {
     configSettingsIntro: '在 VS Code 设置中配置 Cortex（搜索 “Cortex”）。设置位于 cortex.* 命名空间——不是项目的 config.json。',
     configTableHeaders: ['设置', '默认值', '说明'],
     configRows: [
-      { setting: 'cortex.opencodeBinary', default: '"opencode"', desc: 'OpenCode CLI 二进制路径' },
+      { setting: 'cortex.opencodeBinary', default: '"opencode"', desc: 'OpenCode CLI 二进制路径（需要 ≥ 2.0.0）' },
       { setting: 'cortex.opencodePort', default: '4096', desc: 'opencode serve 的首选端口；若被其他工作区占用，Cortex 会使用下一个空闲端口' },
       { setting: 'cortex.agent', default: '"build"', desc: '默认 OpenCode 主代理（如 build、plan）' },
       { setting: 'cortex.providerID', default: '"opencode"', desc: '已弃用的离线镜像 — 默认模型为 opencode.json 的 `model`' },
